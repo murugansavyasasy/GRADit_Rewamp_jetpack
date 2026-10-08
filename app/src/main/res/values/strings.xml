@@ -1,0 +1,485 @@
+<resources>
+    <string name="app_name">GRADit</string>
+
+    <!-- Splash / onboarding -->
+    <string name="splash_college_name">University College\nof Engineering</string>
+    <string name="splash_location">Chennai</string>
+    <string name="splash_tagline">Campus app for students &amp; parents</string>
+    <string name="splash_get_started">Get started</string>
+    <string name="splash_powered_by">Powered by</string>
+    <string name="splash_partner_name">SAVYASASY</string>
+    <string name="splash_logo_content_desc">College logo</string>
+    <string name="splash_partner_logo_content_desc">SAVYASASY Software Solutions</string>
+
+    <!-- Onboarding / app introduction -->
+    <string name="onboarding_skip">Skip</string>
+    <string name="onboarding_next">Next</string>
+    <string name="onboarding_page_counter">%1$d of %2$d</string>
+
+    <string name="onboarding_title_1">Everything about college, in one place</string>
+    <string name="onboarding_subtitle_1">Attendance, homework, exams and marks — updated the moment teachers post them.</string>
+    <string name="onboarding_badge_attendance">Attendance 92%</string>
+    <string name="onboarding_badge_ia">IA 2 · 12 Oct</string>
+    <string name="onboarding_badge_cgpa">CGPA 8.4</string>
+
+    <string name="onboarding_title_2">Talk to teachers easily</string>
+    <string name="onboarding_subtitle_2">Read notices, hear voice notes from faculty and reply in a tap — no more missed circulars.</string>
+    <string name="onboarding_badge_new_notice">New notice</string>
+    <string name="onboarding_badge_voice">Voice · 0:24</string>
+    <string name="onboarding_badge_unread">2 unread</string>
+
+    <string name="onboarding_title_3">Pay fees and track the bus</string>
+    <string name="onboarding_subtitle_3">Pay securely, upload payment proof and see exactly when the college bus will reach your stop.</string>
+    <string name="onboarding_badge_due">₹24,500 due</string>
+    <string name="onboarding_badge_bus">Bus in 12 min</string>
+    <string name="onboarding_badge_receipt">Receipt saved</string>
+
+    <string name="onboarding_icon_chat_desc">Messages</string>
+    <string name="onboarding_icon_bus_desc">Bus tracking</string>
+
+    <!-- Country selection -->
+    <string name="country_title">Select your country</string>
+    <string name="country_subtitle">We use this to show your college list, currency and phone code.</string>
+    <string name="country_search_hint">Search country</string>
+    <string name="country_detected">Detected from your location: %1$s</string>
+    <string name="country_continue">Continue with %1$s</string>
+
+    <!-- Shared UI -->
+    <string name="back_content_desc">Back</string>
+    <string name="search_content_desc">Search</string>
+    <string name="selected_content_desc">Selected</string>
+    <string name="location_content_desc">Location</string>
+    <string name="password_show">Show password</string>
+    <string name="password_hide">Hide password</string>
+    <string name="language_content_desc">Language</string>
+    <string name="close_content_desc">Close</string>
+
+    <!-- Change language -->
+    <string name="language_title">Change language</string>
+    <string name="language_subtitle">Menus, notices and alerts will use this language</string>
+    <string name="language_apply">Apply · %1$s</string>
+
+    <!-- Forgot password -->
+    <string name="forgot_title">Forgot password?</string>
+    <string name="forgot_subtitle">Choose where we should send a 6-digit code to reset it.</string>
+    <string name="forgot_send_via">Send code via</string>
+    <string name="forgot_method_sms_title">SMS to registered mobile</string>
+    <string name="forgot_method_email_title">Email</string>
+    <string name="forgot_send_code">Send code</string>
+    <string name="forgot_back_to_sign_in">Back to sign in</string>
+    <string name="forgot_lock_desc">Reset password</string>
+    <string name="forgot_method_sms_desc">Mobile</string>
+    <string name="forgot_method_email_desc">Email</string>
+
+    <!-- OTP verification -->
+    <string name="otp_title">Enter the code</string>
+    <string name="otp_subtitle">We sent a 6-digit code to %1$s.</string>
+    <string name="otp_change">Change</string>
+    <string name="otp_resend_in">Resend code in</string>
+    <string name="otp_resend">Resend</string>
+    <string name="otp_verify">Verify &amp; continue</string>
+    <string name="otp_shield_desc">Verification</string>
+    <string name="otp_timer_desc">Time remaining</string>
+
+    <!-- Create / reset password -->
+    <string name="create_pw_title">Create a password</string>
+    <string name="create_pw_subtitle">Your number is verified. Set a password you\'ll use to sign in next time.</string>
+    <string name="create_pw_new_label">New password</string>
+    <string name="create_pw_confirm_label">Confirm password</string>
+    <string name="create_pw_save">Save &amp; continue</string>
+    <string name="create_pw_lock_desc">Create password</string>
+    <string name="pw_req_length">At least 8 characters</string>
+    <string name="pw_req_case">One uppercase and one lowercase letter</string>
+    <string name="pw_req_number">One number or symbol</string>
+    <string name="pw_req_match">Passwords match</string>
+    <string name="pw_req_met_desc">Met</string>
+    <string name="pw_strength_weak">Weak password</string>
+    <string name="pw_strength_fair">Fair password</string>
+    <string name="pw_strength_strong">Strong password</string>
+    <string name="pw_strength_very_strong">Very strong password</string>
+
+    <!-- Home (student) -->
+    <string name="home_greeting">Good morning, %1$s</string>
+    <string name="home_user_name">Aarav</string>
+    <string name="home_role_student">Student</string>
+    <string name="home_college">UCE Chennai</string>
+    <string name="home_notifications_desc">Notifications</string>
+    <string name="home_search_hint">Search menu</string>
+    <string name="home_search_no_results">No menu items found</string>
+    <string name="home_alert">College closed on 8 Oct due to heavy rain. Online classes will run as usual.</string>
+    <string name="home_alert_dismiss">Dismiss alert</string>
+
+    <string name="qa_attendance">Attendance</string>
+    <string name="qa_assignment">Assignment</string>
+    <string name="qa_exam">Exam Application Details</string>
+    <string name="qa_fee">Fee Details</string>
+    <string name="qa_notice">Notice Board</string>
+    <string name="qa_events">Events</string>
+    <string name="qa_video">Video</string>
+    <string name="qa_discussion">Discussion Board</string>
+    <string name="qa_text_msg">Text Msg</string>
+    <string name="qa_voice_msg">Voice Msg</string>
+    <string name="qa_image_pdf">Image/PDF</string>
+    <string name="qa_faculty">Faculty</string>
+    <string name="qa_course">Course Details</string>
+    <string name="qa_category_credit">Category Credit Points</string>
+    <string name="qa_sem_credit">Sem Credit Points</string>
+    <string name="qa_resume">Resume Builder</string>
+    <string name="qa_placement_events">Placement Events</string>
+    <string name="qa_placement_training">Placement Training</string>
+    <string name="qa_more">More</string>
+    <string name="qa_less">Less</string>
+
+    <string name="home_att_header">TODAY · OVERALL 92%</string>
+    <string name="home_att_percent">92%</string>
+    <string name="home_att_status">You\'re marked Present</string>
+    <string name="home_att_next">Next: TOC · 11:45 AM · B-204</string>
+
+    <string name="home_classes_title">Today\'s classes</string>
+    <string name="home_timetable">Timetable</string>
+    <string name="home_class1_period">P3</string>
+    <string name="home_class1_time">10:55 – 11:45 AM · B-204</string>
+    <string name="home_class1_title">Operating Systems</string>
+    <string name="home_class1_sub">Swapped · Prof. Karthik Raman</string>
+    <string name="home_class1_tag_now">Now</string>
+    <string name="home_class1_tag_swapped">Swapped</string>
+    <string name="home_class2_period">P4</string>
+    <string name="home_class2_time">11:45 AM – 12:35 PM · B-204</string>
+    <string name="home_class2_title">Theory of Computation</string>
+    <string name="home_class2_sub">Substitute: Dr. Kavitha M.</string>
+    <string name="home_class2_tag_next">Next</string>
+    <string name="home_class2_tag_changed">Changed</string>
+
+    <string name="home_upcoming_title">Upcoming events</string>
+    <string name="home_see_all">See all</string>
+    <string name="home_event1_date">9 OCT</string>
+    <string name="home_event1_title">Parent–teacher meet</string>
+    <string name="home_event1_location">Block B, Room 204</string>
+    <string name="home_event2_date">15 OCT</string>
+    <string name="home_event2_title">AI in healthcare talk</string>
+    <string name="home_event2_location">Seminar hall</string>
+
+    <string name="home_assignments_title">Assignments due</string>
+    <string name="home_assign1_course">DBMS</string>
+    <string name="home_assign1_title">Assignment 3 (3NF)</string>
+    <string name="home_assign1_due">Due today</string>
+    <string name="home_assign2_course">Operating Systems</string>
+    <string name="home_assign2_title">CPU scheduling report</string>
+    <string name="home_assign2_due">Due Thu, 8 Oct</string>
+
+    <string name="home_notice_title">Notice board</string>
+    <string name="home_notice1_title">IA 2 hall tickets from 9 Oct</string>
+    <string name="home_notice1_meta">Posted today · Exam cell</string>
+    <string name="home_notice2_title">Hostel fee: last date 15 Oct</string>
+    <string name="home_notice2_meta">3 Oct · Accounts office</string>
+    <string name="home_notice_open_desc">Open notice</string>
+
+    <string name="home_chat_title">Chat</string>
+    <string name="home_chat1_initials">MI</string>
+    <string name="home_chat1_name">Dr. Meena Iyer (Mentor)</string>
+    <string name="home_chat1_time">10:24</string>
+    <string name="home_chat1_message">Aarav did well in IA 1, keep it up before IA 2.</string>
+    <string name="home_chat1_unread">2</string>
+    <string name="home_ad_label">Ad</string>
+    <string name="home_ad_message">Campus store — hoodies 20% off this week</string>
+
+    <!-- Profile (Me) -->
+    <string name="profile_title">Profile</string>
+    <string name="profile_name">Rajesh Sharma</string>
+    <string name="profile_phone">+91 98765 43210</string>
+    <string name="profile_avatar_initials">RS</string>
+    <string name="profile_edit_desc">Edit profile</string>
+    <string name="profile_role_parent">Parent</string>
+    <string name="profile_role_principal">Principal</string>
+    <string name="profile_role_all">All roles</string>
+    <string name="profile_your_roles">YOUR ROLES</string>
+    <string name="profile_linked_students">LINKED STUDENTS</string>
+    <string name="profile_student1_initials">AS</string>
+    <string name="profile_student1_name">Aarav Sharma</string>
+    <string name="profile_student1_detail">B.E. CSE · Sem 5 · Viewing now</string>
+    <string name="profile_student2_initials">IS</string>
+    <string name="profile_student2_name">Isha Sharma</string>
+    <string name="profile_student2_detail">B.Com · Sem 1</string>
+    <string name="profile_change_password">Change password</string>
+    <string name="profile_settings">Settings</string>
+    <string name="profile_sign_out">Sign out</string>
+    <string name="profile_signout_confirm_title">Sign out?</string>
+    <string name="profile_signout_confirm_message">You\'ll need to sign in again to use the app.</string>
+    <string name="action_cancel">Cancel</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_section_notifications">NOTIFICATIONS</string>
+    <string name="settings_section_preferences">PREFERENCES &amp; ACCOUNT</string>
+    <string name="settings_section_help">HELP &amp; LEGAL</string>
+    <string name="settings_attendance_title">Attendance alerts</string>
+    <string name="settings_attendance_sub">When marked absent or late</string>
+    <string name="settings_fee_title">Fee reminders</string>
+    <string name="settings_fee_sub">7 days and 1 day before due</string>
+    <string name="settings_results_title">Results &amp; exams</string>
+    <string name="settings_results_sub">Marks, timetables, hall tickets</string>
+    <string name="settings_bus_title">Bus arrival</string>
+    <string name="settings_bus_sub">When the bus is 10 min away</string>
+    <string name="settings_biometric_title">Fingerprint / Face unlock</string>
+    <string name="settings_biometric_sub">Sign in without a password</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_language_value">English</string>
+    <string name="settings_text_size">Text size</string>
+    <string name="settings_text_size_value">Default</string>
+    <string name="settings_help_support">Help &amp; support</string>
+    <string name="settings_faqs">FAQs &amp; help</string>
+    <string name="settings_privacy">Privacy policy</string>
+    <string name="settings_terms">Terms &amp; conditions</string>
+
+    <!-- Change password -->
+    <string name="change_pw_title">Change password</string>
+    <string name="change_pw_subtitle">Use a password you don\'t use for other apps.</string>
+    <string name="change_pw_current_label">Current password</string>
+    <string name="change_pw_forgot">Forgot?</string>
+    <string name="change_pw_new_label">New password</string>
+    <string name="change_pw_confirm_label">Confirm new password</string>
+    <string name="change_pw_mismatch">Passwords don\'t match</string>
+    <string name="change_pw_signout_others">Sign me out on other devices</string>
+    <string name="change_pw_update">Update password</string>
+    <string name="change_pw_strength_weak">Weak — use a longer password</string>
+    <string name="change_pw_strength_fair">Fair — use 12 or more characters to strengthen it</string>
+    <string name="change_pw_strength_strong">Strong password</string>
+    <string name="change_pw_strength_very_strong">Very strong password</string>
+
+    <!-- Privacy policy -->
+    <string name="privacy_title">Privacy policy</string>
+    <string name="privacy_download_desc">Download</string>
+    <string name="privacy_summary_title">Your data stays with your college</string>
+    <string name="privacy_summary_body">This summary explains what University College of Engineering, Chennai collects through the app and why. Read the full policy below.</string>
+    <string name="privacy_meta">Last updated [DATE] · Version [X.X]</string>
+    <string name="privacy_s1_title">Information we collect</string>
+    <string name="privacy_s1_body">Your name, contact details, attendance, marks, fee records and messages you send through the app. [REVIEW WITH LEGAL]</string>
+    <string name="privacy_s2_title">How we use it</string>
+    <string name="privacy_s2_body">To show academic progress, send notices and reminders, process fee payments and help families reach faculty. [REVIEW WITH LEGAL]</string>
+    <string name="privacy_s3_title">Who can see your data</string>
+    <string name="privacy_s3_body">Your college staff, and the parents or guardians linked to a student. We do not sell your data. [REVIEW WITH LEGAL]</string>
+    <string name="privacy_s4_title">Storage &amp; security</string>
+    <string name="privacy_s4_body">Data is stored securely and access is limited to authorised college staff. [REVIEW WITH LEGAL]</string>
+    <string name="privacy_s5_title">Your choices &amp; rights</string>
+    <string name="privacy_s5_body">You can request a copy of your data or ask the college to correct it. [REVIEW WITH LEGAL]</string>
+    <string name="privacy_s6_title">Changes to this policy</string>
+    <string name="privacy_s6_body">We may update this policy and will note the date and version above. [REVIEW WITH LEGAL]</string>
+    <string name="privacy_contact">Questions? Write to our data officer at [PRIVACY EMAIL]</string>
+    <string name="privacy_read_terms">Read Terms &amp; conditions</string>
+
+    <!-- Terms &amp; conditions -->
+    <string name="terms_title">Terms &amp; conditions</string>
+    <string name="terms_effective">Effective [DATE]</string>
+    <string name="terms_read_time">About 4 min read</string>
+    <string name="terms_s1_title">Using the app</string>
+    <string name="terms_s1_body">The app is for students, parents and staff of University College of Engineering, Chennai. By signing in you accept these terms.</string>
+    <string name="terms_s2_title">Your account</string>
+    <string name="terms_s2_body">Keep your password and OTPs private. You are responsible for activity on your account and should report misuse to the college office.</string>
+    <string name="terms_s3_title">Respectful communication</string>
+    <string name="terms_s3_body">Messages, voice notes and concerns must be respectful and relate to college matters. Abusive content may be removed.</string>
+    <string name="terms_s4_title">Fees &amp; payments</string>
+    <string name="terms_s4_body">Fee amounts and due dates are set by the college. Payment proofs are verified by the accounts office before they are marked paid. [REVIEW WITH LEGAL]</string>
+    <string name="terms_s5_title">Accuracy of information</string>
+    <string name="terms_s5_body">Attendance, marks and notices are published by the college. Raise a concern in the app if something looks wrong.</string>
+    <string name="terms_s6_title">Changes &amp; contact</string>
+    <string name="terms_s6_body">We may update these terms and will notify you in the app. For questions, contact the college office. [REVIEW WITH LEGAL]</string>
+    <string name="terms_agree_prefix">I have read and agree to the </string>
+    <string name="terms_agree_terms">Terms &amp; conditions</string>
+    <string name="terms_agree_middle"> and the </string>
+    <string name="terms_agree_privacy">Privacy policy</string>
+    <string name="terms_accept">Accept &amp; continue</string>
+
+    <!-- FAQs &amp; help -->
+    <string name="faq_title">FAQs &amp; help</string>
+    <string name="faq_search_hint">Search questions</string>
+    <string name="faq_cat_all">All</string>
+    <string name="faq_cat_account">Account</string>
+    <string name="faq_cat_fees">Fees</string>
+    <string name="faq_cat_attendance">Attendance</string>
+    <string name="faq_cat_more">More</string>
+    <string name="faq_q1">How do I reset my password?</string>
+    <string name="faq_a1">On the sign-in screen tap \"Forgot password?\", choose SMS or email, enter the 6-digit code and set a new password.</string>
+    <string name="faq_q2">Can I see more than one child in the app?</string>
+    <string name="faq_a2">Yes. Linked students appear on your profile — tap a student to switch between them.</string>
+    <string name="faq_q3">My fee payment isn\'t showing as paid</string>
+    <string name="faq_a3">Payments are marked paid after the accounts office verifies your proof. This can take up to 2 working days.</string>
+    <string name="faq_q4">Attendance is marked wrong — what should I do?</string>
+    <string name="faq_a4">Open the attendance screen and raise a concern, or contact your class teacher through the app.</string>
+    <string name="faq_q5">Can I reply to a voice message?</string>
+    <string name="faq_a5">Yes. Open the message and tap reply to send a text or voice note back to faculty.</string>
+    <string name="faq_q6">How do I turn on fingerprint sign-in?</string>
+    <string name="faq_a6">Go to Settings and turn on Fingerprint / Face unlock to sign in without a password.</string>
+    <string name="faq_help_title">Still need help?</string>
+    <string name="faq_help_body">Our office replies within 2 working days.</string>
+    <string name="faq_raise_concern">Raise a concern</string>
+    <string name="faq_call_office">Call office</string>
+    <string name="expand_desc">Expand</string>
+    <string name="collapse_desc">Collapse</string>
+
+    <!-- Raise a concern -->
+    <string name="concern_title">Raise a concern</string>
+    <string name="concern_category">Category</string>
+    <string name="concern_cat_academic">Academic</string>
+    <string name="concern_cat_attendance">Attendance</string>
+    <string name="concern_cat_fees">Fees</string>
+    <string name="concern_cat_transport">Transport</string>
+    <string name="concern_cat_hostel">Hostel</string>
+    <string name="concern_cat_other">Other</string>
+    <string name="concern_subject_label">Subject</string>
+    <string name="concern_subject_hint">What is this about?</string>
+    <string name="concern_subject_prefill">Absent marked incorrectly on 22 Sep</string>
+    <string name="concern_describe_label">Describe the issue</string>
+    <string name="concern_describe_hint">Add any details that will help us look into it</string>
+    <string name="concern_describe_prefill">Aarav attended the Networks lab that day; the faculty register shows present. Please correct the record.</string>
+    <string name="concern_char_count">%1$d / %2$d</string>
+    <string name="concern_attach">Attach a file (optional)</string>
+    <string name="concern_attach_desc">Attach a file</string>
+    <string name="concern_response_time">Usually answered within 2 working days</string>
+    <string name="concern_response_desc">Response time</string>
+    <string name="concern_submit">Submit concern</string>
+
+    <!-- Academics -->
+    <string name="acad_title">Academic performance</string>
+    <string name="acad_cgpa_label">CGPA</string>
+    <string name="acad_cgpa_value">8.40</string>
+    <string name="acad_cgpa_sub">out of 10 · 4 semesters</string>
+    <string name="acad_trend_label">Trend</string>
+    <string name="acad_trend_value">+1.0</string>
+    <string name="acad_trend_sub">since semester 1</string>
+    <string name="acad_sgpa_title">SGPA by semester</string>
+    <string name="acad_sgpa_scale">scale 6 – 10</string>
+    <string name="acad_sem1">Sem 1</string>
+    <string name="acad_sem2">Sem 2</string>
+    <string name="acad_sem3">Sem 3</string>
+    <string name="acad_sem4">Sem 4</string>
+    <string name="acad_subject_title">Subject strength · current semester</string>
+    <string name="acad_subj_dbms">DBMS</string>
+    <string name="acad_subj_networks">Networks</string>
+    <string name="acad_subj_os">OS</string>
+    <string name="acad_subj_toc">TOC</string>
+    <string name="acad_percent">%1$d%%</string>
+    <string name="acad_view_marks">View marks</string>
+    <string name="acad_attendance">Attendance</string>
+
+    <!-- Notifications -->
+    <string name="notif_title">Notifications</string>
+    <string name="notif_cat_all">All</string>
+    <string name="notif_cat_academic">Academic</string>
+    <string name="notif_cat_exams">Exams</string>
+    <string name="notif_cat_events">Events</string>
+    <string name="notif_cat_placement">Placement</string>
+    <string name="notif_cat_training">Training</string>
+    <string name="notif_cat_fees">Fees</string>
+    <string name="notif_cat_attendance">Attendance</string>
+    <string name="notif_section_today">TODAY</string>
+    <string name="notif_empty">No notifications</string>
+    <string name="notif1_title">Photos from Sports Day are now available</string>
+    <string name="notif1_time">09:40 AM</string>
+    <string name="notif1_desc">42 photos and 6 videos from Tue 06 Oct. Tap to view them online.</string>
+    <string name="notif2_title">Session today at 2:00 PM</string>
+    <string name="notif2_time">11:30 AM</string>
+    <string name="notif2_desc">DSA Coding Track: Graphs, BFS and DFS. Computer centre, Lab 3.</string>
+    <string name="notif3_title">Event tomorrow at 10:00 AM</string>
+    <string name="notif3_time">11:00 AM</string>
+    <string name="notif3_desc">Freshworks Pre-placement Talk, virtual. Open to B.E. CSE and B.Tech IT. The join link opens at 09:50 AM.</string>
+    <string name="notif4_title">Exam application opens today</string>
+    <string name="notif4_time">10:00 AM</string>
+    <string name="notif4_desc">Revaluation – Sem 4 results is open for Aarav until Wed 14 Oct. Apply on the web portal.</string>
+    <string name="notif5_title">Last date in 2 days</string>
+    <string name="notif5_time">09:30 AM</string>
+    <string name="notif5_desc">End Semester Examination, Nov 2026: Aarav\'s application closes on Fri 09 Oct.</string>
+
+    <!-- Chat / Messages -->
+    <string name="chat_title">Messages</string>
+    <string name="chat_search_hint">Search teachers or office</string>
+    <string name="chat_new_desc">New message</string>
+    <string name="chat_concern_title">Concern #C-1042 · In review</string>
+    <string name="chat_concern_sub">Attendance correction · Office replied</string>
+    <string name="chat_concern_open_desc">Open concern</string>
+    <string name="chat_flag_desc">Concern</string>
+    <string name="chat_c1_initials">MI</string>
+    <string name="chat_c1_name">Dr. Meena Iyer</string>
+    <string name="chat_c1_subject">Class mentor · DBMS</string>
+    <string name="chat_c1_preview">Aarav did well in IA 1, keep it up before IA 2.</string>
+    <string name="chat_c1_time">10:24 AM</string>
+    <string name="chat_c2_initials">AO</string>
+    <string name="chat_c2_name">Accounts Office</string>
+    <string name="chat_c2_subject">Fees &amp; receipts</string>
+    <string name="chat_c2_preview">We received your hostel fee proof; verifying now.</string>
+    <string name="chat_c2_time">9:02 AM</string>
+    <string name="chat_c3_initials">KR</string>
+    <string name="chat_c3_name">Prof. K. Rao</string>
+    <string name="chat_c3_subject">Operating Systems</string>
+    <string name="chat_c3_preview">Report format is shared in the class group.</string>
+    <string name="chat_c3_time">Mon</string>
+    <string name="chat_c4_initials">TD</string>
+    <string name="chat_c4_name">Transport Desk</string>
+    <string name="chat_c4_subject">Bus 12 coordinator</string>
+    <string name="chat_c4_preview">New pickup point starts Monday 7:10 AM.</string>
+    <string name="chat_c4_time">Sun</string>
+    <string name="chat_c5_initials">SN</string>
+    <string name="chat_c5_name">Dr. S. Nair</string>
+    <string name="chat_c5_subject">Computer Networks</string>
+    <string name="chat_c5_preview">Lab record submission extended to Friday.</string>
+    <string name="chat_c5_time">2 Oct</string>
+
+    <!-- Bottom navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_academics">Academics</string>
+    <string name="nav_campus">Campus</string>
+    <string name="nav_chat">Chat</string>
+    <string name="nav_me">Me</string>
+
+    <!-- Login -->
+    <string name="login_language_english">English</string>
+    <string name="login_welcome_title">Welcome back</string>
+    <string name="login_welcome_subtitle">University College of Engineering, Chennai — sign in to follow attendance, marks and fees.</string>
+    <string name="login_identifier_label">Mobile number</string>
+    <string name="login_identifier_hint">xxxxxxxxxx</string>
+    <string name="login_password_label">Password</string>
+    <string name="login_keep_signed_in">Keep me signed in</string>
+    <string name="login_forgot_password">Forgot password?</string>
+    <string name="login_sign_in">Sign in</string>
+    <string name="login_create_account">New here? Create account</string>
+    <string name="login_fingerprint_on">Fingerprint sign-in is on for this device</string>
+    <string name="login_fingerprint_button_desc">Sign in with fingerprint</string>
+    <string name="login_legal">By signing in you agree to our %1$s and %2$s. Need access? Call the college office at %3$s</string>
+    <string name="login_terms">Terms</string>
+    <string name="login_privacy">Privacy policy</string>
+    <string name="login_office_phone">[PHONE NUMBER]</string>
+    <string name="login_error_enter_mobile">Enter your mobile number to reset the password</string>
+    <string name="login_error_invalid_mobile">Enter a valid 10-digit mobile number</string>
+    <string name="login_error_enter_identifier">Enter your mobile number</string>
+    <string name="login_error_enter_password">Enter your password</string>
+
+    <!-- Role selection -->
+    <string name="role_signed_in_as">Signed in as %1$s</string>
+    <string name="role_title">How are you using the app?</string>
+    <string name="role_subtitle">Your account has more than one role. You can switch anytime from Profile.</string>
+    <string name="role_parent_title">Parent / Guardian</string>
+    <string name="role_parent_desc">Follow your child\'s attendance, marks, fees and bus</string>
+    <string name="role_parent_badge_desc">Parent</string>
+    <string name="role_student_title">Student</string>
+    <string name="role_student_desc">Homework, exams, timetable and messages</string>
+    <string name="role_student_badge_desc">Student</string>
+    <string name="role_faculty_title">Faculty / Staff</string>
+    <string name="role_faculty_desc">Mark attendance, share homework, reply to parents</string>
+    <string name="role_faculty_badge_desc">Faculty</string>
+    <string name="role_management_title">Management / Principal</string>
+    <string name="role_management_desc">Attendance reports, notices and staff overview</string>
+    <string name="role_management_badge_desc">Management</string>
+    <string name="role_college_label">College</string>
+    <string name="role_continue">Continue as %1$s</string>
+    <string name="role_continue_parent">parent</string>
+    <string name="role_continue_student">student</string>
+    <string name="role_continue_faculty">faculty</string>
+    <string name="role_continue_management">management</string>
+
+    <!-- Login · biometric prompt -->
+    <string name="login_biometric_title">Sign in with fingerprint</string>
+    <string name="login_biometric_touch">Touch the fingerprint sensor</string>
+    <string name="login_biometric_hint">Face unlock also works on supported phones</string>
+    <string name="login_biometric_cancel">Cancel</string>
+    <string name="login_biometric_use_password">Use password</string>
+    <string name="login_biometric_icon_desc">Fingerprint</string>
+</resources>
