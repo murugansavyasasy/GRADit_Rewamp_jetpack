@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.systemBarsPadding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -60,6 +61,9 @@ fun TermsScreen(
     onBack: () -> Unit,
     onAccept: () -> Unit,
     modifier: Modifier = Modifier,
+    // Apply when shown outside a Scaffold (e.g. the auth flow) so content
+    // doesn't draw under the status / navigation bars.
+    applySystemBarsPadding: Boolean = false,
 ) {
     var agreed by rememberSaveable { mutableStateOf(false) }
 
@@ -67,6 +71,7 @@ fun TermsScreen(
         modifier = modifier
             .fillMaxSize()
             .background(White)
+            .then(if (applySystemBarsPadding) Modifier.systemBarsPadding() else Modifier)
             .padding(horizontal = 16.dp),
     ) {
         Spacer(Modifier.height(12.dp))

@@ -1,0 +1,485 @@
+<resources>
+    <!-- Initial Tamil translations for the GRADit app — review with a native speaker. -->
+    <string name="app_name">GRADit</string>
+
+    <!-- Splash / onboarding -->
+    <string name="splash_college_name">யுனிவர்சிட்டி கல்லூரி\nஆஃப் இன்ஜினியரிங்</string>
+    <string name="splash_location">சென்னை</string>
+    <string name="splash_tagline">மாணவர்கள் &amp; பெற்றோருக்கான வளாக செயலி</string>
+    <string name="splash_get_started">தொடங்கவும்</string>
+    <string name="splash_powered_by">வழங்குபவர்</string>
+    <string name="splash_partner_name">SAVYASASY</string>
+    <string name="splash_logo_content_desc">கல்லூரி லோகோ</string>
+    <string name="splash_partner_logo_content_desc">SAVYASASY Software Solutions</string>
+
+    <!-- Onboarding / app introduction -->
+    <string name="onboarding_skip">தவிர்</string>
+    <string name="onboarding_next">அடுத்து</string>
+    <string name="onboarding_page_counter">%2$d இல் %1$d</string>
+
+    <string name="onboarding_title_1">கல்லூரி பற்றிய அனைத்தும், ஒரே இடத்தில்</string>
+    <string name="onboarding_subtitle_1">வருகை, வீட்டுப்பாடம், தேர்வுகள் மற்றும் மதிப்பெண்கள் — ஆசிரியர்கள் பதிவிட்ட உடனேயே புதுப்பிக்கப்படும்.</string>
+    <string name="onboarding_badge_attendance">வருகை 92%</string>
+    <string name="onboarding_badge_ia">IA 2 · 12 Oct</string>
+    <string name="onboarding_badge_cgpa">CGPA 8.4</string>
+
+    <string name="onboarding_title_2">ஆசிரியர்களுடன் எளிதாகப் பேசுங்கள்</string>
+    <string name="onboarding_subtitle_2">அறிவிப்புகளைப் படியுங்கள், ஆசிரியர்களின் குரல் குறிப்புகளைக் கேளுங்கள், ஒரே தட்டில் பதிலளியுங்கள் — இனி சுற்றறிக்கைகள் தவறாது.</string>
+    <string name="onboarding_badge_new_notice">புதிய அறிவிப்பு</string>
+    <string name="onboarding_badge_voice">குரல் · 0:24</string>
+    <string name="onboarding_badge_unread">2 படிக்காதவை</string>
+
+    <string name="onboarding_title_3">கட்டணம் செலுத்தி பேருந்தைக் கண்காணியுங்கள்</string>
+    <string name="onboarding_subtitle_3">பாதுகாப்பாகக் கட்டணம் செலுத்தி, கட்டணச் சான்றை பதிவேற்றி, கல்லூரி பேருந்து உங்கள் நிறுத்தத்தை எப்போது அடையும் என்று பாருங்கள்.</string>
+    <string name="onboarding_badge_due">₹24,500 நிலுவை</string>
+    <string name="onboarding_badge_bus">பேருந்து 12 நிமிடத்தில்</string>
+    <string name="onboarding_badge_receipt">ரசீது சேமிக்கப்பட்டது</string>
+
+    <string name="onboarding_icon_chat_desc">செய்திகள்</string>
+    <string name="onboarding_icon_bus_desc">பேருந்து கண்காணிப்பு</string>
+
+    <!-- Country selection -->
+    <string name="country_title">உங்கள் நாட்டைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="country_subtitle">உங்கள் கல்லூரி பட்டியல், நாணயம் மற்றும் தொலைபேசிக் குறியீட்டைக் காட்ட இதைப் பயன்படுத்துகிறோம்.</string>
+    <string name="country_search_hint">நாட்டைத் தேடு</string>
+    <string name="country_detected">உங்கள் இருப்பிடத்திலிருந்து கண்டறியப்பட்டது: %1$s</string>
+    <string name="country_continue">%1$s உடன் தொடரவும்</string>
+
+    <!-- Shared UI -->
+    <string name="back_content_desc">பின்</string>
+    <string name="search_content_desc">தேடு</string>
+    <string name="selected_content_desc">தேர்ந்தெடுக்கப்பட்டது</string>
+    <string name="location_content_desc">இருப்பிடம்</string>
+    <string name="password_show">கடவுச்சொல்லைக் காட்டு</string>
+    <string name="password_hide">கடவுச்சொல்லை மறை</string>
+    <string name="language_content_desc">மொழி</string>
+    <string name="close_content_desc">மூடு</string>
+
+    <!-- Change language -->
+    <string name="language_title">மொழியை மாற்று</string>
+    <string name="language_subtitle">மெனுக்கள், அறிவிப்புகள் மற்றும் எச்சரிக்கைகள் இந்த மொழியில் இருக்கும்</string>
+    <string name="language_apply">பயன்படுத்து · %1$s</string>
+
+    <!-- Forgot password -->
+    <string name="forgot_title">கடவுச்சொல்லை மறந்தீர்களா?</string>
+    <string name="forgot_subtitle">அதை மீட்டமைக்க 6-இலக்கக் குறியீட்டை எங்கு அனுப்ப வேண்டும் எனத் தேர்ந்தெடுக்கவும்.</string>
+    <string name="forgot_send_via">குறியீட்டை இதன் வழி அனுப்பு</string>
+    <string name="forgot_method_sms_title">பதிவுசெய்த மொபைலுக்கு SMS</string>
+    <string name="forgot_method_email_title">மின்னஞ்சல்</string>
+    <string name="forgot_send_code">குறியீட்டை அனுப்பு</string>
+    <string name="forgot_back_to_sign_in">உள்நுழைவுக்குத் திரும்பு</string>
+    <string name="forgot_lock_desc">கடவுச்சொல்லை மீட்டமை</string>
+    <string name="forgot_method_sms_desc">மொபைல்</string>
+    <string name="forgot_method_email_desc">மின்னஞ்சல்</string>
+
+    <!-- OTP verification -->
+    <string name="otp_title">குறியீட்டை உள்ளிடவும்</string>
+    <string name="otp_subtitle">%1$s க்கு 6-இலக்கக் குறியீட்டை அனுப்பியுள்ளோம்.</string>
+    <string name="otp_change">மாற்று</string>
+    <string name="otp_resend_in">குறியீட்டை மீண்டும் அனுப்பு</string>
+    <string name="otp_resend">மீண்டும் அனுப்பு</string>
+    <string name="otp_verify">சரிபார்த்து தொடரவும்</string>
+    <string name="otp_shield_desc">சரிபார்ப்பு</string>
+    <string name="otp_timer_desc">மீதமுள்ள நேரம்</string>
+
+    <!-- Create / reset password -->
+    <string name="create_pw_title">கடவுச்சொல்லை உருவாக்கு</string>
+    <string name="create_pw_subtitle">உங்கள் எண் சரிபார்க்கப்பட்டது. அடுத்த முறை உள்நுழைய கடவுச்சொல்லை அமைக்கவும்.</string>
+    <string name="create_pw_new_label">புதிய கடவுச்சொல்</string>
+    <string name="create_pw_confirm_label">கடவுச்சொல்லை உறுதிப்படுத்து</string>
+    <string name="create_pw_save">சேமித்து தொடரவும்</string>
+    <string name="create_pw_lock_desc">கடவுச்சொல்லை உருவாக்கு</string>
+    <string name="pw_req_length">குறைந்தது 8 எழுத்துகள்</string>
+    <string name="pw_req_case">ஒரு பெரிய மற்றும் ஒரு சிறிய எழுத்து</string>
+    <string name="pw_req_number">ஒரு எண் அல்லது சின்னம்</string>
+    <string name="pw_req_match">கடவுச்சொற்கள் பொருந்துகின்றன</string>
+    <string name="pw_req_met_desc">பூர்த்தி</string>
+    <string name="pw_strength_weak">பலவீனமான கடவுச்சொல்</string>
+    <string name="pw_strength_fair">ஓரளவு கடவுச்சொல்</string>
+    <string name="pw_strength_strong">வலுவான கடவுச்சொல்</string>
+    <string name="pw_strength_very_strong">மிகவும் வலுவான கடவுச்சொல்</string>
+
+    <!-- Home (student) -->
+    <string name="home_greeting">காலை வணக்கம், %1$s</string>
+    <string name="home_user_name">Aarav</string>
+    <string name="home_role_student">மாணவர்</string>
+    <string name="home_college">UCE சென்னை</string>
+    <string name="home_notifications_desc">அறிவிப்புகள்</string>
+    <string name="home_search_hint">மெனுவைத் தேடு</string>
+    <string name="home_search_no_results">மெனு உருப்படிகள் எதுவும் இல்லை</string>
+    <string name="home_alert">கன மழையால் 8 Oct அன்று கல்லூரி மூடப்பட்டுள்ளது. ஆன்லைன் வகுப்புகள் வழக்கம்போல் நடக்கும்.</string>
+    <string name="home_alert_dismiss">எச்சரிக்கையை நீக்கு</string>
+
+    <string name="qa_attendance">வருகை</string>
+    <string name="qa_assignment">பணி</string>
+    <string name="qa_exam">தேர்வு விண்ணப்ப விவரங்கள்</string>
+    <string name="qa_fee">கட்டண விவரங்கள்</string>
+    <string name="qa_notice">அறிவிப்புப் பலகை</string>
+    <string name="qa_events">நிகழ்வுகள்</string>
+    <string name="qa_video">வீடியோ</string>
+    <string name="qa_discussion">கலந்துரையாடல் பலகை</string>
+    <string name="qa_text_msg">உரை செய்தி</string>
+    <string name="qa_voice_msg">குரல் செய்தி</string>
+    <string name="qa_image_pdf">படம்/PDF</string>
+    <string name="qa_faculty">ஆசிரியர்</string>
+    <string name="qa_course">பாட விவரங்கள்</string>
+    <string name="qa_category_credit">வகை கிரெடிட் புள்ளிகள்</string>
+    <string name="qa_sem_credit">செமஸ்டர் கிரெடிட் புள்ளிகள்</string>
+    <string name="qa_resume">ரெஸ்யூம் பில்டர்</string>
+    <string name="qa_placement_events">வேலைவாய்ப்பு நிகழ்வுகள்</string>
+    <string name="qa_placement_training">வேலைவாய்ப்பு பயிற்சி</string>
+    <string name="qa_more">மேலும்</string>
+    <string name="qa_less">குறைவாக</string>
+
+    <string name="home_att_header">இன்று · மொத்தம் 92%</string>
+    <string name="home_att_percent">92%</string>
+    <string name="home_att_status">நீங்கள் வருகை எனக் குறிக்கப்பட்டுள்ளீர்கள்</string>
+    <string name="home_att_next">அடுத்து: TOC · 11:45 AM · B-204</string>
+
+    <string name="home_classes_title">இன்றைய வகுப்புகள்</string>
+    <string name="home_timetable">கால அட்டவணை</string>
+    <string name="home_class1_period">P3</string>
+    <string name="home_class1_time">10:55 – 11:45 AM · B-204</string>
+    <string name="home_class1_title">Operating Systems</string>
+    <string name="home_class1_sub">மாற்றப்பட்டது · Prof. Karthik Raman</string>
+    <string name="home_class1_tag_now">இப்போது</string>
+    <string name="home_class1_tag_swapped">மாற்றப்பட்டது</string>
+    <string name="home_class2_period">P4</string>
+    <string name="home_class2_time">11:45 AM – 12:35 PM · B-204</string>
+    <string name="home_class2_title">Theory of Computation</string>
+    <string name="home_class2_sub">மாற்று: Dr. Kavitha M.</string>
+    <string name="home_class2_tag_next">அடுத்து</string>
+    <string name="home_class2_tag_changed">மாற்றப்பட்டது</string>
+
+    <string name="home_upcoming_title">வரவிருக்கும் நிகழ்வுகள்</string>
+    <string name="home_see_all">அனைத்தையும் காண்க</string>
+    <string name="home_event1_date">9 OCT</string>
+    <string name="home_event1_title">பெற்றோர்–ஆசிரியர் சந்திப்பு</string>
+    <string name="home_event1_location">Block B, Room 204</string>
+    <string name="home_event2_date">15 OCT</string>
+    <string name="home_event2_title">சுகாதாரத்தில் AI பேச்சு</string>
+    <string name="home_event2_location">கருத்தரங்க அறை</string>
+
+    <string name="home_assignments_title">நிலுவையிலுள்ள பணிகள்</string>
+    <string name="home_assign1_course">DBMS</string>
+    <string name="home_assign1_title">பணி 3 (3NF)</string>
+    <string name="home_assign1_due">இன்று நிலுவை</string>
+    <string name="home_assign2_course">Operating Systems</string>
+    <string name="home_assign2_title">CPU திட்டமிடல் அறிக்கை</string>
+    <string name="home_assign2_due">நிலுவை வியாழன், 8 Oct</string>
+
+    <string name="home_notice_title">அறிவிப்புப் பலகை</string>
+    <string name="home_notice1_title">IA 2 ஹால் டிக்கெட்டுகள் 9 Oct முதல்</string>
+    <string name="home_notice1_meta">இன்று பதிவிடப்பட்டது · தேர்வுப் பிரிவு</string>
+    <string name="home_notice2_title">விடுதி கட்டணம்: கடைசி தேதி 15 Oct</string>
+    <string name="home_notice2_meta">3 Oct · கணக்குப் பிரிவு</string>
+    <string name="home_notice_open_desc">அறிவிப்பைத் திற</string>
+
+    <string name="home_chat_title">அரட்டை</string>
+    <string name="home_chat1_initials">MI</string>
+    <string name="home_chat1_name">Dr. Meena Iyer (வழிகாட்டி)</string>
+    <string name="home_chat1_time">10:24</string>
+    <string name="home_chat1_message">Aarav IA 1 இல் சிறப்பாகச் செய்தார், IA 2 க்கு முன் அதைத் தொடரவும்.</string>
+    <string name="home_chat1_unread">2</string>
+    <string name="home_ad_label">விளம்பரம்</string>
+    <string name="home_ad_message">வளாக கடை — இந்த வாரம் ஹூடிகளுக்கு 20% தள்ளுபடி</string>
+
+    <!-- Profile (Me) -->
+    <string name="profile_title">சுயவிவரம்</string>
+    <string name="profile_name">Rajesh Sharma</string>
+    <string name="profile_phone">+91 98765 43210</string>
+    <string name="profile_avatar_initials">RS</string>
+    <string name="profile_edit_desc">சுயவிவரத்தைத் திருத்து</string>
+    <string name="profile_role_parent">பெற்றோர்</string>
+    <string name="profile_role_principal">முதல்வர்</string>
+    <string name="profile_role_all">அனைத்துப் பணிகள்</string>
+    <string name="profile_your_roles">உங்கள் பணிகள்</string>
+    <string name="profile_linked_students">இணைக்கப்பட்ட மாணவர்கள்</string>
+    <string name="profile_student1_initials">AS</string>
+    <string name="profile_student1_name">Aarav Sharma</string>
+    <string name="profile_student1_detail">B.E. CSE · Sem 5 · இப்போது பார்க்கிறீர்கள்</string>
+    <string name="profile_student2_initials">IS</string>
+    <string name="profile_student2_name">Isha Sharma</string>
+    <string name="profile_student2_detail">B.Com · Sem 1</string>
+    <string name="profile_change_password">கடவுச்சொல்லை மாற்று</string>
+    <string name="profile_settings">அமைப்புகள்</string>
+    <string name="profile_sign_out">வெளியேறு</string>
+    <string name="profile_signout_confirm_title">வெளியேறவா?</string>
+    <string name="profile_signout_confirm_message">செயலியைப் பயன்படுத்த மீண்டும் உள்நுழைய வேண்டும்.</string>
+    <string name="action_cancel">ரத்து</string>
+
+    <!-- Settings -->
+    <string name="settings_title">அமைப்புகள்</string>
+    <string name="settings_section_notifications">அறிவிப்புகள்</string>
+    <string name="settings_section_preferences">விருப்பங்கள் &amp; கணக்கு</string>
+    <string name="settings_section_help">உதவி &amp; சட்டம்</string>
+    <string name="settings_attendance_title">வருகை எச்சரிக்கைகள்</string>
+    <string name="settings_attendance_sub">வராதவர் அல்லது தாமதம் எனக் குறிக்கப்படும்போது</string>
+    <string name="settings_fee_title">கட்டண நினைவூட்டல்கள்</string>
+    <string name="settings_fee_sub">நிலுவைக்கு 7 நாட்கள் மற்றும் 1 நாள் முன்</string>
+    <string name="settings_results_title">முடிவுகள் &amp; தேர்வுகள்</string>
+    <string name="settings_results_sub">மதிப்பெண்கள், கால அட்டவணைகள், ஹால் டிக்கெட்டுகள்</string>
+    <string name="settings_bus_title">பேருந்து வருகை</string>
+    <string name="settings_bus_sub">பேருந்து 10 நிமிடம் தொலைவில் இருக்கும்போது</string>
+    <string name="settings_biometric_title">கைரேகை / முக அன்லாக்</string>
+    <string name="settings_biometric_sub">கடவுச்சொல் இல்லாமல் உள்நுழை</string>
+    <string name="settings_language">மொழி</string>
+    <string name="settings_language_value">தமிழ்</string>
+    <string name="settings_text_size">உரை அளவு</string>
+    <string name="settings_text_size_value">இயல்பு</string>
+    <string name="settings_help_support">உதவி &amp; ஆதரவு</string>
+    <string name="settings_faqs">அடிக்கடி கேட்கப்படும் கேள்விகள் &amp; உதவி</string>
+    <string name="settings_privacy">தனியுரிமைக் கொள்கை</string>
+    <string name="settings_terms">விதிமுறைகள் &amp; நிபந்தனைகள்</string>
+
+    <!-- Change password -->
+    <string name="change_pw_title">கடவுச்சொல்லை மாற்று</string>
+    <string name="change_pw_subtitle">மற்ற செயலிகளுக்குப் பயன்படுத்தாத கடவுச்சொல்லைப் பயன்படுத்தவும்.</string>
+    <string name="change_pw_current_label">தற்போதைய கடவுச்சொல்</string>
+    <string name="change_pw_forgot">மறந்தீர்களா?</string>
+    <string name="change_pw_new_label">புதிய கடவுச்சொல்</string>
+    <string name="change_pw_confirm_label">புதிய கடவுச்சொல்லை உறுதிப்படுத்து</string>
+    <string name="change_pw_mismatch">கடவுச்சொற்கள் பொருந்தவில்லை</string>
+    <string name="change_pw_signout_others">மற்ற சாதனங்களில் என்னை வெளியேற்று</string>
+    <string name="change_pw_update">கடவுச்சொல்லைப் புதுப்பி</string>
+    <string name="change_pw_strength_weak">பலவீனம் — நீண்ட கடவுச்சொல்லைப் பயன்படுத்தவும்</string>
+    <string name="change_pw_strength_fair">ஓரளவு — வலுப்படுத்த 12 அல்லது அதற்கு மேற்பட்ட எழுத்துகளைப் பயன்படுத்தவும்</string>
+    <string name="change_pw_strength_strong">வலுவான கடவுச்சொல்</string>
+    <string name="change_pw_strength_very_strong">மிகவும் வலுவான கடவுச்சொல்</string>
+
+    <!-- Privacy policy -->
+    <string name="privacy_title">தனியுரிமைக் கொள்கை</string>
+    <string name="privacy_download_desc">பதிவிறக்கு</string>
+    <string name="privacy_summary_title">உங்கள் தரவு உங்கள் கல்லூரியிடமே இருக்கும்</string>
+    <string name="privacy_summary_body">University College of Engineering, Chennai செயலி மூலம் எதை, ஏன் சேகரிக்கிறது என்பதை இந்தச் சுருக்கம் விளக்குகிறது. முழுக் கொள்கையை கீழே படியுங்கள்.</string>
+    <string name="privacy_meta">கடைசி புதுப்பிப்பு [DATE] · பதிப்பு [X.X]</string>
+    <string name="privacy_s1_title">நாங்கள் சேகரிக்கும் தகவல்</string>
+    <string name="privacy_s1_body">உங்கள் பெயர், தொடர்பு விவரங்கள், வருகை, மதிப்பெண்கள், கட்டணப் பதிவுகள் மற்றும் செயலி வழியாக அனுப்பும் செய்திகள். [REVIEW WITH LEGAL]</string>
+    <string name="privacy_s2_title">நாங்கள் அதை எப்படிப் பயன்படுத்துகிறோம்</string>
+    <string name="privacy_s2_body">கல்வி முன்னேற்றத்தைக் காட்ட, அறிவிப்புகளும் நினைவூட்டல்களும் அனுப்ப, கட்டணம் செயலாக்க, குடும்பங்கள் ஆசிரியர்களைத் தொடர்பு கொள்ள உதவ. [REVIEW WITH LEGAL]</string>
+    <string name="privacy_s3_title">உங்கள் தரவை யார் பார்க்க முடியும்</string>
+    <string name="privacy_s3_body">உங்கள் கல்லூரி பணியாளர்கள், மற்றும் மாணவருடன் இணைந்த பெற்றோர் அல்லது பாதுகாவலர்கள். உங்கள் தரவை நாங்கள் விற்பதில்லை. [REVIEW WITH LEGAL]</string>
+    <string name="privacy_s4_title">சேமிப்பு &amp; பாதுகாப்பு</string>
+    <string name="privacy_s4_body">தரவு பாதுகாப்பாகச் சேமிக்கப்படுகிறது, அங்கீகரிக்கப்பட்ட கல்லூரி பணியாளர்களுக்கே அணுகல் வரம்பு. [REVIEW WITH LEGAL]</string>
+    <string name="privacy_s5_title">உங்கள் தேர்வுகள் &amp; உரிமைகள்</string>
+    <string name="privacy_s5_body">உங்கள் தரவின் நகலைக் கோரலாம் அல்லது அதைச் சரிசெய்யக் கல்லூரியைக் கேட்கலாம். [REVIEW WITH LEGAL]</string>
+    <string name="privacy_s6_title">இந்தக் கொள்கையில் மாற்றங்கள்</string>
+    <string name="privacy_s6_body">இந்தக் கொள்கையைப் புதுப்பிக்கலாம், மேலே தேதியையும் பதிப்பையும் குறிப்போம். [REVIEW WITH LEGAL]</string>
+    <string name="privacy_contact">கேள்விகளா? எங்கள் தரவு அதிகாரிக்கு [PRIVACY EMAIL] இல் எழுதுங்கள்</string>
+    <string name="privacy_read_terms">விதிமுறைகள் &amp; நிபந்தனைகளைப் படி</string>
+
+    <!-- Terms &amp; conditions -->
+    <string name="terms_title">விதிமுறைகள் &amp; நிபந்தனைகள்</string>
+    <string name="terms_effective">அமலுக்கு வரும் [DATE]</string>
+    <string name="terms_read_time">சுமார் 4 நிமிட வாசிப்பு</string>
+    <string name="terms_s1_title">செயலியைப் பயன்படுத்துதல்</string>
+    <string name="terms_s1_body">இந்தச் செயலி University College of Engineering, Chennai இன் மாணவர்கள், பெற்றோர் மற்றும் பணியாளர்களுக்கானது. உள்நுழைவதன் மூலம் இந்த விதிமுறைகளை ஏற்கிறீர்கள்.</string>
+    <string name="terms_s2_title">உங்கள் கணக்கு</string>
+    <string name="terms_s2_body">உங்கள் கடவுச்சொல்லையும் OTP-யையும் தனிப்பட்டதாக வைக்கவும். உங்கள் கணக்கின் செயல்பாட்டுக்கு நீங்களே பொறுப்பு, தவறான பயன்பாட்டைக் கல்லூரி அலுவலகத்துக்குத் தெரிவிக்கவும்.</string>
+    <string name="terms_s3_title">மரியாதையான தொடர்பு</string>
+    <string name="terms_s3_body">செய்திகள், குரல் குறிப்புகள் மற்றும் புகார்கள் மரியாதையாகவும் கல்லூரி தொடர்பானதாகவும் இருக்க வேண்டும். தவறான உள்ளடக்கம் நீக்கப்படலாம்.</string>
+    <string name="terms_s4_title">கட்டணம் &amp; செலுத்துதல்</string>
+    <string name="terms_s4_body">கட்டணத் தொகையும் நிலுவைத் தேதிகளும் கல்லூரியால் நிர்ணயிக்கப்படும். கட்டணச் சான்றுகள் கட்டணம் செலுத்தப்பட்டதாகக் குறிக்கப்படுவதற்கு முன் கணக்கு அலுவலகத்தால் சரிபார்க்கப்படும். [REVIEW WITH LEGAL]</string>
+    <string name="terms_s5_title">தகவலின் துல்லியம்</string>
+    <string name="terms_s5_body">வருகை, மதிப்பெண்கள் மற்றும் அறிவிப்புகள் கல்லூரியால் வெளியிடப்படும். ஏதேனும் தவறாகத் தோன்றினால் செயலியில் புகார் செய்யவும்.</string>
+    <string name="terms_s6_title">மாற்றங்கள் &amp; தொடர்பு</string>
+    <string name="terms_s6_body">இந்த விதிமுறைகளைப் புதுப்பிக்கலாம், செயலியில் உங்களுக்கு அறிவிப்போம். கேள்விகளுக்குக் கல்லூரி அலுவலகத்தைத் தொடர்பு கொள்ளவும். [REVIEW WITH LEGAL]</string>
+    <string name="terms_agree_prefix">நான் படித்து ஒப்புக்கொள்கிறேன் </string>
+    <string name="terms_agree_terms">விதிமுறைகள் &amp; நிபந்தனைகள்</string>
+    <string name="terms_agree_middle"> மற்றும் </string>
+    <string name="terms_agree_privacy">தனியுரிமைக் கொள்கை</string>
+    <string name="terms_accept">ஏற்று தொடரவும்</string>
+
+    <!-- FAQs &amp; help -->
+    <string name="faq_title">கேள்விகள் &amp; உதவி</string>
+    <string name="faq_search_hint">கேள்விகளைத் தேடு</string>
+    <string name="faq_cat_all">அனைத்தும்</string>
+    <string name="faq_cat_account">கணக்கு</string>
+    <string name="faq_cat_fees">கட்டணம்</string>
+    <string name="faq_cat_attendance">வருகை</string>
+    <string name="faq_cat_more">மேலும்</string>
+    <string name="faq_q1">எனது கடவுச்சொல்லை எப்படி மீட்டமைப்பது?</string>
+    <string name="faq_a1">உள்நுழைவுத் திரையில் \"கடவுச்சொல்லை மறந்தீர்களா?\" தட்டி, SMS அல்லது மின்னஞ்சலைத் தேர்ந்தெடுத்து, 6-இலக்கக் குறியீட்டை உள்ளிட்டு புதிய கடவுச்சொல்லை அமைக்கவும்.</string>
+    <string name="faq_q2">செயலியில் ஒன்றுக்கு மேற்பட்ட குழந்தைகளைப் பார்க்க முடியுமா?</string>
+    <string name="faq_a2">ஆம். இணைக்கப்பட்ட மாணவர்கள் உங்கள் சுயவிவரத்தில் தோன்றுவர் — அவர்களிடையே மாற ஒரு மாணவரைத் தட்டவும்.</string>
+    <string name="faq_q3">எனது கட்டணம் செலுத்தப்பட்டதாகக் காட்டவில்லை</string>
+    <string name="faq_a3">கணக்கு அலுவலகம் உங்கள் சான்றைச் சரிபார்த்த பிறகு கட்டணம் செலுத்தப்பட்டதாகக் குறிக்கப்படும். இதற்கு 2 வேலை நாட்கள் வரை ஆகலாம்.</string>
+    <string name="faq_q4">வருகை தவறாகக் குறிக்கப்பட்டுள்ளது — நான் என்ன செய்ய வேண்டும்?</string>
+    <string name="faq_a4">வருகைத் திரையைத் திறந்து புகார் செய்யவும், அல்லது செயலி வழியாக உங்கள் வகுப்பு ஆசிரியரைத் தொடர்பு கொள்ளவும்.</string>
+    <string name="faq_q5">குரல் செய்திக்குப் பதிலளிக்க முடியுமா?</string>
+    <string name="faq_a5">ஆம். செய்தியைத் திறந்து, ஆசிரியருக்கு உரை அல்லது குரல் குறிப்பை அனுப்ப பதில் தட்டவும்.</string>
+    <string name="faq_q6">கைரேகை உள்நுழைவை எப்படி இயக்குவது?</string>
+    <string name="faq_a6">அமைப்புகளுக்குச் சென்று, கடவுச்சொல் இல்லாமல் உள்நுழைய கைரேகை / முக அன்லாக்கை இயக்கவும்.</string>
+    <string name="faq_help_title">இன்னும் உதவி தேவையா?</string>
+    <string name="faq_help_body">எங்கள் அலுவலகம் 2 வேலை நாட்களில் பதிலளிக்கும்.</string>
+    <string name="faq_raise_concern">புகார் செய்</string>
+    <string name="faq_call_office">அலுவலகத்தை அழை</string>
+    <string name="expand_desc">விரிவாக்கு</string>
+    <string name="collapse_desc">சுருக்கு</string>
+
+    <!-- Raise a concern -->
+    <string name="concern_title">புகார் செய்</string>
+    <string name="concern_category">வகை</string>
+    <string name="concern_cat_academic">கல்வி</string>
+    <string name="concern_cat_attendance">வருகை</string>
+    <string name="concern_cat_fees">கட்டணம்</string>
+    <string name="concern_cat_transport">போக்குவரத்து</string>
+    <string name="concern_cat_hostel">விடுதி</string>
+    <string name="concern_cat_other">மற்றவை</string>
+    <string name="concern_subject_label">தலைப்பு</string>
+    <string name="concern_subject_hint">இது எதைப் பற்றியது?</string>
+    <string name="concern_subject_prefill">22 Sep அன்று தவறாக வராதவர் எனக் குறிக்கப்பட்டது</string>
+    <string name="concern_describe_label">சிக்கலை விவரி</string>
+    <string name="concern_describe_hint">இதை ஆராய உதவும் விவரங்களைச் சேர்க்கவும்</string>
+    <string name="concern_describe_prefill">Aarav அன்று Networks ஆய்வகத்தில் கலந்து கொண்டார்; ஆசிரியர் பதிவேட்டில் வருகை எனக் காட்டுகிறது. பதிவைச் சரிசெய்யவும்.</string>
+    <string name="concern_char_count">%1$d / %2$d</string>
+    <string name="concern_attach">கோப்பை இணை (விருப்பம்)</string>
+    <string name="concern_attach_desc">கோப்பை இணை</string>
+    <string name="concern_response_time">பொதுவாக 2 வேலை நாட்களில் பதிலளிக்கப்படும்</string>
+    <string name="concern_response_desc">பதில் நேரம்</string>
+    <string name="concern_submit">புகாரைச் சமர்ப்பி</string>
+
+    <!-- Academics -->
+    <string name="acad_title">கல்வி செயல்திறன்</string>
+    <string name="acad_cgpa_label">CGPA</string>
+    <string name="acad_cgpa_value">8.40</string>
+    <string name="acad_cgpa_sub">10 இல் · 4 செமஸ்டர்கள்</string>
+    <string name="acad_trend_label">போக்கு</string>
+    <string name="acad_trend_value">+1.0</string>
+    <string name="acad_trend_sub">செமஸ்டர் 1 முதல்</string>
+    <string name="acad_sgpa_title">செமஸ்டர் வாரியாக SGPA</string>
+    <string name="acad_sgpa_scale">அளவு 6 – 10</string>
+    <string name="acad_sem1">Sem 1</string>
+    <string name="acad_sem2">Sem 2</string>
+    <string name="acad_sem3">Sem 3</string>
+    <string name="acad_sem4">Sem 4</string>
+    <string name="acad_subject_title">பாட வலிமை · தற்போதைய செமஸ்டர்</string>
+    <string name="acad_subj_dbms">DBMS</string>
+    <string name="acad_subj_networks">Networks</string>
+    <string name="acad_subj_os">OS</string>
+    <string name="acad_subj_toc">TOC</string>
+    <string name="acad_percent">%1$d%%</string>
+    <string name="acad_view_marks">மதிப்பெண்களைக் காண்</string>
+    <string name="acad_attendance">வருகை</string>
+
+    <!-- Notifications -->
+    <string name="notif_title">அறிவிப்புகள்</string>
+    <string name="notif_cat_all">அனைத்தும்</string>
+    <string name="notif_cat_academic">கல்வி</string>
+    <string name="notif_cat_exams">தேர்வுகள்</string>
+    <string name="notif_cat_events">நிகழ்வுகள்</string>
+    <string name="notif_cat_placement">வேலைவாய்ப்பு</string>
+    <string name="notif_cat_training">பயிற்சி</string>
+    <string name="notif_cat_fees">கட்டணம்</string>
+    <string name="notif_cat_attendance">வருகை</string>
+    <string name="notif_section_today">இன்று</string>
+    <string name="notif_empty">அறிவிப்புகள் இல்லை</string>
+    <string name="notif1_title">விளையாட்டு தின புகைப்படங்கள் இப்போது கிடைக்கின்றன</string>
+    <string name="notif1_time">09:40 AM</string>
+    <string name="notif1_desc">Tue 06 Oct இன் 42 புகைப்படங்கள் மற்றும் 6 வீடியோக்கள். ஆன்லைனில் காண தட்டவும்.</string>
+    <string name="notif2_title">இன்று மதியம் 2:00 மணிக்கு அமர்வு</string>
+    <string name="notif2_time">11:30 AM</string>
+    <string name="notif2_desc">DSA கோடிங் டிராக்: Graphs, BFS மற்றும் DFS. கணினி மையம், Lab 3.</string>
+    <string name="notif3_title">நாளை காலை 10:00 மணிக்கு நிகழ்வு</string>
+    <string name="notif3_time">11:00 AM</string>
+    <string name="notif3_desc">Freshworks முன்-வேலைவாய்ப்பு பேச்சு, வர்ச்சுவல். B.E. CSE மற்றும் B.Tech IT க்கு திறந்தது. இணைப்பு லிங்க் 09:50 AM க்கு திறக்கும்.</string>
+    <string name="notif4_title">தேர்வு விண்ணப்பம் இன்று திறக்கிறது</string>
+    <string name="notif4_time">10:00 AM</string>
+    <string name="notif4_desc">மறுமதிப்பீடு – Sem 4 முடிவுகள் Aarav க்கு Wed 14 Oct வரை திறந்துள்ளது. வலைத் தளத்தில் விண்ணப்பிக்கவும்.</string>
+    <string name="notif5_title">கடைசி தேதி 2 நாட்களில்</string>
+    <string name="notif5_time">09:30 AM</string>
+    <string name="notif5_desc">End Semester Examination, Nov 2026: Aarav இன் விண்ணப்பம் Fri 09 Oct அன்று மூடப்படும்.</string>
+
+    <!-- Chat / Messages -->
+    <string name="chat_title">செய்திகள்</string>
+    <string name="chat_search_hint">ஆசிரியர் அல்லது அலுவலகத்தைத் தேடு</string>
+    <string name="chat_new_desc">புதிய செய்தி</string>
+    <string name="chat_concern_title">புகார் #C-1042 · பரிசீலனையில்</string>
+    <string name="chat_concern_sub">வருகை திருத்தம் · அலுவலகம் பதிலளித்தது</string>
+    <string name="chat_concern_open_desc">புகாரைத் திற</string>
+    <string name="chat_flag_desc">புகார்</string>
+    <string name="chat_c1_initials">MI</string>
+    <string name="chat_c1_name">Dr. Meena Iyer</string>
+    <string name="chat_c1_subject">வகுப்பு வழிகாட்டி · DBMS</string>
+    <string name="chat_c1_preview">Aarav IA 1 இல் சிறப்பாகச் செய்தார், IA 2 க்கு முன் அதைத் தொடரவும்.</string>
+    <string name="chat_c1_time">10:24 AM</string>
+    <string name="chat_c2_initials">AO</string>
+    <string name="chat_c2_name">கணக்கு அலுவலகம்</string>
+    <string name="chat_c2_subject">கட்டணம் &amp; ரசீதுகள்</string>
+    <string name="chat_c2_preview">உங்கள் விடுதி கட்டணச் சான்றைப் பெற்றோம்; இப்போது சரிபார்க்கிறோம்.</string>
+    <string name="chat_c2_time">9:02 AM</string>
+    <string name="chat_c3_initials">KR</string>
+    <string name="chat_c3_name">Prof. K. Rao</string>
+    <string name="chat_c3_subject">Operating Systems</string>
+    <string name="chat_c3_preview">அறிக்கை வடிவம் வகுப்புக் குழுவில் பகிரப்பட்டுள்ளது.</string>
+    <string name="chat_c3_time">திங்</string>
+    <string name="chat_c4_initials">TD</string>
+    <string name="chat_c4_name">போக்குவரத்து மேசை</string>
+    <string name="chat_c4_subject">பேருந்து 12 ஒருங்கிணைப்பாளர்</string>
+    <string name="chat_c4_preview">புதிய பிக்அப் இடம் திங்கள் 7:10 AM முதல் தொடங்குகிறது.</string>
+    <string name="chat_c4_time">ஞாயி</string>
+    <string name="chat_c5_initials">SN</string>
+    <string name="chat_c5_name">Dr. S. Nair</string>
+    <string name="chat_c5_subject">Computer Networks</string>
+    <string name="chat_c5_preview">ஆய்வக பதிவு சமர்ப்பிப்பு வெள்ளி வரை நீட்டிக்கப்பட்டது.</string>
+    <string name="chat_c5_time">2 Oct</string>
+
+    <!-- Bottom navigation -->
+    <string name="nav_home">முகப்பு</string>
+    <string name="nav_academics">கல்வி</string>
+    <string name="nav_campus">வளாகம்</string>
+    <string name="nav_chat">அரட்டை</string>
+    <string name="nav_me">நான்</string>
+
+    <!-- Login -->
+    <string name="login_language_english">English</string>
+    <string name="login_welcome_title">மீண்டும் வரவேற்கிறோம்</string>
+    <string name="login_welcome_subtitle">University College of Engineering, Chennai — வருகை, மதிப்பெண்கள் மற்றும் கட்டணத்தைப் பார்க்க உள்நுழையவும்.</string>
+    <string name="login_identifier_label">மொபைல் எண்</string>
+    <string name="login_identifier_hint">xxxxxxxxxx</string>
+    <string name="login_password_label">கடவுச்சொல்</string>
+    <string name="login_keep_signed_in">என்னை உள்நுழைந்தே வைத்திரு</string>
+    <string name="login_forgot_password">கடவுச்சொல்லை மறந்தீர்களா?</string>
+    <string name="login_sign_in">உள்நுழை</string>
+    <string name="login_create_account">புதியவரா? கணக்கை உருவாக்கு</string>
+    <string name="login_fingerprint_on">இந்தச் சாதனத்தில் கைரேகை உள்நுழைவு இயக்கத்தில் உள்ளது</string>
+    <string name="login_fingerprint_button_desc">கைரேகையால் உள்நுழை</string>
+    <string name="login_legal">உள்நுழைவதன் மூலம் எங்கள் %1$s மற்றும் %2$s ஐ ஏற்கிறீர்கள். அணுகல் வேண்டுமா? கல்லூரி அலுவலகத்தை அழைக்கவும்.</string>
+    <string name="login_terms">விதிமுறைகள்</string>
+    <string name="login_privacy">தனியுரிமைக் கொள்கை</string>
+    <string name="login_error_enter_mobile">கடவுச்சொல்லை மீட்டமைக்க உங்கள் மொபைல் எண்ணை உள்ளிடவும்</string>
+    <string name="login_error_invalid_mobile">செல்லுபடியாகும் 10-இலக்க மொபைல் எண்ணை உள்ளிடவும்</string>
+    <string name="login_error_enter_identifier">உங்கள் மொபைல் எண்ணை உள்ளிடவும்</string>
+    <string name="login_error_enter_password">உங்கள் கடவுச்சொல்லை உள்ளிடவும்</string>
+
+    <!-- Role selection -->
+    <string name="role_signed_in_as">உள்நுழைந்தவர்: %1$s</string>
+    <string name="role_title">செயலியை எப்படிப் பயன்படுத்துகிறீர்கள்?</string>
+    <string name="role_subtitle">உங்கள் கணக்கில் ஒன்றுக்கு மேற்பட்ட பணிகள் உள்ளன. சுயவிவரத்திலிருந்து எப்போது வேண்டுமானாலும் மாறலாம்.</string>
+    <string name="role_parent_title">பெற்றோர் / பாதுகாவலர்</string>
+    <string name="role_parent_desc">உங்கள் குழந்தையின் வருகை, மதிப்பெண்கள், கட்டணம் மற்றும் பேருந்தைக் காணுங்கள்</string>
+    <string name="role_parent_badge_desc">பெற்றோர்</string>
+    <string name="role_student_title">மாணவர்</string>
+    <string name="role_student_desc">வீட்டுப்பாடம், தேர்வுகள், கால அட்டவணை மற்றும் செய்திகள்</string>
+    <string name="role_student_badge_desc">மாணவர்</string>
+    <string name="role_faculty_title">ஆசிரியர் / பணியாளர்</string>
+    <string name="role_faculty_desc">வருகையைக் குறி, வீட்டுப்பாடம் பகிர், பெற்றோருக்குப் பதிலளி</string>
+    <string name="role_faculty_badge_desc">ஆசிரியர்</string>
+    <string name="role_management_title">நிர்வாகம் / முதல்வர்</string>
+    <string name="role_management_desc">வருகை அறிக்கைகள், அறிவிப்புகள் மற்றும் பணியாளர் கண்ணோட்டம்</string>
+    <string name="role_management_badge_desc">நிர்வாகம்</string>
+    <string name="role_college_label">கல்லூரி</string>
+    <string name="role_continue">%1$s ஆகத் தொடரவும்</string>
+    <string name="role_continue_parent">பெற்றோர்</string>
+    <string name="role_continue_student">மாணவர்</string>
+    <string name="role_continue_faculty">ஆசிரியர்</string>
+    <string name="role_continue_management">நிர்வாகம்</string>
+
+    <!-- Login · biometric prompt -->
+    <string name="login_biometric_title">கைரேகையால் உள்நுழை</string>
+    <string name="login_biometric_touch">கைரேகை சென்சாரைத் தொடவும்</string>
+    <string name="login_biometric_hint">ஆதரிக்கும் மொபைல்களில் முக அன்லாக்கும் செயல்படும்</string>
+    <string name="login_biometric_cancel">ரத்து</string>
+    <string name="login_biometric_use_password">கடவுச்சொல்லைப் பயன்படுத்து</string>
+    <string name="login_biometric_icon_desc">கைரேகை</string>
+</resources>

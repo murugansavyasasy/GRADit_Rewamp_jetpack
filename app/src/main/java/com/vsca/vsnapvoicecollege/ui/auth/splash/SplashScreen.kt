@@ -47,6 +47,7 @@ import com.vsca.vsnapvoicecollege.ui.theme.WhiteTranslucent
 fun SplashScreen(
     onGetStarted: () -> Unit,
     onNavigateToHome: () -> Unit,
+    onNavigateToAuth: () -> Unit,
     modifier: Modifier = Modifier,
     viewModel: SplashViewModel = viewModel(),
 ) {
@@ -55,14 +56,21 @@ fun SplashScreen(
     // Brand-blue background → light system-bar icons.
     SystemBarIcons(darkIcons = false)
 
-    LaunchedEffect(uiState.isReady, uiState.isAuthenticated) {
-        if (uiState.isReady && uiState.isAuthenticated) {
-            onNavigateToHome()
+    LaunchedEffect(uiState.isReady, uiState.isAuthenticated, uiState.onboardingCompleted) {
+        if (!uiState.isReady) return@LaunchedEffect
+        when {
+            // Signed in → straight to the app.
+            uiState.isAuthenticated -> onNavigateToHome()
+            // Onboarding already done on a previous launch → skip it, go to sign in.
+            uiState.onboardingCompleted -> onNavigateToAuth()
+            // Fresh install → wait for the user to tap "Get started".
+            else -> Unit
         }
     }
 
     SplashContent(
         onGetStarted = onGetStarted,
+        showGetStarted = !uiState.onboardingCompleted,
         modifier = modifier,
     )
 }
@@ -70,6 +78,7 @@ fun SplashScreen(
 @Composable
 private fun SplashContent(
     onGetStarted: () -> Unit,
+    showGetStarted: Boolean,
     modifier: Modifier = Modifier,
 ) {
     Box(
@@ -123,24 +132,27 @@ private fun SplashContent(
 
             Spacer(Modifier.weight(1.3f))
 
-            PageIndicator(
-                pageCount = 3,
-                currentPage = 0,
-                activeColor = White,
-                inactiveColor = WhiteTranslucent,
-            )
+            // Shown only on a fresh install; hidden once onboarding is done.
+            if (showGetStarted) {
+                PageIndicator(
+                    pageCount = 3,
+                    currentPage = 0,
+                    activeColor = White,
+                    inactiveColor = WhiteTranslucent,
+                )
 
-            Spacer(Modifier.height(28.dp))
+                Spacer(Modifier.height(28.dp))
 
-            PrimaryButton(
-                text = stringResource(R.string.splash_get_started),
-                onClick = onGetStarted,
-                // Inverted colors: white button on the brand-blue background.
-                containerColor = White,
-                contentColor = BrandBlue,
-            )
+                PrimaryButton(
+                    text = stringResource(R.string.splash_get_started),
+                    onClick = onGetStarted,
+                    // Inverted colors: white button on the brand-blue background.
+                    containerColor = White,
+                    contentColor = BrandBlue,
+                )
 
-            Spacer(Modifier.height(22.dp))
+                Spacer(Modifier.height(22.dp))
+            }
 
             PoweredByRow(textColor = White, logoBackground = White)
 
@@ -177,6 +189,6 @@ private fun DecorativeCircles(modifier: Modifier = Modifier) {
 @Composable
 private fun SplashContentPreview() {
     GRADit_RewampTheme {
-        SplashContent(onGetStarted = {})
+        SplashContent(onGetStarted = {}, showGetStarted = true)
     }
 }

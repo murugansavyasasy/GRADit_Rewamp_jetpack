@@ -24,11 +24,13 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.LinkAnnotation
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.font.FontWeight
@@ -39,6 +41,7 @@ import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.vsca.vsnapvoicecollege.R
+import com.vsca.vsnapvoicecollege.data.LocaleManager
 import com.vsca.vsnapvoicecollege.ui.components.AppPasswordField
 import com.vsca.vsnapvoicecollege.ui.components.AppTextField
 import com.vsca.vsnapvoicecollege.ui.components.LanguageBottomSheet
@@ -63,15 +66,21 @@ import com.vsca.vsnapvoicecollege.ui.theme.White
 fun LoginScreen(
     onNavigateToRegister: () -> Unit,
     onNavigateToForgotPassword: (mobile: String) -> Unit,
-    onLoginSuccess: () -> Unit,
+    onLoginSuccess: (mobile: String) -> Unit,
+    onNavigateToTerms: () -> Unit,
+    onNavigateToPrivacy: () -> Unit,
     modifier: Modifier = Modifier,
     viewModel: LoginViewModel = viewModel(),
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
+    val currentLanguage = remember { LocaleManager.currentLanguage() }
     SystemBarIcons(darkIcons = true)
 
     LaunchedEffect(uiState.isLoginSuccessful) {
-        if (uiState.isLoginSuccessful) onLoginSuccess()
+        if (uiState.isLoginSuccessful) {
+            onLoginSuccess(uiState.identifier.trim())
+            viewModel.onLoginNavigated()
+        }
     }
 
     LaunchedEffect(uiState.navigateToForgotPassword) {
@@ -104,7 +113,7 @@ fun LoginScreen(
                 shadowElevation = 0.dp,
             )
             LanguageSelector(
-                language = uiState.language,
+                language = currentLanguage.englishName,
                 onClick = viewModel::onLanguageClick,
             )
         }
@@ -202,7 +211,10 @@ fun LoginScreen(
 
         Spacer(Modifier.weight(1f))
 
-        LegalText()
+        LegalText(
+            onNavigateToTerms = onNavigateToTerms,
+            onNavigateToPrivacy = onNavigateToPrivacy,
+        )
 
         Spacer(Modifier.height(20.dp))
 
@@ -228,8 +240,12 @@ fun LoginScreen(
     if (uiState.showLanguageSheet) {
         LanguageBottomSheet(
             languages = SupportedLanguages,
-            selectedCode = uiState.languageCode,
-            onApply = viewModel::onLanguageSelected,
+            selectedCode = currentLanguage.code,
+            onApply = { language ->
+                viewModel.onDismissLanguageSheet()
+                // Recreates the activity in the new locale.
+                LocaleManager.apply(language.code)
+            },
             onDismiss = viewModel::onDismissLanguageSheet,
         )
     }
@@ -281,21 +297,36 @@ private fun FingerprintStatus(modifier: Modifier = Modifier) {
 }
 
 @Composable
-private fun LegalText(modifier: Modifier = Modifier) {
+private fun LegalText(
+    onNavigateToTerms: () -> Unit,
+    onNavigateToPrivacy: () -> Unit,
+    modifier: Modifier = Modifier,
+) {
     val terms = stringResource(R.string.login_terms)
     val privacy = stringResource(R.string.login_privacy)
-    val phone = stringResource(R.string.login_office_phone)
-    val full = stringResource(R.string.login_legal, terms, privacy, phone)
+    val full = stringResource(R.string.login_legal, terms, privacy)
 
     val annotated = buildAnnotatedString {
         append(full)
-        listOf(terms, privacy).forEach { token ->
+        listOf(
+            terms to onNavigateToTerms,
+            privacy to onNavigateToPrivacy,
+        ).forEach { (token, onClick) ->
             val start = full.indexOf(token)
             if (start >= 0) {
+                val end = start + token.length
                 addStyle(
                     SpanStyle(fontWeight = FontWeight.Bold, color = TextPrimary),
                     start,
-                    start + token.length,
+                    end,
+                )
+                addLink(
+                    LinkAnnotation.Clickable(
+                        tag = token,
+                        linkInteractionListener = { onClick() },
+                    ),
+                    start,
+                    end,
                 )
             }
         }

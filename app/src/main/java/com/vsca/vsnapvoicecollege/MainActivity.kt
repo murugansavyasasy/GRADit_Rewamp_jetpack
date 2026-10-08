@@ -2,16 +2,16 @@ package com.vsca.vsnapvoicecollege
 
 import android.graphics.Color
 import android.os.Bundle
-import androidx.activity.ComponentActivity
 import androidx.activity.SystemBarStyle
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.ui.Modifier
 import com.vsca.vsnapvoicecollege.ui.navigation.AppNavHost
 import com.vsca.vsnapvoicecollege.ui.theme.GRADit_RewampTheme
 
-class MainActivity : ComponentActivity() {
+class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         // Fully transparent system bars so each screen's own background shows

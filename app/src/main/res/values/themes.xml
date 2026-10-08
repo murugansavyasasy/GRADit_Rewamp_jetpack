@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.GRADit_Rewamp" parent="android:Theme.Material.Light.NoActionBar" />
+    <!-- AppCompat parent is required by AppCompatActivity (used for per-app locale
+         switching); all actual UI styling is done in Compose. -->
+    <style name="Theme.GRADit_Rewamp" parent="Theme.AppCompat.Light.NoActionBar" />
 </resources>

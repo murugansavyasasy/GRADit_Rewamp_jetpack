@@ -443,10 +443,9 @@
     <string name="login_create_account">New here? Create account</string>
     <string name="login_fingerprint_on">Fingerprint sign-in is on for this device</string>
     <string name="login_fingerprint_button_desc">Sign in with fingerprint</string>
-    <string name="login_legal">By signing in you agree to our %1$s and %2$s. Need access? Call the college office at %3$s</string>
+    <string name="login_legal">By signing in you agree to our %1$s and %2$s. Need access? Call the college office.</string>
     <string name="login_terms">Terms</string>
     <string name="login_privacy">Privacy policy</string>
-    <string name="login_office_phone">[PHONE NUMBER]</string>
     <string name="login_error_enter_mobile">Enter your mobile number to reset the password</string>
     <string name="login_error_invalid_mobile">Enter a valid 10-digit mobile number</string>
     <string name="login_error_enter_identifier">Enter your mobile number</string>

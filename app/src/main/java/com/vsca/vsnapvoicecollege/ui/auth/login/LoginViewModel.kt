@@ -95,6 +95,11 @@ class LoginViewModel : ViewModel() {
         }
     }
 
+    /** Consumes the one-time login-success event after navigation has happened. */
+    fun onLoginNavigated() {
+        _uiState.update { it.copy(isLoginSuccessful = false) }
+    }
+
     /** Validates the mobile number before allowing navigation to forgot-password. */
     fun onForgotPasswordClick() {
         val identifier = _uiState.value.identifier.trim()

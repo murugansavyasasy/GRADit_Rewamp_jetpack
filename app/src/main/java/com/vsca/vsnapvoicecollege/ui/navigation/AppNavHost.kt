@@ -2,10 +2,13 @@ package com.vsca.vsnapvoicecollege.ui.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.vsca.vsnapvoicecollege.data.OnboardingPreferences
+import com.vsca.vsnapvoicecollege.data.SessionPreferences
 import com.vsca.vsnapvoicecollege.ui.auth.navigation.AuthRoute
 import com.vsca.vsnapvoicecollege.ui.auth.navigation.authNavGraph
 import com.vsca.vsnapvoicecollege.ui.auth.country.CountrySelectionScreen
@@ -34,9 +37,7 @@ fun AppNavHost(
 ) {
     NavHost(
         navController = navController,
-        // TEMP (testing): launch into the auth flow (Login) to exercise Sign in → Role selection.
-        // Revert to AppRoute.SPLASH for the real flow.
-        startDestination = AuthRoute.GRAPH,
+        startDestination = AppRoute.SPLASH,
         modifier = modifier,
     ) {
         composable(AppRoute.SPLASH) {
@@ -49,12 +50,22 @@ fun AppNavHost(
                         popUpTo(AppRoute.SPLASH) { inclusive = true }
                     }
                 },
+                onNavigateToAuth = {
+                    navController.navigate(AuthRoute.GRAPH) {
+                        popUpTo(AppRoute.SPLASH) { inclusive = true }
+                    }
+                },
             )
         }
 
         composable(AppRoute.ONBOARDING) {
+            val context = LocalContext.current
             OnboardingScreen(
-                onFinish = { navController.navigate(AppRoute.COUNTRY) },
+                onFinish = {
+                    // Mark the one-time intro as done so later launches skip it.
+                    OnboardingPreferences.setCompleted(context)
+                    navController.navigate(AppRoute.COUNTRY)
+                },
             )
         }
 
@@ -73,8 +84,11 @@ fun AppNavHost(
         authNavGraph(navController)
 
         composable(AppRoute.HOME) {
+            val context = LocalContext.current
             MainScreen(
                 onSignOut = {
+                    // Clear the session so the app no longer auto-logins.
+                    SessionPreferences.setLoggedIn(context, false)
                     navController.navigate(AuthRoute.GRAPH) {
                         popUpTo(AppRoute.HOME) { inclusive = true }
                     }

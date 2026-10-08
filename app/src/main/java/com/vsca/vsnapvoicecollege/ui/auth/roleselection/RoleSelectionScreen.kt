@@ -26,6 +26,7 @@ import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.vsca.vsnapvoicecollege.R
+import com.vsca.vsnapvoicecollege.ui.components.BackButton
 import com.vsca.vsnapvoicecollege.ui.components.DropdownField
 import com.vsca.vsnapvoicecollege.ui.components.IconBadge
 import com.vsca.vsnapvoicecollege.ui.components.PoweredByRow
@@ -51,6 +52,7 @@ import com.vsca.vsnapvoicecollege.ui.theme.White
  */
 @Composable
 fun RoleSelectionScreen(
+    onBack: () -> Unit,
     onContinue: (Role) -> Unit,
     modifier: Modifier = Modifier,
     viewModel: RoleSelectionViewModel = viewModel(),
@@ -60,6 +62,7 @@ fun RoleSelectionScreen(
 
     RoleSelectionContent(
         uiState = uiState,
+        onBack = onBack,
         onRoleSelected = viewModel::onRoleSelected,
         onCollegeSelected = viewModel::onCollegeSelected,
         onContinue = onContinue,
@@ -70,6 +73,7 @@ fun RoleSelectionScreen(
 @Composable
 private fun RoleSelectionContent(
     uiState: RoleSelectionUiState,
+    onBack: () -> Unit,
     onRoleSelected: (Role) -> Unit,
     onCollegeSelected: (String) -> Unit,
     onContinue: (Role) -> Unit,
@@ -88,6 +92,10 @@ private fun RoleSelectionContent(
                 .weight(1f)
                 .verticalScroll(rememberScrollState()),
         ) {
+            Spacer(Modifier.height(16.dp))
+
+            BackButton(onClick = onBack)
+
             Spacer(Modifier.height(16.dp))
 
             Text(
@@ -234,6 +242,7 @@ private fun RoleSelectionPreview() {
                 colleges = listOf("University College of Engineering, Chennai"),
                 selectedCollege = "University College of Engineering, Chennai",
             ),
+            onBack = {},
             onRoleSelected = {},
             onCollegeSelected = {},
             onContinue = {},

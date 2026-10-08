@@ -9,4 +9,6 @@ package com.vsca.vsnapvoicecollege.ui.auth.splash
 data class SplashUiState(
     val isReady: Boolean = false,
     val isAuthenticated: Boolean = false,
+    /** True once the one-time onboarding intro has been completed on this install. */
+    val onboardingCompleted: Boolean = false,
 )

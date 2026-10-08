@@ -22,6 +22,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
@@ -33,6 +34,7 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.vsca.vsnapvoicecollege.R
+import com.vsca.vsnapvoicecollege.data.LocaleManager
 import com.vsca.vsnapvoicecollege.ui.components.AppCard
 import com.vsca.vsnapvoicecollege.ui.components.BackButton
 import com.vsca.vsnapvoicecollege.ui.components.LanguageBottomSheet
@@ -64,10 +66,8 @@ fun SettingsScreen(
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
 
-    var languageCode by rememberSaveable { mutableStateOf("en") }
     var showLanguageSheet by rememberSaveable { mutableStateOf(false) }
-    val selectedLanguage = SupportedLanguages.firstOrNull { it.code == languageCode }
-        ?: SupportedLanguages.first()
+    val currentLanguage = remember { LocaleManager.currentLanguage() }
 
     Column(
         modifier = modifier
@@ -138,7 +138,7 @@ fun SettingsScreen(
                 NavRow(
                     iconRes = R.drawable.ic_language,
                     title = stringResource(R.string.settings_language),
-                    value = selectedLanguage.englishName,
+                    value = currentLanguage.englishName,
                     onClick = { showLanguageSheet = true },
                 )
                 RowDivider()
@@ -187,10 +187,11 @@ fun SettingsScreen(
     if (showLanguageSheet) {
         LanguageBottomSheet(
             languages = SupportedLanguages,
-            selectedCode = languageCode,
+            selectedCode = currentLanguage.code,
             onApply = { language ->
-                languageCode = language.code
                 showLanguageSheet = false
+                // Recreates the activity in the new locale.
+                LocaleManager.apply(language.code)
             },
             onDismiss = { showLanguageSheet = false },
         )
