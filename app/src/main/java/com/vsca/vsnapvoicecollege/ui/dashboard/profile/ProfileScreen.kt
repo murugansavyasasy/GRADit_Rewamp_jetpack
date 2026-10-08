@@ -61,6 +61,7 @@ import com.vsca.vsnapvoicecollege.ui.theme.White
 fun ProfileScreen(
     onSignOut: () -> Unit,
     onOpenSettings: () -> Unit,
+    onAllRoles: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
     var showSignOutDialog by rememberSaveable { mutableStateOf(false) }
@@ -81,7 +82,7 @@ fun ProfileScreen(
         )
         Spacer(Modifier.height(16.dp))
 
-        ProfileCard()
+        ProfileCard(onAllRoles = onAllRoles)
 
         Spacer(Modifier.height(20.dp))
         SectionLabel(stringResource(R.string.profile_linked_students))
@@ -218,7 +219,7 @@ private fun DialogButton(
 }
 
 @Composable
-private fun ProfileCard() {
+private fun ProfileCard(onAllRoles: () -> Unit) {
     Surface(
         modifier = Modifier.fillMaxWidth(),
         shape = RoundedCornerShape(20.dp),
@@ -262,7 +263,7 @@ private fun ProfileCard() {
             Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
                 RoleChip(stringResource(R.string.profile_role_parent), selected = true)
                 RoleChip(stringResource(R.string.profile_role_principal), selected = false)
-                RoleChip(stringResource(R.string.profile_role_all), selected = false)
+                RoleChip(stringResource(R.string.profile_role_all), selected = false, onClick = onAllRoles)
             }
         }
     }
@@ -289,9 +290,9 @@ private fun EditButton() {
 }
 
 @Composable
-private fun RoleChip(text: String, selected: Boolean) {
+private fun RoleChip(text: String, selected: Boolean, onClick: () -> Unit = {}) {
     Surface(
-        onClick = { /* TODO: switch role */ },
+        onClick = onClick,
         shape = RoundedCornerShape(12.dp),
         color = if (selected) BrandBlue else White,
         border = if (selected) null else BorderStroke(1.dp, BrandBlue),

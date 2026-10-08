@@ -15,35 +15,71 @@
     <!-- Onboarding / app introduction -->
     <string name="onboarding_skip">దాటవేయి</string>
     <string name="onboarding_next">తదుపరి</string>
+    <string name="onboarding_get_started">ప్రారంభించండి</string>
     <string name="onboarding_page_counter">%2$d లో %1$d</string>
-
-    <string name="onboarding_title_1">కాలేజ్‌కు సంబంధించిన ప్రతిదీ, ఒకే చోట</string>
-    <string name="onboarding_subtitle_1">హాజరు, హోంవర్క్, పరీక్షలు మరియు మార్కులు — ఉపాధ్యాయులు పోస్ట్ చేసిన వెంటనే నవీకరించబడతాయి.</string>
-    <string name="onboarding_badge_attendance">హాజరు 92%</string>
-    <string name="onboarding_badge_ia">IA 2 · 12 Oct</string>
-    <string name="onboarding_badge_cgpa">CGPA 8.4</string>
-
-    <string name="onboarding_title_2">ఉపాధ్యాయులతో సులభంగా మాట్లాడండి</string>
-    <string name="onboarding_subtitle_2">నోటీసులు చదవండి, అధ్యాపకుల వాయిస్ నోట్స్ వినండి, ఒక్క ట్యాప్‌తో ప్రత్యుత్తరం ఇవ్వండి — ఇక సర్క్యులర్లు మిస్ కావు.</string>
-    <string name="onboarding_badge_new_notice">కొత్త నోటీసు</string>
-    <string name="onboarding_badge_voice">వాయిస్ · 0:24</string>
-    <string name="onboarding_badge_unread">2 చదవనివి</string>
-
-    <string name="onboarding_title_3">ఫీజు చెల్లించి బస్సును ట్రాక్ చేయండి</string>
-    <string name="onboarding_subtitle_3">సురక్షితంగా చెల్లించండి, చెల్లింపు రుజువును అప్‌లోడ్ చేయండి, కాలేజ్ బస్సు మీ స్టాప్‌కు ఎప్పుడు చేరుతుందో చూడండి.</string>
-    <string name="onboarding_badge_due">₹24,500 బకాయి</string>
-    <string name="onboarding_badge_bus">బస్సు 12 నిమిషాల్లో</string>
-    <string name="onboarding_badge_receipt">రసీదు సేవ్ అయింది</string>
-
-    <string name="onboarding_icon_chat_desc">సందేశాలు</string>
-    <string name="onboarding_icon_bus_desc">బస్సు ట్రాకింగ్</string>
+    <string name="onboarding_pill_1">వాయిస్ కమ్యూనికేషన్</string>
+    <string name="onboarding_title_1">ఒకే వాయిస్ నోట్‌లో ప్రతి తల్లిదండ్రితో మాట్లాడండి</string>
+    <string name="onboarding_subtitle_1">ఉపాధ్యాయులు ఒకసారి రికార్డ్ చేస్తారు, ప్రతి తల్లిదండ్రి దానిని వింటారు — ట్రాన్‌స్క్రిప్ట్ మరియు “విన్నారు” రసీదుతో. తల్లిదండ్రులు ఎప్పుడైనా వినవచ్చు, ఒక్క ట్యాప్‌తో ప్రత్యుత్తరం ఇవ్వవచ్చు.</string>
+    <string name="onboarding_rec_recording">రికార్డింగ్ · 0:18</string>
+    <string name="onboarding_rec_to_parents">62 తల్లిదండ్రులకు</string>
+    <string name="onboarding_rec_heard_title">62లో 48 తల్లిదండ్రులు విన్నారు</string>
+    <string name="onboarding_rec_heard_sub">ట్రాన్‌స్క్రిప్ట్ ఇంగ్లీష్ మరియు తమిళంలో పంపబడింది</string>
+    <string name="onboarding_rec_mic_desc">రికార్డ్</string>
+    <string name="onboarding_rec_send_desc">పంపు</string>
+    <string name="onboarding_rec_delete_desc">తొలగించు</string>
+    <string name="onboarding_pill_2">జియో-ఫెన్స్ హాజరు</string>
+    <string name="onboarding_title_2">క్యాంపస్‌లో ధృవీకరించిన హాజరు</string>
+    <string name="onboarding_subtitle_2">సిబ్బంది ఒక్క ట్యాప్‌తో, కాలేజ్ జియో-ఫెన్స్ లోపల మాత్రమే చెక్ ఇన్ చేస్తారు. రిజిస్టర్లు లేవు, ప్రాక్సీలు లేవు, ప్రిన్సిపాల్ దీన్ని లైవ్‌గా చూస్తారు.</string>
+    <string name="onboarding_geo_campus">UCE చెన్నై క్యాంపస్</string>
+    <string name="onboarding_geo_inside">జియో-ఫెన్స్ లోపల</string>
+    <string name="onboarding_geo_checkin_title">చెక్ ఇన్ · 08:52 AM</string>
+    <string name="onboarding_geo_checkin_sub">అడ్మిన్ బ్లాక్ · లొకేషన్ ధృవీకరించబడింది, 12 మీ</string>
+    <string name="onboarding_geo_ontime">సమయానికి</string>
+    <string name="onboarding_pill_3">రెజ్యూమ్ బిల్డర్</string>
+    <string name="onboarding_title_3">ప్లేస్‌మెంట్-సిద్ధ రెజ్యూమ్‌ను రూపొందించండి</string>
+    <string name="onboarding_subtitle_3">కాలేజ్ నుండి మార్కులు, ప్రాజెక్టులు, సర్టిఫికెట్లు స్వయంచాలకంగా నింపబడతాయి. ఒక టెంప్లేట్ ఎంచుకుని ప్లేస్‌మెంట్ డ్రైవ్‌ల కోసం PDF డౌన్‌లోడ్ చేయండి.</string>
+    <string name="onboarding_resume_initials">AR</string>
+    <string name="onboarding_resume_name">Aarav R.</string>
+    <string name="onboarding_resume_detail">B.E. CSE · UCE Chennai · CGPA 8.4</string>
+    <string name="onboarding_resume_skills">నైపుణ్యాలు</string>
+    <string name="onboarding_resume_skill_1">Python</string>
+    <string name="onboarding_resume_skill_2">SQL</string>
+    <string name="onboarding_resume_skill_3">React</string>
+    <string name="onboarding_resume_skill_4">Cloud Computing</string>
+    <string name="onboarding_resume_project_label">ప్రాజెక్ట్</string>
+    <string name="onboarding_resume_project">స్మార్ట్ అటెండెన్స్ కియోస్క్ · Techfest \'26 ఉత్తమ ప్రాజెక్ట్</string>
+    <string name="onboarding_resume_progress">రెజ్యూమ్ 80% పూర్తి</string>
+    <string name="onboarding_resume_pdf">PDF</string>
+    <string name="onboarding_pill_4">మరియు అన్నీ</string>
+    <string name="onboarding_title_4">మీ మొత్తం కాలేజ్, ఒకే యాప్‌లో</string>
+    <string name="onboarding_subtitle_4">హాజరు, ఫీజులు, ఫైల్‌లు, ఈవెంట్‌లు, మార్కులు మరియు మరిన్ని — కాలేజ్ పోస్ట్ చేసిన వెంటనే నవీకరించబడతాయి.</string>
+    <string name="onboarding_grid_attendance_label">హాజరు</string>
+    <string name="onboarding_grid_attendance_value">ఈ సెమిస్టర్ 92%</string>
+    <string name="onboarding_grid_fee_label">ఫీజు వివరాలు</string>
+    <string name="onboarding_grid_fee_value">₹24,500 బకాయి 15 Oct</string>
+    <string name="onboarding_grid_files_label">ఫైల్‌లు</string>
+    <string name="onboarding_grid_files_value">IA 2 timetable.pdf</string>
+    <string name="onboarding_grid_events_label">ఈవెంట్‌లు</string>
+    <string name="onboarding_grid_events_value">స్పోర్ట్స్ డే ఫోటోలు</string>
 
     <!-- Country selection -->
-    <string name="country_title">మీ దేశాన్ని ఎంచుకోండి</string>
-    <string name="country_subtitle">మీ కాలేజ్ జాబితా, కరెన్సీ మరియు ఫోన్ కోడ్ చూపడానికి దీన్ని ఉపయోగిస్తాము.</string>
-    <string name="country_search_hint">దేశాన్ని వెతకండి</string>
-    <string name="country_detected">మీ లొకేషన్ నుండి గుర్తించబడింది: %1$s</string>
-    <string name="country_continue">%1$s తో కొనసాగించండి</string>
+    <string name="country_step">దశ 1 / 2 · ప్రాంతం</string>
+    <string name="country_title">మీ కాలేజ్ ఎక్కడ ఉంది?</string>
+    <string name="country_subtitle">సరైన కాలేజ్ జాబితా, ఫోన్ కోడ్ మరియు కరెన్సీ చూపడానికి మీ దేశాన్ని ఉపయోగిస్తాము.</string>
+    <string name="country_detected_label">మీ లొకేషన్ నుండి గుర్తించబడింది</string>
+    <string name="country_choose_another">లేదా మరో దేశాన్ని ఎంచుకోండి</string>
+    <string name="country_search_hint">దేశం లేదా కోడ్ వెతకండి, ఉదా. +971</string>
+    <string name="country_popular">మా కాలేజీల్లో ప్రసిద్ధం</string>
+    <string name="country_all">అన్ని దేశాలు A–Z</string>
+    <string name="country_count">%1$d దేశాలు</string>
+    <string name="country_continue">కొనసాగించండి</string>
+    <string name="country_results">ఫలితాలు</string>
+    <string name="country_matches">%1$d సరిపోలికలు</string>
+    <string name="country_no_match">“%1$s” తో ఏ దేశం సరిపోలలేదు</string>
+    <string name="country_no_match_hint">స్పెల్లింగ్ తనిఖీ చేయండి, లేదా +91 వంటి ఫోన్ కోడ్‌తో వెతకండి. మీ దేశం జాబితాలో లేకపోతే, మీ కాలేజ్ అక్కడ ఇంకా GradItను ఉపయోగించడం లేదు.</string>
+    <string name="country_clear_search">శోధనను క్లియర్ చేయి</string>
+    <string name="country_globe_desc">ఫలితాలు లేవు</string>
+    <string name="country_privacy_note">దేశాన్ని సూచించడానికి మీ లొకేషన్‌ను ఒక్కసారి మాత్రమే ఉపయోగిస్తాము. ఇది నిల్వ చేయబడదు లేదా షేర్ చేయబడదు.</string>
 
     <!-- Shared UI -->
     <string name="back_content_desc">వెనుకకు</string>

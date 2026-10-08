@@ -15,35 +15,71 @@
     <!-- Onboarding / app introduction -->
     <string name="onboarding_skip">ಬಿಟ್ಟುಬಿಡಿ</string>
     <string name="onboarding_next">ಮುಂದೆ</string>
+    <string name="onboarding_get_started">ಪ್ರಾರಂಭಿಸಿ</string>
     <string name="onboarding_page_counter">%2$d ರಲ್ಲಿ %1$d</string>
-
-    <string name="onboarding_title_1">ಕಾಲೇಜ್‌ನ ಎಲ್ಲವೂ, ಒಂದೇ ಕಡೆ</string>
-    <string name="onboarding_subtitle_1">ಹಾಜರಾತಿ, ಹೋಮ್‌ವರ್ಕ್, ಪರೀಕ್ಷೆಗಳು ಮತ್ತು ಅಂಕಗಳು — ಶಿಕ್ಷಕರು ಪೋಸ್ಟ್ ಮಾಡಿದ ಕೂಡಲೇ ನವೀಕರಿಸಲಾಗುತ್ತದೆ.</string>
-    <string name="onboarding_badge_attendance">ಹಾಜರಾತಿ 92%</string>
-    <string name="onboarding_badge_ia">IA 2 · 12 Oct</string>
-    <string name="onboarding_badge_cgpa">CGPA 8.4</string>
-
-    <string name="onboarding_title_2">ಶಿಕ್ಷಕರೊಂದಿಗೆ ಸುಲಭವಾಗಿ ಮಾತನಾಡಿ</string>
-    <string name="onboarding_subtitle_2">ಸೂಚನೆಗಳನ್ನು ಓದಿ, ಅಧ್ಯಾಪಕರ ಧ್ವನಿ ಟಿಪ್ಪಣಿಗಳನ್ನು ಕೇಳಿ, ಒಂದೇ ಟ್ಯಾಪ್‌ನಲ್ಲಿ ಉತ್ತರಿಸಿ — ಇನ್ನು ಸುತ್ತೋಲೆಗಳು ತಪ್ಪುವುದಿಲ್ಲ.</string>
-    <string name="onboarding_badge_new_notice">ಹೊಸ ಸೂಚನೆ</string>
-    <string name="onboarding_badge_voice">ಧ್ವನಿ · 0:24</string>
-    <string name="onboarding_badge_unread">2 ಓದದಿರುವುದು</string>
-
-    <string name="onboarding_title_3">ಶುಲ್ಕ ಪಾವತಿಸಿ ಬಸ್ ಟ್ರ್ಯಾಕ್ ಮಾಡಿ</string>
-    <string name="onboarding_subtitle_3">ಸುರಕ್ಷಿತವಾಗಿ ಪಾವತಿಸಿ, ಪಾವತಿ ಪುರಾವೆ ಅಪ್‌ಲೋಡ್ ಮಾಡಿ, ಕಾಲೇಜ್ ಬಸ್ ನಿಮ್ಮ ನಿಲ್ದಾಣ ತಲುಪುವುದನ್ನು ನೋಡಿ.</string>
-    <string name="onboarding_badge_due">₹24,500 ಬಾಕಿ</string>
-    <string name="onboarding_badge_bus">ಬಸ್ 12 ನಿಮಿಷದಲ್ಲಿ</string>
-    <string name="onboarding_badge_receipt">ರಸೀದಿ ಉಳಿಸಲಾಗಿದೆ</string>
-
-    <string name="onboarding_icon_chat_desc">ಸಂದೇಶಗಳು</string>
-    <string name="onboarding_icon_bus_desc">ಬಸ್ ಟ್ರ್ಯಾಕಿಂಗ್</string>
+    <string name="onboarding_pill_1">ಧ್ವನಿ ಸಂವಹನ</string>
+    <string name="onboarding_title_1">ಒಂದೇ ಧ್ವನಿ ಟಿಪ್ಪಣಿಯಲ್ಲಿ ಪ್ರತಿ ಪೋಷಕರೊಂದಿಗೆ ಮಾತನಾಡಿ</string>
+    <string name="onboarding_subtitle_1">ಶಿಕ್ಷಕರು ಒಮ್ಮೆ ರೆಕಾರ್ಡ್ ಮಾಡುತ್ತಾರೆ, ಪ್ರತಿ ಪೋಷಕರು ಅದನ್ನು ಕೇಳುತ್ತಾರೆ — ಪ್ರತಿಲಿಪಿ ಮತ್ತು “ಕೇಳಲಾಗಿದೆ” ರಸೀದಿಯೊಂದಿಗೆ. ಪೋಷಕರು ಯಾವಾಗ ಬೇಕಾದರೂ ಕೇಳಿ ಒಂದೇ ಟ್ಯಾಪ್‌ನಲ್ಲಿ ಉತ್ತರಿಸಬಹುದು.</string>
+    <string name="onboarding_rec_recording">ರೆಕಾರ್ಡಿಂಗ್ · 0:18</string>
+    <string name="onboarding_rec_to_parents">62 ಪೋಷಕರಿಗೆ</string>
+    <string name="onboarding_rec_heard_title">62ರಲ್ಲಿ 48 ಪೋಷಕರು ಕೇಳಿದರು</string>
+    <string name="onboarding_rec_heard_sub">ಪ್ರತಿಲಿಪಿ ಇಂಗ್ಲಿಷ್ ಮತ್ತು ತಮಿಳಿನಲ್ಲಿ ಕಳುಹಿಸಲಾಗಿದೆ</string>
+    <string name="onboarding_rec_mic_desc">ರೆಕಾರ್ಡ್</string>
+    <string name="onboarding_rec_send_desc">ಕಳುಹಿಸಿ</string>
+    <string name="onboarding_rec_delete_desc">ಅಳಿಸಿ</string>
+    <string name="onboarding_pill_2">ಜಿಯೋ-ಫೆನ್ಸ್ ಹಾಜರಾತಿ</string>
+    <string name="onboarding_title_2">ಕ್ಯಾಂಪಸ್‌ನಲ್ಲಿ ಪರಿಶೀಲಿಸಿದ ಹಾಜರಾತಿ</string>
+    <string name="onboarding_subtitle_2">ಸಿಬ್ಬಂದಿ ಒಂದೇ ಟ್ಯಾಪ್‌ನಲ್ಲಿ, ಕಾಲೇಜ್ ಜಿಯೋ-ಫೆನ್ಸ್ ಒಳಗೆ ಮಾತ್ರ ಚೆಕ್ ಇನ್ ಮಾಡುತ್ತಾರೆ. ರಿಜಿಸ್ಟರ್‌ಗಳಿಲ್ಲ, ಪ್ರಾಕ್ಸಿಗಳಿಲ್ಲ, ಪ್ರಾಂಶುಪಾಲರು ಇದನ್ನು ನೇರವಾಗಿ ನೋಡುತ್ತಾರೆ.</string>
+    <string name="onboarding_geo_campus">UCE ಚೆನ್ನೈ ಕ್ಯಾಂಪಸ್</string>
+    <string name="onboarding_geo_inside">ಜಿಯೋ-ಫೆನ್ಸ್ ಒಳಗೆ</string>
+    <string name="onboarding_geo_checkin_title">ಚೆಕ್ ಇನ್ · 08:52 AM</string>
+    <string name="onboarding_geo_checkin_sub">ಅಡ್ಮಿನ್ ಬ್ಲಾಕ್ · ಸ್ಥಳ ಪರಿಶೀಲಿಸಲಾಗಿದೆ, 12 ಮೀ</string>
+    <string name="onboarding_geo_ontime">ಸಮಯಕ್ಕೆ ಸರಿಯಾಗಿ</string>
+    <string name="onboarding_pill_3">ರೆಸ್ಯೂಮ್ ಬಿಲ್ಡರ್</string>
+    <string name="onboarding_title_3">ಪ್ಲೇಸ್‌ಮೆಂಟ್-ಸಿದ್ಧ ರೆಸ್ಯೂಮ್ ರಚಿಸಿ</string>
+    <string name="onboarding_subtitle_3">ಕಾಲೇಜ್‌ನಿಂದ ಅಂಕಗಳು, ಪ್ರಾಜೆಕ್ಟ್‌ಗಳು ಮತ್ತು ಪ್ರಮಾಣಪತ್ರಗಳು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ತುಂಬುತ್ತವೆ. ಟೆಂಪ್ಲೇಟ್ ಆಯ್ಕೆಮಾಡಿ ಪ್ಲೇಸ್‌ಮೆಂಟ್ ಡ್ರೈವ್‌ಗಳಿಗೆ PDF ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ.</string>
+    <string name="onboarding_resume_initials">AR</string>
+    <string name="onboarding_resume_name">Aarav R.</string>
+    <string name="onboarding_resume_detail">B.E. CSE · UCE Chennai · CGPA 8.4</string>
+    <string name="onboarding_resume_skills">ಕೌಶಲ್ಯಗಳು</string>
+    <string name="onboarding_resume_skill_1">Python</string>
+    <string name="onboarding_resume_skill_2">SQL</string>
+    <string name="onboarding_resume_skill_3">React</string>
+    <string name="onboarding_resume_skill_4">Cloud Computing</string>
+    <string name="onboarding_resume_project_label">ಪ್ರಾಜೆಕ್ಟ್</string>
+    <string name="onboarding_resume_project">ಸ್ಮಾರ್ಟ್ ಅಟೆಂಡೆನ್ಸ್ ಕಿಯೋಸ್ಕ್ · Techfest \'26 ಅತ್ಯುತ್ತಮ ಪ್ರಾಜೆಕ್ಟ್</string>
+    <string name="onboarding_resume_progress">ರೆಸ್ಯೂಮ್ 80% ಪೂರ್ಣ</string>
+    <string name="onboarding_resume_pdf">PDF</string>
+    <string name="onboarding_pill_4">ಮತ್ತು ಎಲ್ಲವೂ</string>
+    <string name="onboarding_title_4">ನಿಮ್ಮ ಇಡೀ ಕಾಲೇಜ್, ಒಂದೇ ಆ್ಯಪ್‌ನಲ್ಲಿ</string>
+    <string name="onboarding_subtitle_4">ಹಾಜರಾತಿ, ಶುಲ್ಕ, ಫೈಲ್‌ಗಳು, ಕಾರ್ಯಕ್ರಮಗಳು, ಅಂಕಗಳು ಮತ್ತು ಇನ್ನಷ್ಟು — ಕಾಲೇಜ್ ಪೋಸ್ಟ್ ಮಾಡಿದ ಕ್ಷಣದಲ್ಲೇ ನವೀಕರಿಸಲಾಗುತ್ತದೆ.</string>
+    <string name="onboarding_grid_attendance_label">ಹಾಜರಾತಿ</string>
+    <string name="onboarding_grid_attendance_value">ಈ ಸೆಮಿಸ್ಟರ್ 92%</string>
+    <string name="onboarding_grid_fee_label">ಶುಲ್ಕ ವಿವರಗಳು</string>
+    <string name="onboarding_grid_fee_value">₹24,500 ಬಾಕಿ 15 Oct</string>
+    <string name="onboarding_grid_files_label">ಫೈಲ್‌ಗಳು</string>
+    <string name="onboarding_grid_files_value">IA 2 timetable.pdf</string>
+    <string name="onboarding_grid_events_label">ಕಾರ್ಯಕ್ರಮಗಳು</string>
+    <string name="onboarding_grid_events_value">ಕ್ರೀಡಾ ದಿನದ ಫೋಟೋಗಳು</string>
 
     <!-- Country selection -->
-    <string name="country_title">ನಿಮ್ಮ ದೇಶವನ್ನು ಆಯ್ಕೆಮಾಡಿ</string>
-    <string name="country_subtitle">ನಿಮ್ಮ ಕಾಲೇಜ್ ಪಟ್ಟಿ, ಕರೆನ್ಸಿ ಮತ್ತು ಫೋನ್ ಕೋಡ್ ತೋರಿಸಲು ಇದನ್ನು ಬಳಸುತ್ತೇವೆ.</string>
-    <string name="country_search_hint">ದೇಶವನ್ನು ಹುಡುಕಿ</string>
-    <string name="country_detected">ನಿಮ್ಮ ಸ್ಥಳದಿಂದ ಪತ್ತೆಯಾಗಿದೆ: %1$s</string>
-    <string name="country_continue">%1$s ಜೊತೆ ಮುಂದುವರಿಸಿ</string>
+    <string name="country_step">ಹಂತ 1 / 2 · ಪ್ರದೇಶ</string>
+    <string name="country_title">ನಿಮ್ಮ ಕಾಲೇಜ್ ಎಲ್ಲಿದೆ?</string>
+    <string name="country_subtitle">ಸರಿಯಾದ ಕಾಲೇಜ್ ಪಟ್ಟಿ, ಫೋನ್ ಕೋಡ್ ಮತ್ತು ಕರೆನ್ಸಿ ತೋರಿಸಲು ನಿಮ್ಮ ದೇಶವನ್ನು ಬಳಸುತ್ತೇವೆ.</string>
+    <string name="country_detected_label">ನಿಮ್ಮ ಸ್ಥಳದಿಂದ ಪತ್ತೆಯಾಗಿದೆ</string>
+    <string name="country_choose_another">ಅಥವಾ ಬೇರೆ ದೇಶವನ್ನು ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="country_search_hint">ದೇಶ ಅಥವಾ ಕೋಡ್ ಹುಡುಕಿ, ಉದಾ. +971</string>
+    <string name="country_popular">ನಮ್ಮ ಕಾಲೇಜುಗಳಲ್ಲಿ ಜನಪ್ರಿಯ</string>
+    <string name="country_all">ಎಲ್ಲಾ ದೇಶಗಳು A–Z</string>
+    <string name="country_count">%1$d ದೇಶಗಳು</string>
+    <string name="country_continue">ಮುಂದುವರಿಸಿ</string>
+    <string name="country_results">ಫಲಿತಾಂಶಗಳು</string>
+    <string name="country_matches">%1$d ಹೊಂದಾಣಿಕೆಗಳು</string>
+    <string name="country_no_match">“%1$s” ಗೆ ಯಾವುದೇ ದೇಶ ಹೊಂದಿಕೆಯಾಗುವುದಿಲ್ಲ</string>
+    <string name="country_no_match_hint">ಕಾಗುಣಿತ ಪರಿಶೀಲಿಸಿ, ಅಥವಾ +91 ನಂತಹ ಫೋನ್ ಕೋಡ್‌ನಿಂದ ಹುಡುಕಿ. ನಿಮ್ಮ ದೇಶ ಪಟ್ಟಿಯಲ್ಲಿ ಇಲ್ಲದಿದ್ದರೆ, ನಿಮ್ಮ ಕಾಲೇಜ್ ಅಲ್ಲಿ ಇನ್ನೂ GradIt ಬಳಸುವುದಿಲ್ಲ.</string>
+    <string name="country_clear_search">ಹುಡುಕಾಟ ತೆರವುಗೊಳಿಸಿ</string>
+    <string name="country_globe_desc">ಫಲಿತಾಂಶಗಳಿಲ್ಲ</string>
+    <string name="country_privacy_note">ದೇಶ ಸೂಚಿಸಲು ನಿಮ್ಮ ಸ್ಥಳವನ್ನು ಒಮ್ಮೆ ಮಾತ್ರ ಬಳಸುತ್ತೇವೆ. ಇದನ್ನು ಸಂಗ್ರಹಿಸಲಾಗುವುದಿಲ್ಲ ಅಥವಾ ಹಂಚಿಕೊಳ್ಳಲಾಗುವುದಿಲ್ಲ.</string>
 
     <!-- Shared UI -->
     <string name="back_content_desc">ಹಿಂದೆ</string>

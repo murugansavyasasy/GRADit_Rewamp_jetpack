@@ -8,6 +8,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.vsca.vsnapvoicecollege.data.OnboardingPreferences
+import com.vsca.vsnapvoicecollege.data.RegionPreferences
 import com.vsca.vsnapvoicecollege.data.SessionPreferences
 import com.vsca.vsnapvoicecollege.ui.auth.navigation.AuthRoute
 import com.vsca.vsnapvoicecollege.ui.auth.navigation.authNavGraph
@@ -55,6 +56,11 @@ fun AppNavHost(
                         popUpTo(AppRoute.SPLASH) { inclusive = true }
                     }
                 },
+                onNavigateToCountry = {
+                    navController.navigate(AppRoute.COUNTRY) {
+                        popUpTo(AppRoute.SPLASH) { inclusive = true }
+                    }
+                },
             )
         }
 
@@ -70,10 +76,13 @@ fun AppNavHost(
         }
 
         composable(AppRoute.COUNTRY) {
+            val context = LocalContext.current
             CountrySelectionScreen(
                 onBack = { navController.popBackStack() },
                 onContinue = { _ ->
-                    // TODO: persist the selected country for the auth flow.
+                    // Region confirmed — later launches can skip straight to sign in.
+                    // TODO: also persist which country was chosen for the auth flow.
+                    RegionPreferences.setSelected(context, true)
                     navController.navigate(AuthRoute.GRAPH) {
                         popUpTo(AppRoute.SPLASH) { inclusive = true }
                     }

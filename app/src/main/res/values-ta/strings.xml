@@ -15,35 +15,71 @@
     <!-- Onboarding / app introduction -->
     <string name="onboarding_skip">தவிர்</string>
     <string name="onboarding_next">அடுத்து</string>
+    <string name="onboarding_get_started">தொடங்கவும்</string>
     <string name="onboarding_page_counter">%2$d இல் %1$d</string>
-
-    <string name="onboarding_title_1">கல்லூரி பற்றிய அனைத்தும், ஒரே இடத்தில்</string>
-    <string name="onboarding_subtitle_1">வருகை, வீட்டுப்பாடம், தேர்வுகள் மற்றும் மதிப்பெண்கள் — ஆசிரியர்கள் பதிவிட்ட உடனேயே புதுப்பிக்கப்படும்.</string>
-    <string name="onboarding_badge_attendance">வருகை 92%</string>
-    <string name="onboarding_badge_ia">IA 2 · 12 Oct</string>
-    <string name="onboarding_badge_cgpa">CGPA 8.4</string>
-
-    <string name="onboarding_title_2">ஆசிரியர்களுடன் எளிதாகப் பேசுங்கள்</string>
-    <string name="onboarding_subtitle_2">அறிவிப்புகளைப் படியுங்கள், ஆசிரியர்களின் குரல் குறிப்புகளைக் கேளுங்கள், ஒரே தட்டில் பதிலளியுங்கள் — இனி சுற்றறிக்கைகள் தவறாது.</string>
-    <string name="onboarding_badge_new_notice">புதிய அறிவிப்பு</string>
-    <string name="onboarding_badge_voice">குரல் · 0:24</string>
-    <string name="onboarding_badge_unread">2 படிக்காதவை</string>
-
-    <string name="onboarding_title_3">கட்டணம் செலுத்தி பேருந்தைக் கண்காணியுங்கள்</string>
-    <string name="onboarding_subtitle_3">பாதுகாப்பாகக் கட்டணம் செலுத்தி, கட்டணச் சான்றை பதிவேற்றி, கல்லூரி பேருந்து உங்கள் நிறுத்தத்தை எப்போது அடையும் என்று பாருங்கள்.</string>
-    <string name="onboarding_badge_due">₹24,500 நிலுவை</string>
-    <string name="onboarding_badge_bus">பேருந்து 12 நிமிடத்தில்</string>
-    <string name="onboarding_badge_receipt">ரசீது சேமிக்கப்பட்டது</string>
-
-    <string name="onboarding_icon_chat_desc">செய்திகள்</string>
-    <string name="onboarding_icon_bus_desc">பேருந்து கண்காணிப்பு</string>
+    <string name="onboarding_pill_1">குரல் தொடர்பு</string>
+    <string name="onboarding_title_1">ஒரு குரல் குறிப்பில் ஒவ்வொரு பெற்றோரிடமும் பேசுங்கள்</string>
+    <string name="onboarding_subtitle_1">ஆசிரியர்கள் ஒருமுறை பதிவு செய்கிறார்கள், ஒவ்வொரு பெற்றோரும் அதைக் கேட்கிறார்கள் — எழுத்துப்பதிவு மற்றும் “கேட்டது” ரசீதுடன். பெற்றோர் எப்போது வேண்டுமானாலும் கேட்டு ஒரே தட்டில் பதிலளிக்கலாம்.</string>
+    <string name="onboarding_rec_recording">பதிவு · 0:18</string>
+    <string name="onboarding_rec_to_parents">62 பெற்றோருக்கு</string>
+    <string name="onboarding_rec_heard_title">62 இல் 48 பெற்றோர் கேட்டனர்</string>
+    <string name="onboarding_rec_heard_sub">எழுத்துப்பதிவு ஆங்கிலம் மற்றும் தமிழில் அனுப்பப்பட்டது</string>
+    <string name="onboarding_rec_mic_desc">பதிவு</string>
+    <string name="onboarding_rec_send_desc">அனுப்பு</string>
+    <string name="onboarding_rec_delete_desc">நீக்கு</string>
+    <string name="onboarding_pill_2">புவி-வேலி வருகை</string>
+    <string name="onboarding_title_2">வளாகத்தில் சரிபார்க்கப்பட்ட வருகை</string>
+    <string name="onboarding_subtitle_2">ஊழியர்கள் ஒரே தட்டில், கல்லூரி புவி-வேலிக்குள் மட்டுமே செக் இன் செய்கிறார்கள். பதிவேடுகள் இல்லை, போலிகள் இல்லை, முதல்வர் நேரடியாகப் பார்க்கிறார்.</string>
+    <string name="onboarding_geo_campus">UCE சென்னை வளாகம்</string>
+    <string name="onboarding_geo_inside">புவி-வேலிக்குள்</string>
+    <string name="onboarding_geo_checkin_title">செக் இன் · 08:52 AM</string>
+    <string name="onboarding_geo_checkin_sub">நிர்வாக பிளாக் · இருப்பிடம் சரிபார்க்கப்பட்டது, 12 மீ</string>
+    <string name="onboarding_geo_ontime">சரியான நேரத்தில்</string>
+    <string name="onboarding_pill_3">ரெஸ்யூம் பில்டர்</string>
+    <string name="onboarding_title_3">வேலைவாய்ப்புக்குத் தயாரான ரெஸ்யூமை உருவாக்குங்கள்</string>
+    <string name="onboarding_subtitle_3">கல்லூரியின் மதிப்பெண்கள், திட்டங்கள், சான்றிதழ்கள் தானாக நிரப்பப்படுகின்றன. ஒரு வார்ப்புருவைத் தேர்ந்தெடுத்து வேலைவாய்ப்பு இயக்கங்களுக்கு PDF பதிவிறக்குங்கள்.</string>
+    <string name="onboarding_resume_initials">AR</string>
+    <string name="onboarding_resume_name">Aarav R.</string>
+    <string name="onboarding_resume_detail">B.E. CSE · UCE Chennai · CGPA 8.4</string>
+    <string name="onboarding_resume_skills">திறன்கள்</string>
+    <string name="onboarding_resume_skill_1">Python</string>
+    <string name="onboarding_resume_skill_2">SQL</string>
+    <string name="onboarding_resume_skill_3">React</string>
+    <string name="onboarding_resume_skill_4">Cloud Computing</string>
+    <string name="onboarding_resume_project_label">திட்டம்</string>
+    <string name="onboarding_resume_project">ஸ்மார்ட் வருகை கியோஸ்க் · Techfest \'26 சிறந்த திட்டம்</string>
+    <string name="onboarding_resume_progress">ரெஸ்யூம் 80% முடிந்தது</string>
+    <string name="onboarding_resume_pdf">PDF</string>
+    <string name="onboarding_pill_4">மற்றும் அனைத்தும்</string>
+    <string name="onboarding_title_4">உங்கள் முழு கல்லூரியும், ஒரே செயலியில்</string>
+    <string name="onboarding_subtitle_4">வருகை, கட்டணம், கோப்புகள், நிகழ்வுகள், மதிப்பெண்கள் மற்றும் பல — கல்லூரி பதிவிட்ட உடனேயே புதுப்பிக்கப்படும்.</string>
+    <string name="onboarding_grid_attendance_label">வருகை</string>
+    <string name="onboarding_grid_attendance_value">இந்த செமஸ்டர் 92%</string>
+    <string name="onboarding_grid_fee_label">கட்டண விவரங்கள்</string>
+    <string name="onboarding_grid_fee_value">₹24,500 நிலுவை 15 Oct</string>
+    <string name="onboarding_grid_files_label">கோப்புகள்</string>
+    <string name="onboarding_grid_files_value">IA 2 timetable.pdf</string>
+    <string name="onboarding_grid_events_label">நிகழ்வுகள்</string>
+    <string name="onboarding_grid_events_value">விளையாட்டு தின படங்கள்</string>
 
     <!-- Country selection -->
-    <string name="country_title">உங்கள் நாட்டைத் தேர்ந்தெடுக்கவும்</string>
-    <string name="country_subtitle">உங்கள் கல்லூரி பட்டியல், நாணயம் மற்றும் தொலைபேசிக் குறியீட்டைக் காட்ட இதைப் பயன்படுத்துகிறோம்.</string>
-    <string name="country_search_hint">நாட்டைத் தேடு</string>
-    <string name="country_detected">உங்கள் இருப்பிடத்திலிருந்து கண்டறியப்பட்டது: %1$s</string>
-    <string name="country_continue">%1$s உடன் தொடரவும்</string>
+    <string name="country_step">படி 1 / 2 · பகுதி</string>
+    <string name="country_title">உங்கள் கல்லூரி எங்கே?</string>
+    <string name="country_subtitle">சரியான கல்லூரி பட்டியல், தொலைபேசிக் குறியீடு மற்றும் நாணயத்தைக் காட்ட உங்கள் நாட்டைப் பயன்படுத்துகிறோம்.</string>
+    <string name="country_detected_label">உங்கள் இருப்பிடத்திலிருந்து கண்டறியப்பட்டது</string>
+    <string name="country_choose_another">அல்லது வேறு நாட்டைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="country_search_hint">நாடு அல்லது குறியீட்டைத் தேடு, எ.கா. +971</string>
+    <string name="country_popular">எங்கள் கல்லூரிகளில் பிரபலமானவை</string>
+    <string name="country_all">அனைத்து நாடுகளும் A–Z</string>
+    <string name="country_count">%1$d நாடுகள்</string>
+    <string name="country_continue">தொடரவும்</string>
+    <string name="country_results">முடிவுகள்</string>
+    <string name="country_matches">%1$d பொருத்தங்கள்</string>
+    <string name="country_no_match">“%1$s” உடன் எந்த நாடும் பொருந்தவில்லை</string>
+    <string name="country_no_match_hint">எழுத்துப்பிழையைச் சரிபார்க்கவும், அல்லது +91 போன்ற தொலைபேசிக் குறியீட்டால் தேடவும். உங்கள் நாடு பட்டியலில் இல்லையெனில், உங்கள் கல்லூரி அங்கு இன்னும் GradIt ஐப் பயன்படுத்தவில்லை.</string>
+    <string name="country_clear_search">தேடலை அழி</string>
+    <string name="country_globe_desc">முடிவுகள் இல்லை</string>
+    <string name="country_privacy_note">நாட்டைப் பரிந்துரைக்க உங்கள் இருப்பிடத்தை ஒருமுறை மட்டுமே பயன்படுத்துகிறோம். இது சேமிக்கப்படவோ பகிரப்படவோ இல்லை.</string>
 
     <!-- Shared UI -->
     <string name="back_content_desc">பின்</string>

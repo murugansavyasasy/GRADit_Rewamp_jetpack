@@ -11,4 +11,6 @@ data class SplashUiState(
     val isAuthenticated: Boolean = false,
     /** True once the one-time onboarding intro has been completed on this install. */
     val onboardingCompleted: Boolean = false,
+    /** True once the user confirmed their region/country via "Continue". */
+    val regionSelected: Boolean = false,
 )

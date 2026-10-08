@@ -26,6 +26,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.vsca.vsnapvoicecollege.R
+import com.vsca.vsnapvoicecollege.ui.auth.roleselection.RoleSelectionScreen
 import com.vsca.vsnapvoicecollege.ui.components.SystemBarIcons
 import com.vsca.vsnapvoicecollege.ui.dashboard.academics.AcademicsScreen
 import com.vsca.vsnapvoicecollege.ui.dashboard.changepassword.ChangePasswordScreen
@@ -65,11 +66,13 @@ private val HOME_SUBROUTES = setOf(ROUTE_NOTIFICATIONS)
 private const val ROUTE_SETTINGS = "me/settings"
 private const val ROUTE_CHANGE_PASSWORD = "me/change_password"
 private const val ROUTE_RAISE_CONCERN = "me/raise_concern"
+private const val ROUTE_ROLE_SELECTION = "me/role_selection"
 private const val ROUTE_FAQ = "me/faq"
 private const val ROUTE_PRIVACY = "me/privacy"
 private const val ROUTE_TERMS = "me/terms"
 private val ME_SUBROUTES = setOf(
-    ROUTE_SETTINGS, ROUTE_CHANGE_PASSWORD, ROUTE_RAISE_CONCERN, ROUTE_FAQ, ROUTE_PRIVACY, ROUTE_TERMS,
+    ROUTE_SETTINGS, ROUTE_CHANGE_PASSWORD, ROUTE_RAISE_CONCERN, ROUTE_ROLE_SELECTION,
+    ROUTE_FAQ, ROUTE_PRIVACY, ROUTE_TERMS,
 )
 
 /**
@@ -155,6 +158,23 @@ fun MainScreen(
                 ProfileScreen(
                     onSignOut = onSignOut,
                     onOpenSettings = { navController.navigate(ROUTE_SETTINGS) },
+                    onAllRoles = { navController.navigate(ROUTE_ROLE_SELECTION) },
+                )
+            }
+            composable(ROUTE_ROLE_SELECTION) {
+                RoleSelectionScreen(
+                    onBack = { navController.popBackStack() },
+                    onContinue = {
+                        // Remove the role-selection screen from the Me tab's back stack
+                        // first, so returning to Me shows the profile (not this screen).
+                        navController.popBackStack(MainTab.ME.route, inclusive = false)
+                        // Switching role lands on the Home tab.
+                        navController.navigate(MainTab.HOME.route) {
+                            popUpTo(navController.graph.findStartDestination().id) { saveState = true }
+                            launchSingleTop = true
+                            restoreState = true
+                        }
+                    },
                 )
             }
             composable(ROUTE_SETTINGS) {
@@ -180,7 +200,10 @@ fun MainScreen(
                 )
             }
             composable(ROUTE_FAQ) {
-                FaqScreen(onBack = { navController.popBackStack() })
+                FaqScreen(
+                    onBack = { navController.popBackStack() },
+                    onRaiseConcern = { navController.navigate(ROUTE_RAISE_CONCERN) },
+                )
             }
             composable(ROUTE_PRIVACY) {
                 PrivacyPolicyScreen(

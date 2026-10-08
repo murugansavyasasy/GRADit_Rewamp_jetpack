@@ -14,35 +14,79 @@
     <!-- Onboarding / app introduction -->
     <string name="onboarding_skip">Skip</string>
     <string name="onboarding_next">Next</string>
+    <string name="onboarding_get_started">Get started</string>
     <string name="onboarding_page_counter">%1$d of %2$d</string>
 
-    <string name="onboarding_title_1">Everything about college, in one place</string>
-    <string name="onboarding_subtitle_1">Attendance, homework, exams and marks — updated the moment teachers post them.</string>
-    <string name="onboarding_badge_attendance">Attendance 92%</string>
-    <string name="onboarding_badge_ia">IA 2 · 12 Oct</string>
-    <string name="onboarding_badge_cgpa">CGPA 8.4</string>
+    <!-- Onboarding page 1 · Voice communication -->
+    <string name="onboarding_pill_1">Voice communication</string>
+    <string name="onboarding_title_1">Talk to every parent in one voice note</string>
+    <string name="onboarding_subtitle_1">Teachers record once and every parent hears it, with a transcript and a “Heard” receipt. Parents play it anytime and reply in a tap.</string>
+    <string name="onboarding_rec_recording">Recording · 0:18</string>
+    <string name="onboarding_rec_to_parents">To 62 parents</string>
+    <string name="onboarding_rec_heard_title">Heard by 48 of 62 parents</string>
+    <string name="onboarding_rec_heard_sub">Transcript sent in English and Tamil</string>
+    <string name="onboarding_rec_mic_desc">Record</string>
+    <string name="onboarding_rec_send_desc">Send</string>
+    <string name="onboarding_rec_delete_desc">Delete</string>
 
-    <string name="onboarding_title_2">Talk to teachers easily</string>
-    <string name="onboarding_subtitle_2">Read notices, hear voice notes from faculty and reply in a tap — no more missed circulars.</string>
-    <string name="onboarding_badge_new_notice">New notice</string>
-    <string name="onboarding_badge_voice">Voice · 0:24</string>
-    <string name="onboarding_badge_unread">2 unread</string>
+    <!-- Onboarding page 2 · Geo-fenced attendance -->
+    <string name="onboarding_pill_2">Geo-fenced attendance</string>
+    <string name="onboarding_title_2">Attendance verified on campus</string>
+    <string name="onboarding_subtitle_2">Staff check in with one tap, only inside the college geo-fence. No registers, no proxies, and the principal sees it live.</string>
+    <string name="onboarding_geo_campus">UCE Chennai campus</string>
+    <string name="onboarding_geo_inside">Inside geo-fence</string>
+    <string name="onboarding_geo_checkin_title">Checked in · 08:52 AM</string>
+    <string name="onboarding_geo_checkin_sub">Admin block · location verified, 12 m</string>
+    <string name="onboarding_geo_ontime">On time</string>
 
-    <string name="onboarding_title_3">Pay fees and track the bus</string>
-    <string name="onboarding_subtitle_3">Pay securely, upload payment proof and see exactly when the college bus will reach your stop.</string>
-    <string name="onboarding_badge_due">₹24,500 due</string>
-    <string name="onboarding_badge_bus">Bus in 12 min</string>
-    <string name="onboarding_badge_receipt">Receipt saved</string>
+    <!-- Onboarding page 3 · Resume Builder -->
+    <string name="onboarding_pill_3">Resume Builder</string>
+    <string name="onboarding_title_3">Build a placement-ready resume</string>
+    <string name="onboarding_subtitle_3">Marks, projects and certificates from the college fill in automatically. Pick a template and download a PDF for placement drives.</string>
+    <string name="onboarding_resume_initials">AR</string>
+    <string name="onboarding_resume_name">Aarav R.</string>
+    <string name="onboarding_resume_detail">B.E. CSE · UCE Chennai · CGPA 8.4</string>
+    <string name="onboarding_resume_skills">SKILLS</string>
+    <string name="onboarding_resume_skill_1">Python</string>
+    <string name="onboarding_resume_skill_2">SQL</string>
+    <string name="onboarding_resume_skill_3">React</string>
+    <string name="onboarding_resume_skill_4">Cloud Computing</string>
+    <string name="onboarding_resume_project_label">PROJECT</string>
+    <string name="onboarding_resume_project">Smart attendance kiosk · Techfest \'26 best project</string>
+    <string name="onboarding_resume_progress">Resume 80% complete</string>
+    <string name="onboarding_resume_pdf">PDF</string>
 
-    <string name="onboarding_icon_chat_desc">Messages</string>
-    <string name="onboarding_icon_bus_desc">Bus tracking</string>
+    <!-- Onboarding page 4 · And everything else -->
+    <string name="onboarding_pill_4">And everything else</string>
+    <string name="onboarding_title_4">Your whole college, in one app</string>
+    <string name="onboarding_subtitle_4">Attendance, fees, files, events, marks and more — updated the moment the college posts them.</string>
+    <string name="onboarding_grid_attendance_label">Attendance</string>
+    <string name="onboarding_grid_attendance_value">92% this semester</string>
+    <string name="onboarding_grid_fee_label">Fee Details</string>
+    <string name="onboarding_grid_fee_value">₹24,500 due 15 Oct</string>
+    <string name="onboarding_grid_files_label">Files</string>
+    <string name="onboarding_grid_files_value">IA 2 timetable.pdf</string>
+    <string name="onboarding_grid_events_label">Events</string>
+    <string name="onboarding_grid_events_value">Sports Day photos</string>
 
     <!-- Country selection -->
-    <string name="country_title">Select your country</string>
-    <string name="country_subtitle">We use this to show your college list, currency and phone code.</string>
-    <string name="country_search_hint">Search country</string>
-    <string name="country_detected">Detected from your location: %1$s</string>
-    <string name="country_continue">Continue with %1$s</string>
+    <string name="country_step">Step 1 of 2 · Region</string>
+    <string name="country_title">Where is your college?</string>
+    <string name="country_subtitle">We use your country to show the right college list, phone code and currency.</string>
+    <string name="country_detected_label">DETECTED FROM YOUR LOCATION</string>
+    <string name="country_choose_another">Or choose another country</string>
+    <string name="country_search_hint">Search country or code, e.g. +971</string>
+    <string name="country_popular">POPULAR WITH OUR COLLEGES</string>
+    <string name="country_all">ALL COUNTRIES A–Z</string>
+    <string name="country_count">%1$d countries</string>
+    <string name="country_continue">Continue</string>
+    <string name="country_results">RESULTS</string>
+    <string name="country_matches">%1$d matches</string>
+    <string name="country_no_match">No country matches “%1$s”</string>
+    <string name="country_no_match_hint">Check the spelling, or search by phone code such as +91. If your country isn\'t listed, your college doesn\'t use GradIt there yet.</string>
+    <string name="country_clear_search">Clear search</string>
+    <string name="country_globe_desc">No results</string>
+    <string name="country_privacy_note">We only use your location once, to suggest a country. It isn\'t stored or shared.</string>
 
     <!-- Shared UI -->
     <string name="back_content_desc">Back</string>

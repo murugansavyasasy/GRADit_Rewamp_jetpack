@@ -15,35 +15,71 @@
     <!-- Onboarding / app introduction -->
     <string name="onboarding_skip">ഒഴിവാക്കുക</string>
     <string name="onboarding_next">അടുത്തത്</string>
+    <string name="onboarding_get_started">ആരംഭിക്കുക</string>
     <string name="onboarding_page_counter">%2$d-ൽ %1$d</string>
-
-    <string name="onboarding_title_1">കോളേജിനെക്കുറിച്ചുള്ള എല്ലാം, ഒരിടത്ത്</string>
-    <string name="onboarding_subtitle_1">ഹാജർ, ഹോംവർക്ക്, പരീക്ഷകൾ, മാർക്കുകൾ — അധ്യാപകർ പോസ്റ്റ് ചെയ്യുന്ന ഉടൻ അപ്‌ഡേറ്റ് ആകും.</string>
-    <string name="onboarding_badge_attendance">ഹാജർ 92%</string>
-    <string name="onboarding_badge_ia">IA 2 · 12 Oct</string>
-    <string name="onboarding_badge_cgpa">CGPA 8.4</string>
-
-    <string name="onboarding_title_2">അധ്യാപകരുമായി എളുപ്പത്തിൽ സംസാരിക്കുക</string>
-    <string name="onboarding_subtitle_2">അറിയിപ്പുകൾ വായിക്കുക, അധ്യാപകരുടെ വോയ്സ് കുറിപ്പുകൾ കേൾക്കുക, ഒറ്റ ടാപ്പിൽ മറുപടി നൽകുക — ഇനി സർക്കുലറുകൾ നഷ്ടപ്പെടില്ല.</string>
-    <string name="onboarding_badge_new_notice">പുതിയ അറിയിപ്പ്</string>
-    <string name="onboarding_badge_voice">വോയ്സ് · 0:24</string>
-    <string name="onboarding_badge_unread">2 വായിക്കാത്തവ</string>
-
-    <string name="onboarding_title_3">ഫീസ് അടയ്ക്കുക, ബസ് ട്രാക്ക് ചെയ്യുക</string>
-    <string name="onboarding_subtitle_3">സുരക്ഷിതമായി അടയ്ക്കുക, പേയ്‌മെന്റ് തെളിവ് അപ്‌ലോഡ് ചെയ്യുക, കോളേജ് ബസ് നിങ്ങളുടെ സ്റ്റോപ്പിൽ എപ്പോൾ എത്തുമെന്ന് കാണുക.</string>
-    <string name="onboarding_badge_due">₹24,500 കുടിശ്ശിക</string>
-    <string name="onboarding_badge_bus">ബസ് 12 മിനിറ്റിൽ</string>
-    <string name="onboarding_badge_receipt">രസീത് സംരക്ഷിച്ചു</string>
-
-    <string name="onboarding_icon_chat_desc">സന്ദേശങ്ങൾ</string>
-    <string name="onboarding_icon_bus_desc">ബസ് ട്രാക്കിംഗ്</string>
+    <string name="onboarding_pill_1">ശബ്ദ ആശയവിനിമയം</string>
+    <string name="onboarding_title_1">ഒരൊറ്റ വോയ്സ് നോട്ടിൽ എല്ലാ രക്ഷിതാക്കളോടും സംസാരിക്കുക</string>
+    <string name="onboarding_subtitle_1">അധ്യാപകർ ഒരിക്കൽ റെക്കോർഡ് ചെയ്യുന്നു, ഓരോ രക്ഷിതാവും അത് കേൾക്കുന്നു — ട്രാൻസ്ക്രിപ്റ്റും “കേട്ടു” രസീതും സഹിതം. രക്ഷിതാക്കൾക്ക് എപ്പോൾ വേണമെങ്കിലും കേട്ട് ഒറ്റ ടാപ്പിൽ മറുപടി നൽകാം.</string>
+    <string name="onboarding_rec_recording">റെക്കോർഡിംഗ് · 0:18</string>
+    <string name="onboarding_rec_to_parents">62 രക്ഷിതാക്കൾക്ക്</string>
+    <string name="onboarding_rec_heard_title">62-ൽ 48 രക്ഷിതാക്കൾ കേട്ടു</string>
+    <string name="onboarding_rec_heard_sub">ട്രാൻസ്ക്രിപ്റ്റ് ഇംഗ്ലീഷിലും തമിഴിലും അയച്ചു</string>
+    <string name="onboarding_rec_mic_desc">റെക്കോർഡ്</string>
+    <string name="onboarding_rec_send_desc">അയയ്ക്കുക</string>
+    <string name="onboarding_rec_delete_desc">ഇല്ലാതാക്കുക</string>
+    <string name="onboarding_pill_2">ജിയോ-ഫെൻസ് ഹാജർ</string>
+    <string name="onboarding_title_2">ക്യാമ്പസിൽ പരിശോധിച്ച ഹാജർ</string>
+    <string name="onboarding_subtitle_2">സ്റ്റാഫ് ഒറ്റ ടാപ്പിൽ, കോളേജ് ജിയോ-ഫെൻസിനുള്ളിൽ മാത്രം ചെക്ക് ഇൻ ചെയ്യുന്നു. രജിസ്റ്ററുകളില്ല, പ്രോക്സികളില്ല, പ്രിൻസിപ്പൽ ഇത് തത്സമയം കാണുന്നു.</string>
+    <string name="onboarding_geo_campus">UCE ചെന്നൈ ക്യാമ്പസ്</string>
+    <string name="onboarding_geo_inside">ജിയോ-ഫെൻസിനുള്ളിൽ</string>
+    <string name="onboarding_geo_checkin_title">ചെക്ക് ഇൻ · 08:52 AM</string>
+    <string name="onboarding_geo_checkin_sub">അഡ്മിൻ ബ്ലോക്ക് · ലൊക്കേഷൻ പരിശോധിച്ചു, 12 മീ</string>
+    <string name="onboarding_geo_ontime">സമയത്ത്</string>
+    <string name="onboarding_pill_3">റെസ്യൂമെ ബിൽഡർ</string>
+    <string name="onboarding_title_3">പ്ലേസ്‌മെന്റിന് തയ്യാറായ റെസ്യൂമെ ഉണ്ടാക്കുക</string>
+    <string name="onboarding_subtitle_3">കോളേജിൽ നിന്നുള്ള മാർക്കുകൾ, പ്രോജക്ടുകൾ, സർട്ടിഫിക്കറ്റുകൾ സ്വയമേവ നിറയുന്നു. ഒരു ടെംപ്ലേറ്റ് തിരഞ്ഞെടുത്ത് പ്ലേസ്‌മെന്റ് ഡ്രൈവുകൾക്കായി PDF ഡൗൺലോഡ് ചെയ്യുക.</string>
+    <string name="onboarding_resume_initials">AR</string>
+    <string name="onboarding_resume_name">Aarav R.</string>
+    <string name="onboarding_resume_detail">B.E. CSE · UCE Chennai · CGPA 8.4</string>
+    <string name="onboarding_resume_skills">വൈദഗ്ധ്യങ്ങൾ</string>
+    <string name="onboarding_resume_skill_1">Python</string>
+    <string name="onboarding_resume_skill_2">SQL</string>
+    <string name="onboarding_resume_skill_3">React</string>
+    <string name="onboarding_resume_skill_4">Cloud Computing</string>
+    <string name="onboarding_resume_project_label">പ്രോജക്റ്റ്</string>
+    <string name="onboarding_resume_project">സ്മാർട്ട് അറ്റൻഡൻസ് കിയോസ്ക് · Techfest \'26 മികച്ച പ്രോജക്റ്റ്</string>
+    <string name="onboarding_resume_progress">റെസ്യൂമെ 80% പൂർത്തിയായി</string>
+    <string name="onboarding_resume_pdf">PDF</string>
+    <string name="onboarding_pill_4">മറ്റെല്ലാം</string>
+    <string name="onboarding_title_4">നിങ്ങളുടെ മുഴുവൻ കോളേജും, ഒരൊറ്റ ആപ്പിൽ</string>
+    <string name="onboarding_subtitle_4">ഹാജർ, ഫീസ്, ഫയലുകൾ, ഇവന്റുകൾ, മാർക്കുകൾ തുടങ്ങിയവ — കോളേജ് പോസ്റ്റ് ചെയ്യുന്ന നിമിഷം അപ്‌ഡേറ്റ് ആകും.</string>
+    <string name="onboarding_grid_attendance_label">ഹാജർ</string>
+    <string name="onboarding_grid_attendance_value">ഈ സെമസ്റ്റർ 92%</string>
+    <string name="onboarding_grid_fee_label">ഫീസ് വിവരങ്ങൾ</string>
+    <string name="onboarding_grid_fee_value">₹24,500 കുടിശ്ശിക 15 Oct</string>
+    <string name="onboarding_grid_files_label">ഫയലുകൾ</string>
+    <string name="onboarding_grid_files_value">IA 2 timetable.pdf</string>
+    <string name="onboarding_grid_events_label">ഇവന്റുകൾ</string>
+    <string name="onboarding_grid_events_value">സ്പോർട്സ് ഡേ ഫോട്ടോകൾ</string>
 
     <!-- Country selection -->
-    <string name="country_title">നിങ്ങളുടെ രാജ്യം തിരഞ്ഞെടുക്കുക</string>
-    <string name="country_subtitle">നിങ്ങളുടെ കോളേജ് പട്ടിക, കറൻസി, ഫോൺ കോഡ് കാണിക്കാൻ ഇത് ഉപയോഗിക്കുന്നു.</string>
-    <string name="country_search_hint">രാജ്യം തിരയുക</string>
-    <string name="country_detected">നിങ്ങളുടെ ലൊക്കേഷനിൽ നിന്ന് കണ്ടെത്തി: %1$s</string>
-    <string name="country_continue">%1$s ഉപയോഗിച്ച് തുടരുക</string>
+    <string name="country_step">ഘട്ടം 1 / 2 · മേഖല</string>
+    <string name="country_title">നിങ്ങളുടെ കോളേജ് എവിടെയാണ്?</string>
+    <string name="country_subtitle">ശരിയായ കോളേജ് പട്ടിക, ഫോൺ കോഡ്, കറൻസി എന്നിവ കാണിക്കാൻ നിങ്ങളുടെ രാജ്യം ഉപയോഗിക്കുന്നു.</string>
+    <string name="country_detected_label">നിങ്ങളുടെ ലൊക്കേഷനിൽ നിന്ന് കണ്ടെത്തി</string>
+    <string name="country_choose_another">അല്ലെങ്കിൽ മറ്റൊരു രാജ്യം തിരഞ്ഞെടുക്കുക</string>
+    <string name="country_search_hint">രാജ്യം അല്ലെങ്കിൽ കോഡ് തിരയുക, ഉദാ. +971</string>
+    <string name="country_popular">ഞങ്ങളുടെ കോളേജുകളിൽ ജനപ്രിയം</string>
+    <string name="country_all">എല്ലാ രാജ്യങ്ങളും A–Z</string>
+    <string name="country_count">%1$d രാജ്യങ്ങൾ</string>
+    <string name="country_continue">തുടരുക</string>
+    <string name="country_results">ഫലങ്ങൾ</string>
+    <string name="country_matches">%1$d പൊരുത്തങ്ങൾ</string>
+    <string name="country_no_match">“%1$s” യുമായി ഒരു രാജ്യവും പൊരുത്തപ്പെടുന്നില്ല</string>
+    <string name="country_no_match_hint">അക്ഷരവിന്യാസം പരിശോധിക്കുക, അല്ലെങ്കിൽ +91 പോലുള്ള ഫോൺ കോഡ് ഉപയോഗിച്ച് തിരയുക. നിങ്ങളുടെ രാജ്യം പട്ടികയിലില്ലെങ്കിൽ, നിങ്ങളുടെ കോളേജ് അവിടെ ഇതുവരെ GradIt ഉപയോഗിക്കുന്നില്ല.</string>
+    <string name="country_clear_search">തിരയൽ മായ്ക്കുക</string>
+    <string name="country_globe_desc">ഫലങ്ങളില്ല</string>
+    <string name="country_privacy_note">ഒരു രാജ്യം നിർദ്ദേശിക്കാൻ നിങ്ങളുടെ ലൊക്കേഷൻ ഒരിക്കൽ മാത്രം ഉപയോഗിക്കുന്നു. ഇത് സംഭരിക്കുകയോ പങ്കിടുകയോ ഇല്ല.</string>
 
     <!-- Shared UI -->
     <string name="back_content_desc">പിന്നോട്ട്</string>

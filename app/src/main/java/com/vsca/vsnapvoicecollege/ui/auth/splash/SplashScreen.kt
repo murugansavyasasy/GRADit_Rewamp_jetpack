@@ -48,6 +48,7 @@ fun SplashScreen(
     onGetStarted: () -> Unit,
     onNavigateToHome: () -> Unit,
     onNavigateToAuth: () -> Unit,
+    onNavigateToCountry: () -> Unit,
     modifier: Modifier = Modifier,
     viewModel: SplashViewModel = viewModel(),
 ) {
@@ -56,12 +57,19 @@ fun SplashScreen(
     // Brand-blue background → light system-bar icons.
     SystemBarIcons(darkIcons = false)
 
-    LaunchedEffect(uiState.isReady, uiState.isAuthenticated, uiState.onboardingCompleted) {
+    LaunchedEffect(
+        uiState.isReady,
+        uiState.isAuthenticated,
+        uiState.onboardingCompleted,
+        uiState.regionSelected,
+    ) {
         if (!uiState.isReady) return@LaunchedEffect
         when {
             // Signed in → straight to the app.
             uiState.isAuthenticated -> onNavigateToHome()
-            // Onboarding already done on a previous launch → skip it, go to sign in.
+            // Onboarding done but the user never confirmed a country → reopen it.
+            uiState.onboardingCompleted && !uiState.regionSelected -> onNavigateToCountry()
+            // Onboarding and region both done → go to sign in.
             uiState.onboardingCompleted -> onNavigateToAuth()
             // Fresh install → wait for the user to tap "Get started".
             else -> Unit

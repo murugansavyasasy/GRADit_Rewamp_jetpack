@@ -18,12 +18,13 @@ class CountryViewModel : ViewModel() {
     val uiState: StateFlow<CountryUiState> = _uiState.asStateFlow()
 
     init {
-        val detected = "IN"
         _uiState.update {
             it.copy(
                 countries = SUPPORTED_COUNTRIES,
-                detectedIso = detected,
-                selectedIso = detected,
+                detectedIso = "IN",
+                // No country is pre-selected — the user must choose one explicitly.
+                selectedIso = null,
+                detectedLocation = "Chennai, Tamil Nadu",
             )
         }
     }
@@ -39,12 +40,22 @@ class CountryViewModel : ViewModel() {
     private companion object {
         // TODO: replace with the full list from a data source.
         val SUPPORTED_COUNTRIES = listOf(
-            Country(iso = "IN", name = "India", dialCode = "+91"),
-            Country(iso = "AE", name = "United Arab Emirates", dialCode = "+971"),
-            Country(iso = "SA", name = "Saudi Arabia", dialCode = "+966"),
-            Country(iso = "SG", name = "Singapore", dialCode = "+65"),
-            Country(iso = "GB", name = "United Kingdom", dialCode = "+44"),
-            Country(iso = "US", name = "United States", dialCode = "+1"),
+            Country("IN", "India", "+91", "INR ₹"),
+            Country("AE", "United Arab Emirates", "+971", "AED", popular = true),
+            Country("SA", "Saudi Arabia", "+966", "SAR", popular = true),
+            Country("SG", "Singapore", "+65", "SGD", popular = true),
+            Country("LK", "Sri Lanka", "+94", "LKR", popular = true),
+            Country("AU", "Australia", "+61", "AUD"),
+            Country("BH", "Bahrain", "+973", "BHD"),
+            Country("CA", "Canada", "+1", "CAD"),
+            Country("DE", "Germany", "+49", "EUR"),
+            Country("KW", "Kuwait", "+965", "KWD"),
+            Country("MY", "Malaysia", "+60", "MYR"),
+            Country("NP", "Nepal", "+977", "NPR"),
+            Country("OM", "Oman", "+968", "OMR"),
+            Country("QA", "Qatar", "+974", "QAR"),
+            Country("GB", "United Kingdom", "+44", "GBP"),
+            Country("US", "United States", "+1", "USD"),
         )
     }
 }

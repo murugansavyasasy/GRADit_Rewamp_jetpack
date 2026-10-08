@@ -4,6 +4,7 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.vsca.vsnapvoicecollege.data.OnboardingPreferences
+import com.vsca.vsnapvoicecollege.data.RegionPreferences
 import com.vsca.vsnapvoicecollege.data.SessionPreferences
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -23,6 +24,7 @@ class SplashViewModel(application: Application) : AndroidViewModel(application) 
         // from the first frame (no flash on repeat launches).
         SplashUiState(
             onboardingCompleted = OnboardingPreferences.isCompleted(application),
+            regionSelected = RegionPreferences.isSelected(application),
             isAuthenticated = SessionPreferences.isLoggedIn(application),
         ),
     )

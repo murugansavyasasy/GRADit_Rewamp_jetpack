@@ -52,6 +52,7 @@ import com.vsca.vsnapvoicecollege.ui.theme.White
 @Composable
 fun FaqScreen(
     onBack: () -> Unit,
+    onRaiseConcern: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
     val faqs = listOf(
@@ -130,7 +131,7 @@ fun FaqScreen(
         }
 
         Spacer(Modifier.height(20.dp))
-        HelpCard()
+        HelpCard(onRaiseConcern = onRaiseConcern)
         Spacer(Modifier.height(24.dp))
     }
 }
@@ -198,7 +199,7 @@ private fun ToggleCircle(expanded: Boolean) {
 }
 
 @Composable
-private fun HelpCard() {
+private fun HelpCard(onRaiseConcern: () -> Unit) {
     Surface(shape = RoundedCornerShape(20.dp), color = SelectedRowBackground) {
         Column(modifier = Modifier.padding(16.dp)) {
             Text(
@@ -217,7 +218,7 @@ private fun HelpCard() {
             Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                 PrimaryButton(
                     text = stringResource(R.string.faq_raise_concern),
-                    onClick = { /* TODO */ },
+                    onClick = onRaiseConcern,
                     modifier = Modifier.weight(1f),
                 )
                 CallOfficeButton(modifier = Modifier.weight(1f))

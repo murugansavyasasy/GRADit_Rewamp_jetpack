@@ -15,35 +15,71 @@
     <!-- Onboarding / app introduction -->
     <string name="onboarding_skip">এড়িয়ে যান</string>
     <string name="onboarding_next">পরবর্তী</string>
+    <string name="onboarding_get_started">শুরু করুন</string>
     <string name="onboarding_page_counter">%2$d এর মধ্যে %1$d</string>
-
-    <string name="onboarding_title_1">কলেজ সম্পর্কে সবকিছু, এক জায়গায়</string>
-    <string name="onboarding_subtitle_1">উপস্থিতি, হোমওয়ার্ক, পরীক্ষা ও নম্বর — শিক্ষকরা পোস্ট করার সঙ্গে সঙ্গে আপডেট হয়।</string>
-    <string name="onboarding_badge_attendance">উপস্থিতি 92%</string>
-    <string name="onboarding_badge_ia">IA 2 · 12 Oct</string>
-    <string name="onboarding_badge_cgpa">CGPA 8.4</string>
-
-    <string name="onboarding_title_2">শিক্ষকদের সঙ্গে সহজে কথা বলুন</string>
-    <string name="onboarding_subtitle_2">বিজ্ঞপ্তি পড়ুন, শিক্ষকদের ভয়েস নোট শুনুন এবং এক ট্যাপে উত্তর দিন — আর কোনো সার্কুলার মিস হবে না।</string>
-    <string name="onboarding_badge_new_notice">নতুন বিজ্ঞপ্তি</string>
-    <string name="onboarding_badge_voice">ভয়েস · 0:24</string>
-    <string name="onboarding_badge_unread">2 অপঠিত</string>
-
-    <string name="onboarding_title_3">ফি দিন এবং বাস ট্র্যাক করুন</string>
-    <string name="onboarding_subtitle_3">নিরাপদে পেমেন্ট করুন, পেমেন্টের প্রমাণ আপলোড করুন এবং কলেজ বাস আপনার স্টপে কখন পৌঁছাবে তা দেখুন।</string>
-    <string name="onboarding_badge_due">₹24,500 বকেয়া</string>
-    <string name="onboarding_badge_bus">বাস 12 মিনিটে</string>
-    <string name="onboarding_badge_receipt">রসিদ সংরক্ষিত</string>
-
-    <string name="onboarding_icon_chat_desc">বার্তা</string>
-    <string name="onboarding_icon_bus_desc">বাস ট্র্যাকিং</string>
+    <string name="onboarding_pill_1">ভয়েস যোগাযোগ</string>
+    <string name="onboarding_title_1">একটি ভয়েস নোটে প্রত্যেক অভিভাবকের সঙ্গে কথা বলুন</string>
+    <string name="onboarding_subtitle_1">শিক্ষকরা একবার রেকর্ড করেন এবং প্রত্যেক অভিভাবক তা শোনেন — ট্রান্সক্রিপ্ট ও “শোনা হয়েছে” রসিদ সহ। অভিভাবকরা যেকোনো সময় শুনে এক ট্যাপে উত্তর দিতে পারেন।</string>
+    <string name="onboarding_rec_recording">রেকর্ডিং · 0:18</string>
+    <string name="onboarding_rec_to_parents">62 জন অভিভাবককে</string>
+    <string name="onboarding_rec_heard_title">62 জনের মধ্যে 48 জন অভিভাবক শুনেছেন</string>
+    <string name="onboarding_rec_heard_sub">ট্রান্সক্রিপ্ট ইংরেজি ও তামিলে পাঠানো হয়েছে</string>
+    <string name="onboarding_rec_mic_desc">রেকর্ড</string>
+    <string name="onboarding_rec_send_desc">পাঠান</string>
+    <string name="onboarding_rec_delete_desc">মুছুন</string>
+    <string name="onboarding_pill_2">জিও-ফেন্স উপস্থিতি</string>
+    <string name="onboarding_title_2">ক্যাম্পাসে যাচাই করা উপস্থিতি</string>
+    <string name="onboarding_subtitle_2">কর্মীরা এক ট্যাপে, শুধুমাত্র কলেজ জিও-ফেন্সের ভিতরে চেক ইন করেন। কোনো রেজিস্টার নেই, প্রক্সি নেই, এবং অধ্যক্ষ এটি লাইভ দেখেন।</string>
+    <string name="onboarding_geo_campus">UCE চেন্নাই ক্যাম্পাস</string>
+    <string name="onboarding_geo_inside">জিও-ফেন্সের ভিতরে</string>
+    <string name="onboarding_geo_checkin_title">চেক ইন · 08:52 AM</string>
+    <string name="onboarding_geo_checkin_sub">অ্যাডমিন ব্লক · অবস্থান যাচাই, 12 মি</string>
+    <string name="onboarding_geo_ontime">সময়মতো</string>
+    <string name="onboarding_pill_3">রিজিউমে বিল্ডার</string>
+    <string name="onboarding_title_3">প্লেসমেন্ট-প্রস্তুত রিজিউমে তৈরি করুন</string>
+    <string name="onboarding_subtitle_3">কলেজ থেকে নম্বর, প্রকল্প ও সার্টিফিকেট স্বয়ংক্রিয়ভাবে পূরণ হয়। একটি টেমপ্লেট বেছে নিন এবং প্লেসমেন্ট ড্রাইভের জন্য PDF ডাউনলোড করুন।</string>
+    <string name="onboarding_resume_initials">AR</string>
+    <string name="onboarding_resume_name">Aarav R.</string>
+    <string name="onboarding_resume_detail">B.E. CSE · UCE Chennai · CGPA 8.4</string>
+    <string name="onboarding_resume_skills">দক্ষতা</string>
+    <string name="onboarding_resume_skill_1">Python</string>
+    <string name="onboarding_resume_skill_2">SQL</string>
+    <string name="onboarding_resume_skill_3">React</string>
+    <string name="onboarding_resume_skill_4">Cloud Computing</string>
+    <string name="onboarding_resume_project_label">প্রকল্প</string>
+    <string name="onboarding_resume_project">স্মার্ট অ্যাটেনডেন্স কিয়স্ক · Techfest \'26 সেরা প্রকল্প</string>
+    <string name="onboarding_resume_progress">রিজিউমে 80% সম্পূর্ণ</string>
+    <string name="onboarding_resume_pdf">PDF</string>
+    <string name="onboarding_pill_4">এবং আরও সবকিছু</string>
+    <string name="onboarding_title_4">আপনার পুরো কলেজ, একটি অ্যাপে</string>
+    <string name="onboarding_subtitle_4">উপস্থিতি, ফি, ফাইল, ইভেন্ট, নম্বর এবং আরও অনেক কিছু — কলেজ পোস্ট করার সঙ্গে সঙ্গে আপডেট।</string>
+    <string name="onboarding_grid_attendance_label">উপস্থিতি</string>
+    <string name="onboarding_grid_attendance_value">এই সেমিস্টারে 92%</string>
+    <string name="onboarding_grid_fee_label">ফি বিবরণ</string>
+    <string name="onboarding_grid_fee_value">₹24,500 বকেয়া 15 Oct</string>
+    <string name="onboarding_grid_files_label">ফাইল</string>
+    <string name="onboarding_grid_files_value">IA 2 timetable.pdf</string>
+    <string name="onboarding_grid_events_label">ইভেন্ট</string>
+    <string name="onboarding_grid_events_value">স্পোর্টস ডে ছবি</string>
 
     <!-- Country selection -->
-    <string name="country_title">আপনার দেশ নির্বাচন করুন</string>
-    <string name="country_subtitle">আপনার কলেজ তালিকা, মুদ্রা এবং ফোন কোড দেখাতে আমরা এটি ব্যবহার করি।</string>
-    <string name="country_search_hint">দেশ খুঁজুন</string>
-    <string name="country_detected">আপনার অবস্থান থেকে শনাক্ত করা হয়েছে: %1$s</string>
-    <string name="country_continue">%1$s দিয়ে চালিয়ে যান</string>
+    <string name="country_step">ধাপ 1 / 2 · অঞ্চল</string>
+    <string name="country_title">আপনার কলেজ কোথায়?</string>
+    <string name="country_subtitle">সঠিক কলেজ তালিকা, ফোন কোড এবং মুদ্রা দেখাতে আমরা আপনার দেশ ব্যবহার করি।</string>
+    <string name="country_detected_label">আপনার অবস্থান থেকে শনাক্ত করা হয়েছে</string>
+    <string name="country_choose_another">অথবা অন্য দেশ বেছে নিন</string>
+    <string name="country_search_hint">দেশ বা কোড খুঁজুন, যেমন +971</string>
+    <string name="country_popular">আমাদের কলেজে জনপ্রিয়</string>
+    <string name="country_all">সব দেশ A–Z</string>
+    <string name="country_count">%1$d দেশ</string>
+    <string name="country_continue">চালিয়ে যান</string>
+    <string name="country_results">ফলাফল</string>
+    <string name="country_matches">%1$d মিল</string>
+    <string name="country_no_match">“%1$s” এর সাথে কোনো দেশ মেলে না</string>
+    <string name="country_no_match_hint">বানান পরীক্ষা করুন, অথবা +91 এর মতো ফোন কোড দিয়ে খুঁজুন। আপনার দেশ তালিকায় না থাকলে, আপনার কলেজ সেখানে এখনও GradIt ব্যবহার করে না।</string>
+    <string name="country_clear_search">অনুসন্ধান সাফ করুন</string>
+    <string name="country_globe_desc">কোনো ফলাফল নেই</string>
+    <string name="country_privacy_note">একটি দেশ প্রস্তাব করতে আমরা আপনার অবস্থান শুধুমাত্র একবার ব্যবহার করি। এটি সংরক্ষণ বা শেয়ার করা হয় না।</string>
 
     <!-- Shared UI -->
     <string name="back_content_desc">পিছনে</string>
