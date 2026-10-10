@@ -134,7 +134,7 @@ private fun OnboardingPageView(
                 )
                 drawCircle(
                     color = bubble,
-                    radius = size.width * 0.5f,
+                    radius = size.width * 0.32f,
                     center = Offset(size.width * 0.04f, size.height * 0.98f),
                 )
             }
