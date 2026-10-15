@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Cache folders the FileProvider may expose: shared file copies and camera captures. -->
+<paths>
+    <cache-path name="shared" path="shared/" />
+    <cache-path name="camera" path="camera/" />
+    <external-path name="downloads" path="." />
+</paths>

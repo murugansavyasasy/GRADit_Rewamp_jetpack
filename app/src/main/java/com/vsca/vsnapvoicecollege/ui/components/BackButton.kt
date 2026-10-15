@@ -1,5 +1,6 @@
 package com.vsca.vsnapvoicecollege.ui.components
 
+import androidx.annotation.DrawableRes
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.size
@@ -18,12 +19,15 @@ import com.vsca.vsnapvoicecollege.ui.theme.TextPrimary
 import com.vsca.vsnapvoicecollege.ui.theme.White
 
 /**
- * Rounded-square back button used in screen top bars across the app.
+ * Rounded-square back button used in screen top bars across the app. Pass a different
+ * [iconRes] / [contentDescription] for the same-styled close button on modal screens.
  */
 @Composable
 fun BackButton(
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
+    @DrawableRes iconRes: Int = R.drawable.ic_chevron_left,
+    contentDescription: String = stringResource(R.string.back_content_desc),
 ) {
     Surface(
         onClick = onClick,
@@ -35,8 +39,8 @@ fun BackButton(
     ) {
         Box(contentAlignment = Alignment.Center) {
             Icon(
-                painter = painterResource(R.drawable.ic_chevron_left),
-                contentDescription = stringResource(R.string.back_content_desc),
+                painter = painterResource(iconRes),
+                contentDescription = contentDescription,
                 tint = TextPrimary,
                 modifier = Modifier.size(24.dp),
             )

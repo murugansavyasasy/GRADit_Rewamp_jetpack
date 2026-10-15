@@ -61,3 +61,7 @@ val ScreenBackground = Color(0xFFF5F6FA)      // app content background behind c
 val AlertBackground = Color(0xFFFDECEC)       // warning banner background
 val AmberChipBackground = Color(0xFFFCF3DE)   // "Changed" chip background
 val IconButtonBorder = Color(0xFFE6E8EF)      // circular header icon buttons
+
+// Shared surfaces
+val NavySurface = Color(0xFF131A2B)       // dark banners, video tiles, snackbars
+val DestructiveRed = Color(0xFFC6352E)    // destructive confirm buttons (Delete)

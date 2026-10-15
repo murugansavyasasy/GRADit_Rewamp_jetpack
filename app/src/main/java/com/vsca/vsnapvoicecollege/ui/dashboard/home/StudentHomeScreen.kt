@@ -50,6 +50,7 @@ import com.vsca.vsnapvoicecollege.R
 import com.vsca.vsnapvoicecollege.ui.components.IconBadge
 import com.vsca.vsnapvoicecollege.ui.components.LogoBadge
 import com.vsca.vsnapvoicecollege.ui.components.SearchBar
+import com.vsca.vsnapvoicecollege.ui.dashboard.credits.CreditView
 import com.vsca.vsnapvoicecollege.ui.theme.AlertBackground
 import com.vsca.vsnapvoicecollege.ui.theme.AmberChipBackground
 import com.vsca.vsnapvoicecollege.ui.theme.AmberText
@@ -105,8 +106,30 @@ private const val GRID_COLUMNS = 4
 @Composable
 fun StudentHomeScreen(
     onOpenNotifications: () -> Unit = {},
+    onOpenDiscussionBoard: () -> Unit = {},
+    onOpenTextMessages: () -> Unit = {},
+    onOpenVoiceMessages: () -> Unit = {},
+    onOpenFiles: () -> Unit = {},
+    onOpenVideos: () -> Unit = {},
+    onOpenNotices: () -> Unit = {},
+    onOpenCredits: (CreditView) -> Unit = {},
+    onOpenFaculty: () -> Unit = {},
     modifier: Modifier = Modifier,
 ) {
+    // TODO: route the remaining quick actions as their screens land.
+    val onQuickAction: (QuickAction) -> Unit = { action ->
+        when (action.label) {
+            R.string.qa_discussion -> onOpenDiscussionBoard()
+            R.string.qa_text_msg -> onOpenTextMessages()
+            R.string.qa_voice_msg -> onOpenVoiceMessages()
+            R.string.qa_image_pdf -> onOpenFiles()
+            R.string.qa_video -> onOpenVideos()
+            R.string.qa_notice -> onOpenNotices()
+            R.string.qa_category_credit -> onOpenCredits(CreditView.BY_CATEGORY)
+            R.string.qa_sem_credit -> onOpenCredits(CreditView.BY_SEMESTER)
+            R.string.qa_faculty -> onOpenFaculty()
+        }
+    }
     var searchActive by rememberSaveable { mutableStateOf(false) }
     var query by rememberSaveable { mutableStateOf("") }
     val focusRequester = remember { FocusRequester() }
@@ -143,7 +166,7 @@ fun StudentHomeScreen(
             Spacer(Modifier.height(12.dp))
             LaunchedEffect(Unit) { focusRequester.requestFocus() }
         }
-        QuickActionsCard(filterQuery = if (searchActive) query else null)
+        QuickActionsCard(filterQuery = if (searchActive) query else null, onActionClick = onQuickAction)
         Spacer(Modifier.height(16.dp))
         AttendanceCard()
         Spacer(Modifier.height(16.dp))
@@ -153,7 +176,7 @@ fun StudentHomeScreen(
         Spacer(Modifier.height(20.dp))
         AssignmentsDueSection()
         Spacer(Modifier.height(20.dp))
-        NoticeBoardSection()
+        NoticeBoardSection(onOpenNotices = onOpenNotices)
         Spacer(Modifier.height(20.dp))
         ChatSection()
         Spacer(Modifier.height(24.dp))
@@ -292,29 +315,32 @@ private fun AssignmentCard(
 }
 
 @Composable
-private fun NoticeBoardSection() {
+private fun NoticeBoardSection(onOpenNotices: () -> Unit) {
     Column {
         SectionHeader(
             title = stringResource(R.string.home_notice_title),
             actionText = stringResource(R.string.home_see_all),
+            onAction = onOpenNotices,
         )
         Spacer(Modifier.height(12.dp))
         Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
             NoticeRow(
                 title = stringResource(R.string.home_notice1_title),
                 meta = stringResource(R.string.home_notice1_meta),
+                onClick = onOpenNotices,
             )
             NoticeRow(
                 title = stringResource(R.string.home_notice2_title),
                 meta = stringResource(R.string.home_notice2_meta),
+                onClick = onOpenNotices,
             )
         }
     }
 }
 
 @Composable
-private fun NoticeRow(title: String, meta: String) {
-    BorderedCard(modifier = Modifier.fillMaxWidth()) {
+private fun NoticeRow(title: String, meta: String, onClick: () -> Unit) {
+    BorderedCard(modifier = Modifier.fillMaxWidth().clip(RoundedCornerShape(16.dp)).clickable(onClick = onClick)) {
         Row(
             modifier = Modifier.padding(14.dp),
             verticalAlignment = Alignment.CenterVertically,
@@ -636,14 +662,16 @@ private fun HomeCard(content: @Composable () -> Unit) {
  * query (all of them when the query is blank), with no toggle.
  */
 @Composable
-private fun QuickActionsCard(filterQuery: String?) {
+private fun QuickActionsCard(filterQuery: String?, onActionClick: (QuickAction) -> Unit) {
     if (filterQuery == null) {
         var expanded by rememberSaveable { mutableStateOf(false) }
         val visibleActions = if (expanded) quickActions else quickActions.take(COLLAPSED_ACTION_COUNT)
 
         val cells: List<@Composable (Modifier) -> Unit> = buildList {
             visibleActions.forEach { action ->
-                add { cellModifier -> QuickActionItem(action, modifier = cellModifier) }
+                add { cellModifier ->
+                    QuickActionItem(action, onClick = { onActionClick(action) }, modifier = cellModifier)
+                }
             }
             add { cellModifier ->
                 QuickActionToggle(
@@ -677,7 +705,11 @@ private fun QuickActionsCard(filterQuery: String?) {
             }
         }
     } else {
-        QuickActionsGrid(matches.map { action -> { cellModifier -> QuickActionItem(action, modifier = cellModifier) } })
+        QuickActionsGrid(
+            matches.map { action ->
+                { cellModifier -> QuickActionItem(action, onClick = { onActionClick(action) }, modifier = cellModifier) }
+            },
+        )
     }
 }
 
@@ -734,9 +766,12 @@ private fun QuickActionToggle(
 }
 
 @Composable
-private fun QuickActionItem(action: QuickAction, modifier: Modifier = Modifier) {
+private fun QuickActionItem(action: QuickAction, onClick: () -> Unit, modifier: Modifier = Modifier) {
     Column(
-        modifier = modifier.padding(horizontal = 4.dp),
+        modifier = modifier
+            .clip(RoundedCornerShape(16.dp))
+            .clickable(onClick = onClick)
+            .padding(horizontal = 4.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         IconBadge(
@@ -931,7 +966,7 @@ private fun Tag(text: String, background: Color, textColor: Color) {
 }
 
 @Composable
-private fun SectionHeader(title: String, actionText: String) {
+private fun SectionHeader(title: String, actionText: String, onAction: () -> Unit = { /* TODO */ }) {
     Row(
         modifier = Modifier.fillMaxWidth(),
         horizontalArrangement = Arrangement.SpaceBetween,
@@ -945,7 +980,7 @@ private fun SectionHeader(title: String, actionText: String) {
         )
         Row(
             verticalAlignment = Alignment.CenterVertically,
-            modifier = Modifier.clickable { /* TODO */ },
+            modifier = Modifier.clickable(onClick = onAction),
         ) {
             Text(
                 text = actionText,

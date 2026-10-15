@@ -3,6 +3,7 @@ package com.vsca.vsnapvoicecollege.ui.components
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
@@ -14,7 +15,6 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.unit.dp
-import androidx.compose.foundation.text.KeyboardOptions
 import com.vsca.vsnapvoicecollege.R
 import com.vsca.vsnapvoicecollege.ui.theme.SearchFieldBackground
 import com.vsca.vsnapvoicecollege.ui.theme.TextMuted
@@ -29,6 +29,7 @@ fun SearchBar(
     onQueryChange: (String) -> Unit,
     hint: String,
     modifier: Modifier = Modifier,
+    containerColor: Color = SearchFieldBackground,
 ) {
     TextField(
         value = query,
@@ -47,9 +48,9 @@ fun SearchBar(
         shape = RoundedCornerShape(14.dp),
         keyboardOptions = KeyboardOptions(imeAction = ImeAction.Search),
         colors = TextFieldDefaults.colors(
-            focusedContainerColor = SearchFieldBackground,
-            unfocusedContainerColor = SearchFieldBackground,
-            disabledContainerColor = SearchFieldBackground,
+            focusedContainerColor = containerColor,
+            unfocusedContainerColor = containerColor,
+            disabledContainerColor = containerColor,
             focusedTextColor = TextPrimary,
             unfocusedTextColor = TextPrimary,
             focusedIndicatorColor = Color.Transparent,

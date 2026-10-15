@@ -25,17 +25,11 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.draw.drawBehind
-import androidx.compose.ui.geometry.CornerRadius
-import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathEffect
-import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
@@ -43,6 +37,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import com.vsca.vsnapvoicecollege.R
 import com.vsca.vsnapvoicecollege.ui.components.AppTextField
 import com.vsca.vsnapvoicecollege.ui.components.BackButton
+import com.vsca.vsnapvoicecollege.ui.components.dashedBorder
 import com.vsca.vsnapvoicecollege.ui.components.PrimaryButton
 import com.vsca.vsnapvoicecollege.ui.theme.AppTextSize
 import com.vsca.vsnapvoicecollege.ui.theme.BrandBlue
@@ -306,22 +301,6 @@ private fun ResponseTimeChip() {
             )
         }
     }
-}
-
-/** Draws a dashed rounded-rectangle outline behind the content. */
-private fun Modifier.dashedBorder(
-    color: Color,
-    cornerRadius: Dp,
-    strokeWidth: Dp = 1.5.dp,
-): Modifier = drawBehind {
-    drawRoundRect(
-        color = color,
-        cornerRadius = CornerRadius(cornerRadius.toPx()),
-        style = Stroke(
-            width = strokeWidth.toPx(),
-            pathEffect = PathEffect.dashPathEffect(floatArrayOf(10f, 8f), 0f),
-        ),
-    )
 }
 
 @Preview(showBackground = true, widthDp = 390, heightDp = 844)

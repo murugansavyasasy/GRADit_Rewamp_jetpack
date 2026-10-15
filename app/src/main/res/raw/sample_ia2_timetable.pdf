@@ -1,0 +1,58 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [6 0 R 8 0 R 10 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Length 357 >>
+stream
+BT /F2 18 Tf 56 780 Td (UCE Chennai - IA 2 Timetable) Tj /F1 12 Tf 0 -24 Td (B.E. CSE - Sem 5 - Division A) Tj 0 -24 Td () Tj 0 -24 Td (Mon 12   DBMS - 09:30 AM) Tj 0 -24 Td (Tue 13   OS - 09:30 AM) Tj 0 -24 Td (Wed 14   CN - 09:30 AM) Tj 0 -24 Td (Thu 15   TOC - 09:30 AM) Tj 0 -24 Td (Fri 16   EVS - 09:30 AM) Tj 0 -24 Td (Hall     B-204 - rows A-F) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 184 >>
+stream
+BT /F2 18 Tf 56 780 Td (Seating arrangement) Tj /F1 12 Tf 0 -24 Td (Seats follow roll number order.) Tj 0 -24 Td (Rows A to F, 10 seats per row.) Tj 0 -24 Td (Report by 9:10 AM.) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Length 207 >>
+stream
+BT /F2 18 Tf 56 780 Td (Instructions) Tj /F1 12 Tf 0 -24 Td (Bring your college ID card and hall ticket.) Tj 0 -24 Td (No phones or smart watches in the hall.) Tj 0 -24 Td (Use blue or black pen only.) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 9 0 R >>
+endobj
+xref
+0 11
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000128 00000 n 
+0000000198 00000 n 
+0000000273 00000 n 
+0000000681 00000 n 
+0000000817 00000 n 
+0000001052 00000 n 
+0000001188 00000 n 
+0000001446 00000 n 
+trailer
+<< /Size 11 /Root 1 0 R >>
+startxref
+1583
+%%EOF

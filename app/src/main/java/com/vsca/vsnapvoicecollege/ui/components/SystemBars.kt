@@ -12,7 +12,7 @@ import androidx.core.view.WindowCompat
  * The system bars are transparent app-wide (see MainActivity), so the screen's
  * own background shows through them; this just keeps the icons legible.
  *
- * @param darkIcons `true` for dark icons on a light background, `false` for light
+ * @param darkIcons `true` for dark icons on a light bac  kground, `false` for light
  *   icons on a dark/brand background (e.g. the splash).
  */
 @Composable

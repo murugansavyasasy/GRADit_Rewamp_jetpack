@@ -74,9 +74,10 @@ fun NavGraphBuilder.authNavGraph(navController: NavHostController) {
             val context = LocalContext.current
             RoleSelectionScreen(
                 onBack = { navController.popBackStack() },
-                onContinue = {
+                onContinue = { role ->
                     // Login is complete — remember the session so the app auto-logins next launch.
                     SessionPreferences.setLoggedIn(context, true)
+                    SessionPreferences.setRole(context, role)
                     navController.navigate(AppRoute.HOME) {
                         popUpTo(AppRoute.SPLASH) { inclusive = true }
                     }
