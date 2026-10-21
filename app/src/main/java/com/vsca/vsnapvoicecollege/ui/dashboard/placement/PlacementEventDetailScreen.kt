@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
@@ -33,6 +34,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -161,21 +163,22 @@ private fun SummaryCard(event: PlacementEvent) {
 }
 
 @Composable
-private fun PrimaryOutlinedAction(iconRes: Int, label: String, onClick: () -> Unit) {
+internal fun PrimaryOutlinedAction(iconRes: Int, label: String, onClick: () -> Unit) {
     OutlinedButton(
         onClick = onClick,
-        modifier = Modifier.fillMaxWidth().height(52.dp),
+        // Long labels ("Join on Google Meet (opens 10 minutes before)") wrap to a second line.
+        modifier = Modifier.fillMaxWidth().heightIn(min = 52.dp),
         shape = RoundedCornerShape(14.dp),
         border = BorderStroke(1.dp, BrandBlue),
     ) {
         Icon(painterResource(iconRes), contentDescription = null, tint = BrandBlue, modifier = Modifier.size(20.dp))
         Spacer(Modifier.width(8.dp))
-        Text(label, color = BrandBlue, fontSize = AppTextSize.Body, fontWeight = FontWeight.Bold, maxLines = 1)
+        Text(label, color = BrandBlue, fontSize = AppTextSize.Body, fontWeight = FontWeight.Bold, maxLines = 2, textAlign = TextAlign.Center)
     }
 }
 
 @Composable
-private fun SecondaryAction(iconRes: Int, label: String, modifier: Modifier = Modifier, onClick: () -> Unit) {
+internal fun SecondaryAction(iconRes: Int, label: String, modifier: Modifier = Modifier, onClick: () -> Unit) {
     OutlinedButton(
         onClick = onClick,
         modifier = modifier.height(52.dp),

@@ -42,7 +42,8 @@ val PlacementTypeBackground = SelectedRowBackground
 data class PlacementCompany(val name: String, val initials: String)
 
 /** A child of the signed-in parent (or the student themself), matched against eligible courses. */
-data class PlacementChild(val id: String, val firstName: String, val initials: String, val course: String)
+/** [batch] is the passing-out year placement trainings are planned for. */
+data class PlacementChild(val id: String, val firstName: String, val initials: String, val course: String, val batch: Int = 0)
 
 data class PlacementEvent(
     val id: String,

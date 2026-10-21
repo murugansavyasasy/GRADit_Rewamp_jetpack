@@ -146,7 +146,7 @@ object FacultyExport {
         return ByteArrayOutputStream().also { doc.writeTo(it); doc.close() }.toByteArray()
     }
 
-    private fun ellipsize(text: String, paint: Paint, maxWidth: Float): String {
+    internal fun ellipsize(text: String, paint: Paint, maxWidth: Float): String {
         if (paint.measureText(text) <= maxWidth) return text
         var end = text.length
         while (end > 0 && paint.measureText(text, 0, end) + paint.measureText("…") > maxWidth) end--
@@ -155,7 +155,7 @@ object FacultyExport {
 
     // ---- Excel (.xlsx: one sheet, inline strings) ----
 
-    private fun xlsx(header: List<String>, rows: List<List<String>>): ByteArray {
+    internal fun xlsx(header: List<String>, rows: List<List<String>>): ByteArray {
         fun esc(s: String) = s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace("\"", "&quot;")
         fun col(i: Int) = ('A' + i).toString()
         val sheetRows = (listOf(header) + rows).mapIndexed { r, cells ->
@@ -183,7 +183,8 @@ object FacultyExport {
 
     // ---- Saving ----
 
-    private fun save(context: Context, name: String, mimeType: String, bytes: ByteArray): Uri =
+    /** Saves [bytes] to Downloads and returns a URI other apps can open. */
+    internal fun save(context: Context, name: String, mimeType: String, bytes: ByteArray): Uri =
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
             val values = ContentValues().apply {
                 put(MediaStore.Downloads.DISPLAY_NAME, name)

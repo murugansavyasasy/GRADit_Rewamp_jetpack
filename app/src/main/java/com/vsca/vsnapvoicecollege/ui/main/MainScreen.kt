@@ -76,9 +76,32 @@ import com.vsca.vsnapvoicecollege.ui.dashboard.messages.MessageSearchScreen
 import com.vsca.vsnapvoicecollege.ui.dashboard.messages.MessageType
 import com.vsca.vsnapvoicecollege.ui.dashboard.messages.NewMessageScreen
 import com.vsca.vsnapvoicecollege.ui.dashboard.messages.NewMessageViewModel
+import com.vsca.vsnapvoicecollege.ui.dashboard.attendance.report.ClassAttendanceScreen
+import com.vsca.vsnapvoicecollege.ui.dashboard.attendance.report.ExportCompleteScreen
+import com.vsca.vsnapvoicecollege.ui.dashboard.attendance.report.ExportShareScreen
+import com.vsca.vsnapvoicecollege.ui.dashboard.attendance.report.PersonAttendanceScreen
+import com.vsca.vsnapvoicecollege.ui.dashboard.attendance.report.PersonKind
+import com.vsca.vsnapvoicecollege.ui.dashboard.attendance.report.ReportScreen
+import com.vsca.vsnapvoicecollege.ui.dashboard.attendance.report.StaffGroupScreen
+import com.vsca.vsnapvoicecollege.ui.dashboard.attendance.staff.StaffAttendanceDetailScreen
+import com.vsca.vsnapvoicecollege.ui.dashboard.attendance.family.ApplyLeaveScreen
+import com.vsca.vsnapvoicecollege.ui.dashboard.attendance.family.ApplyLeaveViewModel
+import com.vsca.vsnapvoicecollege.ui.dashboard.attendance.family.FamilyAttendanceScreen
+import com.vsca.vsnapvoicecollege.ui.dashboard.attendance.leave.LeaveDetailScreen
+import com.vsca.vsnapvoicecollege.ui.dashboard.attendance.teacher.MarkAttendanceScreen
+import com.vsca.vsnapvoicecollege.ui.dashboard.attendance.teacher.MarkAttendanceViewModel
+import com.vsca.vsnapvoicecollege.ui.dashboard.attendance.teacher.TeacherAttendanceScreen
+import com.vsca.vsnapvoicecollege.ui.dashboard.attendance.staff.StaffAttendanceScreen
 import com.vsca.vsnapvoicecollege.ui.dashboard.credits.CreditView
 import com.vsca.vsnapvoicecollege.ui.dashboard.credits.SemCreditsScreen
 import com.vsca.vsnapvoicecollege.ui.dashboard.credits.SemCreditsViewModel
+import com.vsca.vsnapvoicecollege.ui.dashboard.fees.FeeDetailsScreen
+import com.vsca.vsnapvoicecollege.ui.dashboard.fees.UploadProofScreen
+import com.vsca.vsnapvoicecollege.ui.dashboard.fees.UploadProofViewModel
+import com.vsca.vsnapvoicecollege.ui.dashboard.resume.ResumeBuilderScreen
+import com.vsca.vsnapvoicecollege.ui.dashboard.resume.ResumePreviewScreen
+import com.vsca.vsnapvoicecollege.ui.dashboard.resume.ResumeSectionScreen
+import com.vsca.vsnapvoicecollege.ui.dashboard.resume.ResumeSectionViewModel
 import com.vsca.vsnapvoicecollege.ui.dashboard.faculty.FacultyDirectoryScreen
 import com.vsca.vsnapvoicecollege.ui.dashboard.faculty.FacultyProfileScreen
 import com.vsca.vsnapvoicecollege.ui.dashboard.faculty.FacultyProfileViewModel
@@ -100,6 +123,9 @@ import com.vsca.vsnapvoicecollege.ui.dashboard.notifications.NotificationsScreen
 import com.vsca.vsnapvoicecollege.ui.dashboard.placement.PlacementEventDetailScreen
 import com.vsca.vsnapvoicecollege.ui.dashboard.placement.PlacementEventsScreen
 import com.vsca.vsnapvoicecollege.ui.dashboard.placement.StudentPlacementEventsScreen
+import com.vsca.vsnapvoicecollege.ui.dashboard.placement.training.PlacementTrainingDetailScreen
+import com.vsca.vsnapvoicecollege.ui.dashboard.placement.training.PlacementTrainingScreen
+import com.vsca.vsnapvoicecollege.ui.dashboard.placement.training.StudentPlacementTrainingScreen
 import com.vsca.vsnapvoicecollege.ui.dashboard.profile.ProfileScreen
 import com.vsca.vsnapvoicecollege.ui.dashboard.settings.SettingsScreen
 import com.vsca.vsnapvoicecollege.ui.theme.AppTextSize
@@ -166,7 +192,7 @@ private const val ROUTE_FILE_VIEWER = "home/files/view/{$ARG_FILE_ID}"
 private val HOME_SUBROUTES = setOf(
     ROUTE_NOTIFICATIONS, ROUTE_DISCUSSION, ROUTE_INBOX, ROUTE_MESSAGE_SEARCH,
     ROUTE_FILES, ROUTE_FAMILY_FILES, ROUTE_LESSON_VIDEOS, ROUTE_FOLDERS, ROUTE_UPLOAD_PUBLISHED, ROUTE_FILE_DETAIL,
-    ROUTE_STUDENT_FACULTY, ROUTE_STUDENT_PLACEMENT,
+    ROUTE_STUDENT_FACULTY, ROUTE_STUDENT_PLACEMENT, ROUTE_STUDENT_TRAINING, ROUTE_STUDENT_FEES,
 )
 
 private fun discussionThreadRoute(postId: String) = "home/discussion/thread/$postId"
@@ -217,8 +243,60 @@ private const val ROUTE_PLACEMENT_EVENT = "placement/event/{$ARG_EVENT_ID}"
 
 private fun placementEventRoute(eventId: String) = "placement/event/$eventId"
 
+/** Placement training follows the same split; only students and parents have these screens. */
+private const val ROUTE_TRAINING = "placement-training"
+private const val ROUTE_STUDENT_TRAINING = "home/placement-training"
+private const val ARG_TRAINING_ID = "trainingId"
+private const val ROUTE_TRAINING_DETAIL = "placement-training/detail/{$ARG_TRAINING_ID}"
+
+private fun trainingDetailRoute(trainingId: String) = "placement-training/detail/$trainingId"
+
+/** Fee details: parents see no tab lit, students keep Home lit; the upload form is full screen. */
+private const val ROUTE_FEES = "fees"
+private const val ROUTE_STUDENT_FEES = "home/fees"
+private const val ROUTE_FEE_UPLOAD =
+    "fees/upload/{${UploadProofViewModel.ARG_STUDENT_ID}}?${UploadProofViewModel.ARG_FEE_ID}={${UploadProofViewModel.ARG_FEE_ID}}"
+
+private fun feeUploadRoute(studentId: String, feeId: String?) = "fees/upload/$studentId?${UploadProofViewModel.ARG_FEE_ID}=${feeId.orEmpty()}"
+
+/** Resume builder lives under Academics (that tab stays lit); preview and the section editor are full screen. */
+private const val ROUTE_RESUME = "academics/resume"
+private const val ROUTE_RESUME_PREVIEW = "academics/resume/preview/{${ResumeSectionViewModel.ARG_STUDENT_ID}}"
+private const val ROUTE_RESUME_SECTION =
+    "academics/resume/section/{${ResumeSectionViewModel.ARG_STUDENT_ID}}/{${ResumeSectionViewModel.ARG_SECTION}}"
+
+private fun resumePreviewRoute(studentId: String) = "academics/resume/preview/$studentId"
+private fun resumeSectionRoute(studentId: String, section: String) = "academics/resume/section/$studentId/$section"
+
+/** Staff attendance (principal) opens from Home, so no tab is lit; the Attendance tab holds the report. */
+private const val ROUTE_STAFF_ATTENDANCE = "attendance/staff"
+private const val ARG_STAFF_ID = "staffId"
+private const val ROUTE_STAFF_ATTENDANCE_DETAIL = "attendance/staff/{$ARG_STAFF_ID}"
+
+private fun staffAttendanceDetailRoute(staffId: String) = "attendance/staff/$staffId"
+
+/** The principal's report lives on the Attendance tab; its drill-downs keep that tab lit. */
+private const val ARG_REPORT_ID = "reportId"
+private const val ROUTE_REPORT_CLASS = "attendance/report/class/{$ARG_REPORT_ID}"
+private const val ROUTE_REPORT_GROUP = "attendance/report/group/{$ARG_REPORT_ID}"
+private const val ROUTE_REPORT_STUDENT = "attendance/report/student/{$ARG_REPORT_ID}"
+private const val ROUTE_REPORT_STAFF = "attendance/report/staff/{$ARG_REPORT_ID}"
+private const val ROUTE_REPORT_EXPORT = "attendance/report/export"
+private const val ROUTE_REPORT_EXPORT_DONE = "attendance/report/export/done"
+private val ATTENDANCE_SUBROUTES = setOf(ROUTE_REPORT_CLASS, ROUTE_REPORT_GROUP, ROUTE_REPORT_STUDENT, ROUTE_REPORT_STAFF)
+
+/** Teacher: marking a class and a leave request open full screen from the Attendance tab. */
+private const val ROUTE_MARK_ATTENDANCE =
+    "attendance/mark/{${MarkAttendanceViewModel.ARG_SESSION}}/{${MarkAttendanceViewModel.ARG_DAY}}"
+private const val ARG_LEAVE_ID = "leaveId"
+private const val ROUTE_LEAVE_DETAIL = "attendance/leave/{$ARG_LEAVE_ID}"
+
+/** Students and parents: attendance under Academics; applying for leave is full screen. */
+private const val ROUTE_FAMILY_ATTENDANCE = "academics/attendance"
+private const val ROUTE_APPLY_LEAVE = "academics/attendance/apply/{${ApplyLeaveViewModel.ARG_STUDENT_ID}}"
+
 /** Parents reach their children's teachers from Academics, so that tab stays lit. */
-private val ACADEMICS_SUBROUTES = setOf(ROUTE_FAMILY_FACULTY, ROUTE_FAMILY_TEACHER)
+private val ACADEMICS_SUBROUTES = setOf(ROUTE_FAMILY_FACULTY, ROUTE_FAMILY_TEACHER, ROUTE_RESUME, ROUTE_FAMILY_ATTENDANCE)
 
 /** Full-screen flows that hide the bottom bar (they have their own bottom composer / form). */
 private val FULL_SCREEN_ROUTES = setOf(
@@ -226,10 +304,12 @@ private val FULL_SCREEN_ROUTES = setOf(
     ROUTE_MESSAGE_DETAIL, ROUTE_NEW_MESSAGE, ROUTE_COMPOSE_MESSAGE,
     ROUTE_UPLOAD, ROUTE_UPLOAD_PREVIEW, ROUTE_FILE_VIEWER,
     ROUTE_NOTICE_COMPOSE, ROUTE_NOTICE_PREVIEW, ROUTE_NOTICE_PUBLISHED, ROUTE_NOTICE_DETAIL, ROUTE_FAMILY_NOTICE,
+    ROUTE_FEE_UPLOAD, ROUTE_RESUME_PREVIEW, ROUTE_RESUME_SECTION,
+    ROUTE_REPORT_EXPORT, ROUTE_REPORT_EXPORT_DONE, ROUTE_MARK_ATTENDANCE, ROUTE_LEAVE_DETAIL, ROUTE_APPLY_LEAVE,
 )
 
 /** Full-screen routes with a white page, so the status-bar strip matches. */
-private val WHITE_ROUTES = setOf(ROUTE_DISCUSSION_NEW, ROUTE_NOTICE_PUBLISHED)
+private val WHITE_ROUTES = setOf(ROUTE_DISCUSSION_NEW, ROUTE_NOTICE_PUBLISHED, ROUTE_FEE_UPLOAD)
 
 private const val ROUTE_SETTINGS = "me/settings"
 private const val ROUTE_CHANGE_PASSWORD = "me/change_password"
@@ -272,7 +352,8 @@ fun MainScreen(
                         val selected = currentRoute == tab.route ||
                             (tab.isProfile && currentRoute in ME_SUBROUTES) ||
                             (tab == MainTab.HOME && currentRoute in HOME_SUBROUTES) ||
-                            (tab == MainTab.ACADEMICS && currentRoute in ACADEMICS_SUBROUTES)
+                            (tab == MainTab.ACADEMICS && currentRoute in ACADEMICS_SUBROUTES) ||
+                            (tab == MainTab.ATTENDANCE && currentRoute in ATTENDANCE_SUBROUTES)
                         NavigationBarItem(
                             selected = selected,
                             onClick = {
@@ -387,6 +468,127 @@ fun MainScreen(
                     onOpenPlacementEvents = {
                         navController.navigate(if (role == Role.PARENT) ROUTE_PLACEMENT else ROUTE_STUDENT_PLACEMENT)
                     },
+                    // Training is planned by the placement cell outside the app, so staff have no screen.
+                    onOpenPlacementTraining = {
+                        when (role) {
+                            Role.PARENT -> navController.navigate(ROUTE_TRAINING)
+                            Role.STUDENT -> navController.navigate(ROUTE_STUDENT_TRAINING)
+                            Role.MANAGEMENT, Role.FACULTY -> Unit
+                        }
+                    },
+                    // Fees are paid by families; staff have no fee screen.
+                    onOpenFees = {
+                        when (role) {
+                            Role.PARENT -> navController.navigate(ROUTE_FEES)
+                            Role.STUDENT -> navController.navigate(ROUTE_STUDENT_FEES)
+                            Role.MANAGEMENT, Role.FACULTY -> Unit
+                        }
+                    },
+                    // Students build their resume; parents view and download it. No staff screen.
+                    onOpenResume = {
+                        when (role) {
+                            Role.PARENT, Role.STUDENT -> navController.navigate(ROUTE_RESUME)
+                            Role.MANAGEMENT, Role.FACULTY -> Unit
+                        }
+                    },
+                    // The principal checks staff punch-ins; teachers take class attendance from their tab.
+                    onOpenAttendance = {
+                        when (role) {
+                            Role.MANAGEMENT -> navController.navigate(ROUTE_STAFF_ATTENDANCE)
+                            Role.FACULTY -> navController.navigate(MainTab.ATTENDANCE.route) {
+                                popUpTo(navController.graph.findStartDestination().id) { saveState = true }
+                                launchSingleTop = true
+                                restoreState = true
+                            }
+                            Role.STUDENT, Role.PARENT -> navController.navigate(ROUTE_FAMILY_ATTENDANCE)
+                        }
+                    },
+                )
+            }
+            composable(ROUTE_STAFF_ATTENDANCE) {
+                StaffAttendanceScreen(
+                    onBack = { navController.popBackStack() },
+                    onOpenStaff = { id -> navController.navigate(staffAttendanceDetailRoute(id)) },
+                    onOpenFreePeriods = { navController.navigate(ROUTE_FREE_PERIODS) },
+                )
+            }
+            composable(
+                route = ROUTE_STAFF_ATTENDANCE_DETAIL,
+                arguments = listOf(navArgument(ARG_STAFF_ID) { type = NavType.StringType }),
+            ) { entry ->
+                StaffAttendanceDetailScreen(
+                    staffId = entry.arguments?.getString(ARG_STAFF_ID).orEmpty(),
+                    onBack = { navController.popBackStack() },
+                )
+            }
+            composable(ROUTE_RESUME) {
+                ResumeBuilderScreen(
+                    onBack = { navController.popBackStack() },
+                    onPreview = { studentId -> navController.navigate(resumePreviewRoute(studentId)) },
+                    onEditSection = { studentId, section -> navController.navigate(resumeSectionRoute(studentId, section.name)) },
+                )
+            }
+            composable(
+                route = ROUTE_RESUME_PREVIEW,
+                arguments = listOf(navArgument(ResumeSectionViewModel.ARG_STUDENT_ID) { type = NavType.StringType }),
+            ) { entry ->
+                ResumePreviewScreen(
+                    studentId = entry.arguments?.getString(ResumeSectionViewModel.ARG_STUDENT_ID).orEmpty(),
+                    onBack = { navController.popBackStack() },
+                )
+            }
+            composable(
+                route = ROUTE_RESUME_SECTION,
+                arguments = listOf(
+                    navArgument(ResumeSectionViewModel.ARG_STUDENT_ID) { type = NavType.StringType },
+                    navArgument(ResumeSectionViewModel.ARG_SECTION) { type = NavType.StringType },
+                ),
+            ) {
+                ResumeSectionScreen(onBack = { navController.popBackStack() })
+            }
+            listOf(ROUTE_FEES, ROUTE_STUDENT_FEES).forEach { route ->
+                composable(route) {
+                    FeeDetailsScreen(
+                        onBack = { navController.popBackStack() },
+                        onUploadProof = { studentId, feeId -> navController.navigate(feeUploadRoute(studentId, feeId)) },
+                    )
+                }
+            }
+            composable(
+                route = ROUTE_FEE_UPLOAD,
+                arguments = listOf(
+                    navArgument(UploadProofViewModel.ARG_STUDENT_ID) { type = NavType.StringType },
+                    navArgument(UploadProofViewModel.ARG_FEE_ID) {
+                        type = NavType.StringType
+                        nullable = true
+                        defaultValue = null
+                    },
+                ),
+            ) {
+                UploadProofScreen(
+                    onBack = { navController.popBackStack() },
+                    onSubmitted = { navController.popBackStack() },
+                )
+            }
+            composable(ROUTE_TRAINING) {
+                PlacementTrainingScreen(
+                    onBack = { navController.popBackStack() },
+                    onOpenTraining = { id -> navController.navigate(trainingDetailRoute(id)) },
+                )
+            }
+            composable(ROUTE_STUDENT_TRAINING) {
+                StudentPlacementTrainingScreen(
+                    onBack = { navController.popBackStack() },
+                    onOpenTraining = { id -> navController.navigate(trainingDetailRoute(id)) },
+                )
+            }
+            composable(
+                route = ROUTE_TRAINING_DETAIL,
+                arguments = listOf(navArgument(ARG_TRAINING_ID) { type = NavType.StringType }),
+            ) { entry ->
+                PlacementTrainingDetailScreen(
+                    trainingId = entry.arguments?.getString(ARG_TRAINING_ID).orEmpty(),
+                    onBack = { navController.popBackStack() },
                 )
             }
             composable(ROUTE_PLACEMENT) {
@@ -576,7 +778,17 @@ fun MainScreen(
                             restoreState = true
                         }
                     },
+                    onOpenAttendance = { navController.navigate(ROUTE_FAMILY_ATTENDANCE) },
                 )
+            }
+            composable(ROUTE_FAMILY_ATTENDANCE) {
+                FamilyAttendanceScreen(
+                    onBack = { navController.popBackStack() },
+                    onApplyLeave = { studentId -> navController.navigate(ROUTE_APPLY_LEAVE.replace("{${ApplyLeaveViewModel.ARG_STUDENT_ID}}", studentId)) },
+                )
+            }
+            composable(ROUTE_APPLY_LEAVE, arguments = listOf(navArgument(ApplyLeaveViewModel.ARG_STUDENT_ID) { type = NavType.StringType })) {
+                ApplyLeaveScreen(onBack = { navController.popBackStack() }, onSent = { navController.popBackStack() })
             }
             // Campus currently holds the notice board for students and parents.
             composable(MainTab.CAMPUS.route) {
@@ -591,7 +803,84 @@ fun MainScreen(
                     onOpenNotice = { id -> navController.navigate(familyNoticeRoute(id)) },
                 )
             }
-            composable(MainTab.ATTENDANCE.route) { PlaceholderTab(MainTab.ATTENDANCE) }
+            // Management: the attendance report. Teachers: their classes and leave requests.
+            composable(MainTab.ATTENDANCE.route) {
+                if (role == Role.MANAGEMENT) {
+                    ReportScreen(
+                        onBack = {
+                            navController.navigate(MainTab.HOME.route) {
+                                popUpTo(navController.graph.findStartDestination().id) { saveState = true }
+                                launchSingleTop = true
+                                restoreState = true
+                            }
+                        },
+                        onOpenClass = { id -> navController.navigate(ROUTE_REPORT_CLASS.replace("{$ARG_REPORT_ID}", id)) },
+                        onOpenGroup = { id -> navController.navigate(ROUTE_REPORT_GROUP.replace("{$ARG_REPORT_ID}", id)) },
+                        onExport = { navController.navigate(ROUTE_REPORT_EXPORT) },
+                    )
+                } else {
+                    TeacherAttendanceScreen(
+                        onBack = {
+                            navController.navigate(MainTab.HOME.route) {
+                                popUpTo(navController.graph.findStartDestination().id) { saveState = true }
+                                launchSingleTop = true
+                                restoreState = true
+                            }
+                        },
+                        onTakeAttendance = { sessionId, day ->
+                            navController.navigate(
+                                ROUTE_MARK_ATTENDANCE
+                                    .replace("{${MarkAttendanceViewModel.ARG_SESSION}}", sessionId)
+                                    .replace("{${MarkAttendanceViewModel.ARG_DAY}}", MarkAttendanceViewModel.dayArg(day)),
+                            )
+                        },
+                        onOpenLeave = { id -> navController.navigate(ROUTE_LEAVE_DETAIL.replace("{$ARG_LEAVE_ID}", id)) },
+                    )
+                }
+            }
+            composable(
+                route = ROUTE_MARK_ATTENDANCE,
+                arguments = listOf(
+                    navArgument(MarkAttendanceViewModel.ARG_SESSION) { type = NavType.StringType },
+                    navArgument(MarkAttendanceViewModel.ARG_DAY) { type = NavType.StringType },
+                ),
+            ) {
+                MarkAttendanceScreen(onBack = { navController.popBackStack() }, onSent = { navController.popBackStack() })
+            }
+            composable(ROUTE_LEAVE_DETAIL, arguments = listOf(navArgument(ARG_LEAVE_ID) { type = NavType.StringType })) { entry ->
+                LeaveDetailScreen(requestId = entry.arguments?.getString(ARG_LEAVE_ID).orEmpty(), onBack = { navController.popBackStack() })
+            }
+            composable(ROUTE_REPORT_CLASS, arguments = listOf(navArgument(ARG_REPORT_ID) { type = NavType.StringType })) { entry ->
+                ClassAttendanceScreen(
+                    classId = entry.arguments?.getString(ARG_REPORT_ID).orEmpty(),
+                    onBack = { navController.popBackStack() },
+                    onOpenStudent = { id -> navController.navigate(ROUTE_REPORT_STUDENT.replace("{$ARG_REPORT_ID}", id)) },
+                )
+            }
+            composable(ROUTE_REPORT_GROUP, arguments = listOf(navArgument(ARG_REPORT_ID) { type = NavType.StringType })) { entry ->
+                StaffGroupScreen(
+                    groupId = entry.arguments?.getString(ARG_REPORT_ID).orEmpty(),
+                    onBack = { navController.popBackStack() },
+                    onOpenMember = { id -> navController.navigate(ROUTE_REPORT_STAFF.replace("{$ARG_REPORT_ID}", id)) },
+                )
+            }
+            composable(ROUTE_REPORT_STUDENT, arguments = listOf(navArgument(ARG_REPORT_ID) { type = NavType.StringType })) { entry ->
+                PersonAttendanceScreen(PersonKind.STUDENT, entry.arguments?.getString(ARG_REPORT_ID).orEmpty(), onBack = { navController.popBackStack() })
+            }
+            composable(ROUTE_REPORT_STAFF, arguments = listOf(navArgument(ARG_REPORT_ID) { type = NavType.StringType })) { entry ->
+                PersonAttendanceScreen(PersonKind.STAFF, entry.arguments?.getString(ARG_REPORT_ID).orEmpty(), onBack = { navController.popBackStack() })
+            }
+            composable(ROUTE_REPORT_EXPORT) {
+                ExportShareScreen(
+                    onBack = { navController.popBackStack() },
+                    onDone = {
+                        navController.navigate(ROUTE_REPORT_EXPORT_DONE) { popUpTo(ROUTE_REPORT_EXPORT) { inclusive = true } }
+                    },
+                )
+            }
+            composable(ROUTE_REPORT_EXPORT_DONE) {
+                ExportCompleteScreen(onBack = { navController.popBackStack() })
+            }
             composable(MainTab.NOTICES.route) {
                 NoticeBoardScreen(
                     onBack = {
@@ -705,13 +994,8 @@ fun MainScreen(
                     onBack = { navController.popBackStack() },
                     onOpenFaculty = { id -> navController.navigate(facultyProfileRoute(id)) },
                     onOpenNotifications = { navController.navigate(ROUTE_NOTIFICATIONS) },
-                    onOpenPunchIn = {
-                        navController.navigate(MainTab.ATTENDANCE.route) {
-                            popUpTo(navController.graph.findStartDestination().id) { saveState = true }
-                            launchSingleTop = true
-                            restoreState = true
-                        }
-                    },
+                    // "Staff punch-in" opens today's staff attendance.
+                    onOpenPunchIn = { navController.navigate(ROUTE_STAFF_ATTENDANCE) },
                 )
             }
             composable(

@@ -51,3 +51,22 @@ fun pickDate(context: Context, onPicked: (Long) -> Unit) {
         now.get(Calendar.DAY_OF_MONTH),
     ).apply { datePicker.minDate = now.timeInMillis }.show()
 }
+
+/** System date picker up to today, opened on [initial]; reports the start of the picked day. */
+fun pickPastDate(context: Context, initial: Long, onPicked: (Long) -> Unit) {
+    val start = Calendar.getInstance().apply { timeInMillis = initial }
+    DatePickerDialog(
+        context,
+        { _, year, month, day ->
+            onPicked(
+                Calendar.getInstance().apply {
+                    set(year, month, day, 0, 0, 0)
+                    set(Calendar.MILLISECOND, 0)
+                }.timeInMillis,
+            )
+        },
+        start.get(Calendar.YEAR),
+        start.get(Calendar.MONTH),
+        start.get(Calendar.DAY_OF_MONTH),
+    ).apply { datePicker.maxDate = System.currentTimeMillis() }.show()
+}

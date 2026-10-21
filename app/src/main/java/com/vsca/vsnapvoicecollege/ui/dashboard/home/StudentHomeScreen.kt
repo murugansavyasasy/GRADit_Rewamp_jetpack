@@ -115,6 +115,10 @@ fun StudentHomeScreen(
     onOpenCredits: (CreditView) -> Unit = {},
     onOpenFaculty: () -> Unit = {},
     onOpenPlacementEvents: () -> Unit = {},
+    onOpenPlacementTraining: () -> Unit = {},
+    onOpenFees: () -> Unit = {},
+    onOpenResume: () -> Unit = {},
+    onOpenAttendance: () -> Unit = {},
     modifier: Modifier = Modifier,
 ) {
     // TODO: route the remaining quick actions as their screens land.
@@ -130,6 +134,10 @@ fun StudentHomeScreen(
             R.string.qa_sem_credit -> onOpenCredits(CreditView.BY_SEMESTER)
             R.string.qa_faculty -> onOpenFaculty()
             R.string.qa_placement_events -> onOpenPlacementEvents()
+            R.string.qa_placement_training -> onOpenPlacementTraining()
+            R.string.qa_fee -> onOpenFees()
+            R.string.qa_resume -> onOpenResume()
+            R.string.qa_attendance -> onOpenAttendance()
         }
     }
     var searchActive by rememberSaveable { mutableStateOf(false) }

@@ -251,14 +251,14 @@ internal fun PlacementTabs(selected: PlacementTab, counts: Map<PlacementTab, Int
     }
 }
 
-/** "Events are posted by the placement cell…" note and the Powered-by row. */
+/** "Events are posted by the placement cell…" (or another [note]) and the Powered-by row. */
 @Composable
-internal fun PlacementFooter(modifier: Modifier = Modifier) {
+internal fun PlacementFooter(modifier: Modifier = Modifier, note: String = stringResource(R.string.placement_footer_note)) {
     Column(modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
         Row(Modifier.fillMaxWidth().padding(horizontal = 20.dp), verticalAlignment = Alignment.Top) {
             Icon(painterResource(R.drawable.ic_info_outline), contentDescription = null, tint = TextSecondary, modifier = Modifier.padding(top = 3.dp).size(14.dp))
             Spacer(Modifier.width(8.dp))
-            Text(stringResource(R.string.placement_footer_note), color = TextSecondary, fontSize = AppTextSize.Label, lineHeight = 20.sp)
+            Text(note, color = TextSecondary, fontSize = AppTextSize.Label, lineHeight = 20.sp)
         }
         Spacer(Modifier.height(16.dp))
         PoweredByRow(textColor = TextSecondary)
@@ -267,7 +267,8 @@ internal fun PlacementFooter(modifier: Modifier = Modifier) {
 
 // ---- Actions ----
 
-private fun launch(context: Context, intent: Intent) {
+/** Starts [intent], or toasts when no app can handle it. */
+internal fun launchIntent(context: Context, intent: Intent) {
     try {
         context.startActivity(intent)
     } catch (_: ActivityNotFoundException) {
@@ -276,7 +277,7 @@ private fun launch(context: Context, intent: Intent) {
 }
 
 internal fun openInMaps(context: Context, event: PlacementEvent) =
-    launch(context, Intent(Intent.ACTION_VIEW, Uri.parse("geo:0,0?q=" + Uri.encode(event.venue))))
+    launchIntent(context, Intent(Intent.ACTION_VIEW, Uri.parse("geo:0,0?q=" + Uri.encode(event.venue))))
 
 internal fun openJoinLink(context: Context, event: PlacementEvent) {
     val url = event.joinUrl ?: return
@@ -284,7 +285,7 @@ internal fun openJoinLink(context: Context, event: PlacementEvent) {
         Toast.makeText(context, R.string.placement_join_not_open, Toast.LENGTH_SHORT).show()
         return
     }
-    launch(context, Intent(Intent.ACTION_VIEW, Uri.parse(url)))
+    launchIntent(context, Intent(Intent.ACTION_VIEW, Uri.parse(url)))
 }
 
 internal fun addToCalendar(context: Context, event: PlacementEvent) {
@@ -295,7 +296,7 @@ internal fun addToCalendar(context: Context, event: PlacementEvent) {
         .putExtra(CalendarContract.Events.EVENT_LOCATION, event.joinUrl ?: event.venue)
         .putExtra(CalendarContract.EXTRA_EVENT_BEGIN_TIME, event.startAt)
         .putExtra(CalendarContract.EXTRA_EVENT_END_TIME, event.endAt ?: (event.startAt + DEFAULT_LENGTH_MS))
-    launch(context, intent)
+    launchIntent(context, intent)
 }
 
 /** In-app link to an event. TODO: switch to the college's https deep-link domain. */
@@ -310,7 +311,7 @@ internal fun shareEvent(context: Context, event: PlacementEvent, timeLabel: Stri
         event.venue,
         eventLink(event),
     )
-    launch(
+    launchIntent(
         context,
         Intent.createChooser(
             Intent(Intent.ACTION_SEND).setType("text/plain").putExtra(Intent.EXTRA_SUBJECT, event.title).putExtra(Intent.EXTRA_TEXT, text),

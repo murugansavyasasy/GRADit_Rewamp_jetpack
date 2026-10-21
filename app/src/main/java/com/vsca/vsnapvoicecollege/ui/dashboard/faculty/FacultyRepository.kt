@@ -196,7 +196,7 @@ object FacultyRepository {
             ),
             "maths" to listOf(
                 f("abirami", "Dr. Abirami Nagarajan", "AN", "Professor and Head", "maths", "UCE-AS-1131", "Real Analysis, Linear Algebra", isHod = true, punch = 8 * 60 + 41, years = 20),
-                f("gayathri", "Dr. Gayathri Pandian", "GP", "Associate Professor", "maths", "UCE-AS-1132", "Discrete Mathematics, Graph Theory", punch = 8 * 60 + 52, years = 12),
+                f("gayathri", "Dr. Gayathri Pandian", "GP", "Professor", "maths", "UCE-AS-1132", "Discrete Mathematics, Graph Theory", punch = 9 * 60 + 5, years = 12),
             ),
             "cs" to listOf(
                 f("senthil", "Dr. Senthil Kumar Ganesan", "SG", "Professor and Head", "cs", "UCE-AS-1141", "Machine Learning, Data Mining", isHod = true, punch = 8 * 60 + 58, years = 21),
@@ -210,7 +210,7 @@ object FacultyRepository {
                         Teaching("Discrete Mathematics", "maths-3-A", 4),
                     ),
                 ),
-                f("geetha", "Dr. Geetha Arumugam", "GA", "Assistant Professor", "cs", "UCE-AS-1149", "Python Programming, Web Technology", punch = 8 * 60 + 50, years = 8),
+                f("geetha", "Dr. Geetha Arumugam", "GA", "Assistant Professor", "cs", "UCE-AS-1149", "Python Programming, Web Technology", punch = 9 * 60 + 12, years = 8),
                 f("lakshmipriya", "Ms. Lakshmi Priya Srinivasan", "LS", "Assistant Professor", "cs", "UCE-AS-1150", "Data Structures, Operating Systems", punch = 8 * 60 + 54, years = 6),
             ),
             "cse" to listOf(
@@ -273,7 +273,8 @@ object FacultyRepository {
                     phone = "+91 9${(840000000 + i * 7919L) % 1_000_000_000}".let { it.substring(0, 9) + " " + it.substring(9) },
                     specialisation = plan.subjects.drop(i % plan.subjects.size).plus(plan.subjects).take(2).joinToString(", "),
                     isHod = people.none { it.isHod },
-                    presence = Presence(PresenceStatus.PRESENT, 8 * 60 + 35 + (i * 11) % 25, "fingerprint, Main block"),
+                    // A few punch in after 09:00 and show as late on staff attendance.
+                    presence = Presence(PresenceStatus.PRESENT, if (i % 21 == 4) 9 * 60 + 2 + i % 9 else 8 * 60 + 35 + (i * 11) % 25, "fingerprint, Main block"),
                 )
             }
             // Away / not-yet-in staff are the last generated people, so named staff keep their designed status.
@@ -299,7 +300,7 @@ object FacultyRepository {
             faculty += people
         }
         // Class teachers: the designed ones, then the first teacher of each remaining division.
-        val designedClassTeachers = mapOf("cs-1-A" to "geetha", "cs-5-A" to "anitha", "cs-3-B" to "lakshmipriya", "maths-3-A" to "gayathri", "tamil-1-A" to "jayanthi")
+        val designedClassTeachers = mapOf("cs-1-A" to "geetha", "cs-5-A" to "anitha", "cs-3-B" to "lakshmipriya", "maths-3-A" to "gayathri", "tamil-1-A" to "jayanthi", "cse-5-A" to "meena")
         val assigned = mutableSetOf<String>()
         val withTeachers = divisions.map { division ->
             val teacher = designedClassTeachers[division.id]

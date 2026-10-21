@@ -19,8 +19,8 @@ object PlacementRepository {
 
     // ---- The signed-in family and sample constants — declared before the seeded events use them. ----
 
-    private val AARAV = PlacementChild("aarav", "Aarav", "AR", "B.E. CSE")
-    private val DIYA = PlacementChild("diya", "Diya", "DR", "B.Tech IT")
+    private val AARAV = PlacementChild("aarav", "Aarav", "AR", "B.E. CSE", batch = 2024)
+    private val DIYA = PlacementChild("diya", "Diya", "DR", "B.Tech IT", batch = 2025)
 
     private const val ONLINE = "Online · video meeting"
     private val CSE_IT = listOf("B.E. CSE", "B.Tech IT")
