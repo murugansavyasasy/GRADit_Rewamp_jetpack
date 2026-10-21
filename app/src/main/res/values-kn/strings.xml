@@ -1547,4 +1547,84 @@
         <item quantity="one">%1$s ಖಾಲಿ ಅವಧಿ · ಸ್ವಯಂ ಅಧ್ಯಯನ</item>
         <item quantity="other">%1$s ಖಾಲಿ ಅವಧಿಗಳು · ಸ್ವಯಂ ಅಧ್ಯಯನ</item>
     </plurals>
+
+    <!-- Placement events -->
+    <string name="placement_title">ಪ್ಲೇಸ್‌ಮೆಂಟ್ ಕಾರ್ಯಕ್ರಮಗಳು</string>
+    <string name="placement_subtitle">ಪ್ಲೇಸ್‌ಮೆಂಟ್ ಸೆಲ್‌ನಿಂದ</string>
+    <string name="placement_detail_title">ಪ್ಲೇಸ್‌ಮೆಂಟ್ ಕಾರ್ಯಕ್ರಮ</string>
+    <string name="placement_tab_upcoming">ಮುಂಬರುವ</string>
+    <string name="placement_tab_historical">ಹಿಂದಿನ</string>
+    <string name="placement_section_this_week">ಈ ವಾರ</string>
+    <string name="placement_section_later">ನಂತರ</string>
+    <string name="placement_section_ended">ಮುಗಿದಿವೆ</string>
+    <string name="placement_search_hint">ಕಾರ್ಯಕ್ರಮ, ಕಂಪನಿ ಅಥವಾ ಕೋರ್ಸ್ ಹುಡುಕಿ</string>
+    <string name="placement_student_search_hint">ಹುಡುಕಿ</string>
+    <string name="placement_filter_mode">ವಿಧಾನ</string>
+    <string name="placement_filter_course">ಕೋರ್ಸ್</string>
+    <string name="placement_filter_all">ಎಲ್ಲಾ</string>
+    <string name="placement_type_ppt">ಪ್ರಿ-ಪ್ಲೇಸ್‌ಮೆಂಟ್ ಟಾಕ್</string>
+    <string name="placement_type_campus_drive">ಕ್ಯಾಂಪಸ್ ಡ್ರೈವ್</string>
+    <string name="placement_type_event">ಪ್ಲೇಸ್‌ಮೆಂಟ್ ಕಾರ್ಯಕ್ರಮ</string>
+    <string name="placement_type_job_fair">ಉದ್ಯೋಗ ಮೇಳ</string>
+    <string name="placement_type_online_test">ಆನ್‌ಲೈನ್ ಪರೀಕ್ಷೆ</string>
+    <string name="placement_mode_virtual">ವರ್ಚುವಲ್</string>
+    <string name="placement_mode_on_campus">ಕ್ಯಾಂಪಸ್‌ನಲ್ಲಿ</string>
+    <string name="placement_mode_off_campus">ಕ್ಯಾಂಪಸ್ ಹೊರಗೆ</string>
+    <string name="placement_ended">ಮುಗಿದಿದೆ</string>
+    <string name="placement_live_now">ಈಗ ನಡೆಯುತ್ತಿದೆ</string>
+    <string name="placement_today">ಇಂದು</string>
+    <string name="placement_tomorrow">ನಾಳೆ</string>
+    <string name="placement_time_range">%1$s – %2$s</string>
+    <string name="placement_soon_today">%1$s, ಇಂದು %2$s ಕ್ಕೆ</string>
+    <string name="placement_soon_tomorrow">%1$s, ನಾಳೆ %2$s ಕ್ಕೆ</string>
+    <string name="placement_offline_banner">ನೀವು ಆಫ್‌ಲೈನ್‌ನಲ್ಲಿದ್ದೀರಿ. ಕೊನೆಯದಾಗಿ ಲೋಡ್ ಮಾಡಿದ ಪಟ್ಟಿಯನ್ನು ತೋರಿಸಲಾಗುತ್ತಿದೆ. %1$s ರಂದು ಅಪ್‌ಡೇಟ್ ಆಗಿದೆ.</string>
+    <string name="placement_company">ಕಂಪನಿ</string>
+    <string name="placement_companies_count">ಕಂಪನಿಗಳು · %1$d</string>
+    <string name="placement_participating_companies">ಭಾಗವಹಿಸುವ ಕಂಪನಿಗಳು · %1$d</string>
+    <string name="placement_more_companies">+ಇನ್ನೂ %1$d</string>
+    <string name="placement_eligible_courses">ಅರ್ಹ ಕೋರ್ಸ್‌ಗಳು</string>
+    <string name="placement_open_to_one">%1$s ಅವರ ಕೋರ್ಸ್‌ಗೆ ತೆರೆದಿದೆ</string>
+    <string name="placement_open_to_two">%1$s ಮತ್ತು %2$s ಅವರ ಕೋರ್ಸ್‌ಗಳಿಗೆ ತೆರೆದಿದೆ</string>
+    <string name="placement_closed_to_one">%1$s ಅವರ ಕೋರ್ಸ್‌ಗೆ ತೆರೆದಿಲ್ಲ</string>
+    <string name="placement_closed_to_two">%1$s ಅಥವಾ %2$s ಅವರ ಕೋರ್ಸ್‌ಗಳಿಗೆ ತೆರೆದಿಲ್ಲ</string>
+    <string name="placement_closed_to_all">ನಿಮ್ಮ ಮಕ್ಕಳ ಕೋರ್ಸ್‌ಗಳಿಗೆ ತೆರೆದಿಲ್ಲ</string>
+    <string name="placement_error_title">ಪ್ಲೇಸ್‌ಮೆಂಟ್ ಕಾರ್ಯಕ್ರಮಗಳನ್ನು ಲೋಡ್ ಮಾಡಲಾಗಲಿಲ್ಲ</string>
+    <string name="placement_error_body">ನಿಮ್ಮ ಇಂಟರ್ನೆಟ್ ಸಂಪರ್ಕವನ್ನು ಪರಿಶೀಲಿಸಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.</string>
+    <string name="placement_none_upcoming_title">ಮುಂಬರುವ ಕಾರ್ಯಕ್ರಮಗಳಿಲ್ಲ</string>
+    <string name="placement_none_historical_title">ಹಿಂದಿನ ಕಾರ್ಯಕ್ರಮಗಳಿಲ್ಲ</string>
+    <string name="placement_none_body">ಪ್ಲೇಸ್‌ಮೆಂಟ್ ಸೆಲ್‌ನ ಕಾರ್ಯಕ್ರಮಗಳು ಇಲ್ಲಿ ಕಾಣಿಸುತ್ತವೆ.</string>
+    <string name="placement_no_match_title">ಹೊಂದುವ ಕಾರ್ಯಕ್ರಮಗಳಿಲ್ಲ</string>
+    <string name="placement_no_match_body">ಬೇರೆ ಹುಡುಕಾಟ ಪ್ರಯತ್ನಿಸಿ ಅಥವಾ ಫಿಲ್ಟರ್‌ಗಳನ್ನು ತೆರವುಗೊಳಿಸಿ.</string>
+    <string name="placement_student_no_match_body">ಬೇರೆ ಕಂಪನಿ ಅಥವಾ ಕಾರ್ಯಕ್ರಮದ ಹೆಸರನ್ನು ಪ್ರಯತ್ನಿಸಿ.</string>
+    <string name="placement_footer_note">ಕಾರ್ಯಕ್ರಮಗಳನ್ನು ಪ್ಲೇಸ್‌ಮೆಂಟ್ ಸೆಲ್ ಪೋಸ್ಟ್ ಮಾಡುತ್ತದೆ. ವಿವರಗಳು ಅಥವಾ ನೋಂದಣಿಗಾಗಿ ಪ್ಲೇಸ್‌ಮೆಂಟ್ ಸೆಲ್ ಅನ್ನು ಸಂಪರ್ಕಿಸಿ.</string>
+    <string name="placement_not_found">ಈ ಕಾರ್ಯಕ್ರಮ ಇನ್ನು ಲಭ್ಯವಿಲ್ಲ.</string>
+    <string name="placement_open_maps">ಮ್ಯಾಪ್ಸ್‌ನಲ್ಲಿ ತೆರೆಯಿರಿ</string>
+    <string name="placement_join_now">ಈಗ ಸೇರಿ</string>
+    <string name="placement_join_later">ಸೇರುವ ಲಿಂಕ್ (10 ನಿಮಿಷ ಮೊದಲು ತೆರೆಯುತ್ತದೆ)</string>
+    <string name="placement_join_not_open">ಪ್ರಾರಂಭಕ್ಕೆ 10 ನಿಮಿಷ ಮೊದಲು ಸೇರುವ ಲಿಂಕ್ ತೆರೆಯುತ್ತದೆ.</string>
+    <string name="placement_add_calendar">ಕ್ಯಾಲೆಂಡರ್‌ಗೆ ಸೇರಿಸಿ</string>
+    <string name="placement_share">ಹಂಚಿಕೊಳ್ಳಿ</string>
+    <string name="placement_share_text">%1$s\n%2$s\n%3$s\n%4$s\n%5$s</string>
+    <string name="placement_no_app">ಇದನ್ನು ತೆರೆಯಲು ಯಾವುದೇ ಆ್ಯಪ್ ಸಿಗಲಿಲ್ಲ</string>
+    <string name="placement_for_children">ನಿಮ್ಮ ಮಕ್ಕಳಿಗಾಗಿ</string>
+    <string name="placement_for_you">ನಿಮಗಾಗಿ</string>
+    <string name="placement_child_course">%1$s · %2$s</string>
+    <string name="placement_course_eligible">ಕೋರ್ಸ್ ಅರ್ಹವಾಗಿದೆ</string>
+    <string name="placement_course_not_eligible">ಕೋರ್ಸ್ ಅರ್ಹ ಪಟ್ಟಿಯಲ್ಲಿಲ್ಲ</string>
+    <string name="placement_eligibility_note">ಪ್ಲೇಸ್‌ಮೆಂಟ್ ಸೆಲ್ ಪಟ್ಟಿ ಮಾಡಿದ ಅರ್ಹ ಕೋರ್ಸ್‌ಗಳ ಆಧಾರದ ಮೇಲೆ. ಕೆಳಗಿನ ಇತರ ಮಾನದಂಡಗಳೂ ಅನ್ವಯಿಸುತ್ತವೆ.</string>
+    <string name="placement_eligibility">ಅರ್ಹತೆ</string>
+    <string name="placement_other_criteria">ಇತರ ಮಾನದಂಡಗಳು</string>
+    <string name="placement_student_row_title">%1$s · %2$s</string>
+    <plurals name="placement_in_days">
+        <item quantity="one">%1$d ದಿನದಲ್ಲಿ</item>
+        <item quantity="other">%1$d ದಿನಗಳಲ್ಲಿ</item>
+    </plurals>
+    <plurals name="placement_soon_count">
+        <item quantity="one">ಮುಂದಿನ %2$d ದಿನಗಳಲ್ಲಿ %1$d ಕಾರ್ಯಕ್ರಮ</item>
+        <item quantity="other">ಮುಂದಿನ %2$d ದಿನಗಳಲ್ಲಿ %1$d ಕಾರ್ಯಕ್ರಮಗಳು</item>
+    </plurals>
+    <plurals name="placement_open_to_many">
+        <item quantity="one">ನಿಮ್ಮ %1$d ಮಗುವಿನ ಕೋರ್ಸ್‌ಗೆ ತೆರೆದಿದೆ</item>
+        <item quantity="other">ನಿಮ್ಮ %1$d ಮಕ್ಕಳ ಕೋರ್ಸ್‌ಗಳಿಗೆ ತೆರೆದಿದೆ</item>
+    </plurals>
 </resources>

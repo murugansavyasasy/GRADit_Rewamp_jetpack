@@ -97,6 +97,9 @@ import com.vsca.vsnapvoicecollege.ui.dashboard.notices.NoticeDetailScreen
 import com.vsca.vsnapvoicecollege.ui.dashboard.notices.NoticePreviewScreen
 import com.vsca.vsnapvoicecollege.ui.dashboard.notices.NoticePublishedScreen
 import com.vsca.vsnapvoicecollege.ui.dashboard.notifications.NotificationsScreen
+import com.vsca.vsnapvoicecollege.ui.dashboard.placement.PlacementEventDetailScreen
+import com.vsca.vsnapvoicecollege.ui.dashboard.placement.PlacementEventsScreen
+import com.vsca.vsnapvoicecollege.ui.dashboard.placement.StudentPlacementEventsScreen
 import com.vsca.vsnapvoicecollege.ui.dashboard.profile.ProfileScreen
 import com.vsca.vsnapvoicecollege.ui.dashboard.settings.SettingsScreen
 import com.vsca.vsnapvoicecollege.ui.theme.AppTextSize
@@ -163,7 +166,7 @@ private const val ROUTE_FILE_VIEWER = "home/files/view/{$ARG_FILE_ID}"
 private val HOME_SUBROUTES = setOf(
     ROUTE_NOTIFICATIONS, ROUTE_DISCUSSION, ROUTE_INBOX, ROUTE_MESSAGE_SEARCH,
     ROUTE_FILES, ROUTE_FAMILY_FILES, ROUTE_LESSON_VIDEOS, ROUTE_FOLDERS, ROUTE_UPLOAD_PUBLISHED, ROUTE_FILE_DETAIL,
-    ROUTE_STUDENT_FACULTY,
+    ROUTE_STUDENT_FACULTY, ROUTE_STUDENT_PLACEMENT,
 )
 
 private fun discussionThreadRoute(postId: String) = "home/discussion/thread/$postId"
@@ -202,6 +205,17 @@ private const val ROUTE_STUDENT_FACULTY = "home/faculty"
 
 private fun facultyProfileRoute(id: String) = "faculty/profile/$id"
 private fun familyTeacherRoute(childId: String, semester: Int, teacherId: String) = "academics/faculty/$childId/$semester/$teacherId"
+
+/**
+ * Parents get the full placement list (no tab lit, as in the design); students a simple
+ * list that keeps Home lit. Both open the same event detail.
+ */
+private const val ROUTE_PLACEMENT = "placement"
+private const val ROUTE_STUDENT_PLACEMENT = "home/placement"
+private const val ARG_EVENT_ID = "eventId"
+private const val ROUTE_PLACEMENT_EVENT = "placement/event/{$ARG_EVENT_ID}"
+
+private fun placementEventRoute(eventId: String) = "placement/event/$eventId"
 
 /** Parents reach their children's teachers from Academics, so that tab stays lit. */
 private val ACADEMICS_SUBROUTES = setOf(ROUTE_FAMILY_FACULTY, ROUTE_FAMILY_TEACHER)
@@ -370,6 +384,30 @@ fun MainScreen(
                             },
                         )
                     },
+                    onOpenPlacementEvents = {
+                        navController.navigate(if (role == Role.PARENT) ROUTE_PLACEMENT else ROUTE_STUDENT_PLACEMENT)
+                    },
+                )
+            }
+            composable(ROUTE_PLACEMENT) {
+                PlacementEventsScreen(
+                    onBack = { navController.popBackStack() },
+                    onOpenEvent = { id -> navController.navigate(placementEventRoute(id)) },
+                )
+            }
+            composable(ROUTE_STUDENT_PLACEMENT) {
+                StudentPlacementEventsScreen(
+                    onBack = { navController.popBackStack() },
+                    onOpenEvent = { id -> navController.navigate(placementEventRoute(id)) },
+                )
+            }
+            composable(
+                route = ROUTE_PLACEMENT_EVENT,
+                arguments = listOf(navArgument(ARG_EVENT_ID) { type = NavType.StringType }),
+            ) { entry ->
+                PlacementEventDetailScreen(
+                    eventId = entry.arguments?.getString(ARG_EVENT_ID).orEmpty(),
+                    onBack = { navController.popBackStack() },
                 )
             }
             composable(

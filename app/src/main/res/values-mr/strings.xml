@@ -1549,4 +1549,84 @@
         <item quantity="one">%1$s हा रिकामा तास · स्वयंअध्ययन</item>
         <item quantity="other">%1$s हे रिकामे तास · स्वयंअध्ययन</item>
     </plurals>
+
+    <!-- Placement events -->
+    <string name="placement_title">प्लेसमेंट कार्यक्रम</string>
+    <string name="placement_subtitle">प्लेसमेंट सेलकडून</string>
+    <string name="placement_detail_title">प्लेसमेंट कार्यक्रम</string>
+    <string name="placement_tab_upcoming">आगामी</string>
+    <string name="placement_tab_historical">मागील</string>
+    <string name="placement_section_this_week">या आठवड्यात</string>
+    <string name="placement_section_later">नंतर</string>
+    <string name="placement_section_ended">संपलेले</string>
+    <string name="placement_search_hint">कार्यक्रम, कंपनी किंवा कोर्स शोधा</string>
+    <string name="placement_student_search_hint">शोधा</string>
+    <string name="placement_filter_mode">माध्यम</string>
+    <string name="placement_filter_course">कोर्स</string>
+    <string name="placement_filter_all">सर्व</string>
+    <string name="placement_type_ppt">प्री-प्लेसमेंट टॉक</string>
+    <string name="placement_type_campus_drive">कॅम्पस ड्राइव्ह</string>
+    <string name="placement_type_event">प्लेसमेंट कार्यक्रम</string>
+    <string name="placement_type_job_fair">रोजगार मेळावा</string>
+    <string name="placement_type_online_test">ऑनलाइन चाचणी</string>
+    <string name="placement_mode_virtual">व्हर्च्युअल</string>
+    <string name="placement_mode_on_campus">कॅम्पसमध्ये</string>
+    <string name="placement_mode_off_campus">कॅम्पसबाहेर</string>
+    <string name="placement_ended">संपला</string>
+    <string name="placement_live_now">आत्ता सुरू आहे</string>
+    <string name="placement_today">आज</string>
+    <string name="placement_tomorrow">उद्या</string>
+    <string name="placement_time_range">%1$s – %2$s</string>
+    <string name="placement_soon_today">%1$s, आज %2$s वाजता</string>
+    <string name="placement_soon_tomorrow">%1$s, उद्या %2$s वाजता</string>
+    <string name="placement_offline_banner">तुम्ही ऑफलाइन आहात. शेवटची लोड केलेली यादी दिसत आहे. %1$s रोजी अपडेट केली.</string>
+    <string name="placement_company">कंपनी</string>
+    <string name="placement_companies_count">कंपन्या · %1$d</string>
+    <string name="placement_participating_companies">सहभागी कंपन्या · %1$d</string>
+    <string name="placement_more_companies">+आणखी %1$d</string>
+    <string name="placement_eligible_courses">पात्र कोर्स</string>
+    <string name="placement_open_to_one">%1$s च्या कोर्ससाठी खुले</string>
+    <string name="placement_open_to_two">%1$s आणि %2$s च्या कोर्ससाठी खुले</string>
+    <string name="placement_closed_to_one">%1$s च्या कोर्ससाठी खुले नाही</string>
+    <string name="placement_closed_to_two">%1$s किंवा %2$s च्या कोर्ससाठी खुले नाही</string>
+    <string name="placement_closed_to_all">तुमच्या मुलांच्या कोर्ससाठी खुले नाही</string>
+    <string name="placement_error_title">प्लेसमेंट कार्यक्रम लोड करता आले नाहीत</string>
+    <string name="placement_error_body">तुमचे इंटरनेट कनेक्शन तपासा आणि पुन्हा प्रयत्न करा.</string>
+    <string name="placement_none_upcoming_title">कोणतेही आगामी कार्यक्रम नाहीत</string>
+    <string name="placement_none_historical_title">कोणतेही मागील कार्यक्रम नाहीत</string>
+    <string name="placement_none_body">प्लेसमेंट सेलचे कार्यक्रम येथे दिसतील.</string>
+    <string name="placement_no_match_title">जुळणारे कार्यक्रम नाहीत</string>
+    <string name="placement_no_match_body">वेगळा शोध घ्या किंवा फिल्टर काढा.</string>
+    <string name="placement_student_no_match_body">दुसऱ्या कंपनीचे किंवा कार्यक्रमाचे नाव वापरून पहा.</string>
+    <string name="placement_footer_note">कार्यक्रम प्लेसमेंट सेलद्वारे पोस्ट केले जातात. तपशील किंवा नोंदणीसाठी प्लेसमेंट सेलशी संपर्क साधा.</string>
+    <string name="placement_not_found">हा कार्यक्रम आता उपलब्ध नाही.</string>
+    <string name="placement_open_maps">मॅप्समध्ये उघडा</string>
+    <string name="placement_join_now">आत्ता सामील व्हा</string>
+    <string name="placement_join_later">सामील होण्याची लिंक (10 मिनिटे आधी उघडेल)</string>
+    <string name="placement_join_not_open">सुरू होण्याच्या 10 मिनिटे आधी लिंक उघडेल.</string>
+    <string name="placement_add_calendar">कॅलेंडरमध्ये जोडा</string>
+    <string name="placement_share">शेअर करा</string>
+    <string name="placement_share_text">%1$s\n%2$s\n%3$s\n%4$s\n%5$s</string>
+    <string name="placement_no_app">हे उघडण्यासाठी कोणतेही ॲप सापडले नाही</string>
+    <string name="placement_for_children">तुमच्या मुलांसाठी</string>
+    <string name="placement_for_you">तुमच्यासाठी</string>
+    <string name="placement_child_course">%1$s · %2$s</string>
+    <string name="placement_course_eligible">कोर्स पात्र आहे</string>
+    <string name="placement_course_not_eligible">कोर्स पात्र यादीत नाही</string>
+    <string name="placement_eligibility_note">प्लेसमेंट सेलने दिलेल्या पात्र कोर्सवर आधारित. खालील इतर निकषही लागू होतात.</string>
+    <string name="placement_eligibility">पात्रता</string>
+    <string name="placement_other_criteria">इतर निकष</string>
+    <string name="placement_student_row_title">%1$s · %2$s</string>
+    <plurals name="placement_in_days">
+        <item quantity="one">%1$d दिवसात</item>
+        <item quantity="other">%1$d दिवसांत</item>
+    </plurals>
+    <plurals name="placement_soon_count">
+        <item quantity="one">पुढील %2$d दिवसांत %1$d कार्यक्रम</item>
+        <item quantity="other">पुढील %2$d दिवसांत %1$d कार्यक्रम</item>
+    </plurals>
+    <plurals name="placement_open_to_many">
+        <item quantity="one">तुमच्या %1$d मुलाच्या कोर्ससाठी खुले</item>
+        <item quantity="other">तुमच्या %1$d मुलांच्या कोर्ससाठी खुले</item>
+    </plurals>
 </resources>

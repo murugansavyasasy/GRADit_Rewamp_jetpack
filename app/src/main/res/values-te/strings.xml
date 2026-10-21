@@ -1547,4 +1547,84 @@
         <item quantity="one">%1$s ఖాళీ పీరియడ్ · స్వయం అధ్యయనం</item>
         <item quantity="other">%1$s ఖాళీ పీరియడ్లు · స్వయం అధ్యయనం</item>
     </plurals>
+
+    <!-- Placement events -->
+    <string name="placement_title">ప్లేస్‌మెంట్ ఈవెంట్‌లు</string>
+    <string name="placement_subtitle">ప్లేస్‌మెంట్ సెల్ నుండి</string>
+    <string name="placement_detail_title">ప్లేస్‌మెంట్ ఈవెంట్</string>
+    <string name="placement_tab_upcoming">రాబోయేవి</string>
+    <string name="placement_tab_historical">గతంలోనివి</string>
+    <string name="placement_section_this_week">ఈ వారం</string>
+    <string name="placement_section_later">తర్వాత</string>
+    <string name="placement_section_ended">ముగిసినవి</string>
+    <string name="placement_search_hint">ఈవెంట్, కంపెనీ లేదా కోర్సును వెతకండి</string>
+    <string name="placement_student_search_hint">వెతకండి</string>
+    <string name="placement_filter_mode">విధానం</string>
+    <string name="placement_filter_course">కోర్సు</string>
+    <string name="placement_filter_all">అన్నీ</string>
+    <string name="placement_type_ppt">ప్రీ-ప్లేస్‌మెంట్ టాక్</string>
+    <string name="placement_type_campus_drive">క్యాంపస్ డ్రైవ్</string>
+    <string name="placement_type_event">ప్లేస్‌మెంట్ ఈవెంట్</string>
+    <string name="placement_type_job_fair">ఉద్యోగ మేళా</string>
+    <string name="placement_type_online_test">ఆన్‌లైన్ టెస్ట్</string>
+    <string name="placement_mode_virtual">వర్చువల్</string>
+    <string name="placement_mode_on_campus">క్యాంపస్‌లో</string>
+    <string name="placement_mode_off_campus">క్యాంపస్ బయట</string>
+    <string name="placement_ended">ముగిసింది</string>
+    <string name="placement_live_now">ఇప్పుడు జరుగుతోంది</string>
+    <string name="placement_today">ఈరోజు</string>
+    <string name="placement_tomorrow">రేపు</string>
+    <string name="placement_time_range">%1$s – %2$s</string>
+    <string name="placement_soon_today">%1$s, ఈరోజు %2$s కి</string>
+    <string name="placement_soon_tomorrow">%1$s, రేపు %2$s కి</string>
+    <string name="placement_offline_banner">మీరు ఆఫ్‌లైన్‌లో ఉన్నారు. చివరిగా లోడ్ చేసిన జాబితా చూపబడుతోంది. %1$s న అప్‌డేట్ అయింది.</string>
+    <string name="placement_company">కంపెనీ</string>
+    <string name="placement_companies_count">కంపెనీలు · %1$d</string>
+    <string name="placement_participating_companies">పాల్గొనే కంపెనీలు · %1$d</string>
+    <string name="placement_more_companies">+మరో %1$d</string>
+    <string name="placement_eligible_courses">అర్హత ఉన్న కోర్సులు</string>
+    <string name="placement_open_to_one">%1$s కోర్సుకు అందుబాటులో ఉంది</string>
+    <string name="placement_open_to_two">%1$s, %2$s కోర్సులకు అందుబాటులో ఉంది</string>
+    <string name="placement_closed_to_one">%1$s కోర్సుకు అందుబాటులో లేదు</string>
+    <string name="placement_closed_to_two">%1$s లేదా %2$s కోర్సులకు అందుబాటులో లేదు</string>
+    <string name="placement_closed_to_all">మీ పిల్లల కోర్సులకు అందుబాటులో లేదు</string>
+    <string name="placement_error_title">ప్లేస్‌మెంట్ ఈవెంట్‌లను లోడ్ చేయలేకపోయాం</string>
+    <string name="placement_error_body">మీ ఇంటర్నెట్ కనెక్షన్‌ను తనిఖీ చేసి మళ్లీ ప్రయత్నించండి.</string>
+    <string name="placement_none_upcoming_title">రాబోయే ఈవెంట్‌లు లేవు</string>
+    <string name="placement_none_historical_title">గత ఈవెంట్‌లు లేవు</string>
+    <string name="placement_none_body">ప్లేస్‌మెంట్ సెల్ ఈవెంట్‌లు ఇక్కడ కనిపిస్తాయి.</string>
+    <string name="placement_no_match_title">సరిపోలే ఈవెంట్‌లు లేవు</string>
+    <string name="placement_no_match_body">వేరే శోధన ప్రయత్నించండి లేదా ఫిల్టర్‌లను తొలగించండి.</string>
+    <string name="placement_student_no_match_body">వేరే కంపెనీ లేదా ఈవెంట్ పేరును ప్రయత్నించండి.</string>
+    <string name="placement_footer_note">ఈవెంట్‌లను ప్లేస్‌మెంట్ సెల్ పోస్ట్ చేస్తుంది. వివరాలు లేదా నమోదు కోసం ప్లేస్‌మెంట్ సెల్‌ను సంప్రదించండి.</string>
+    <string name="placement_not_found">ఈ ఈవెంట్ ఇకపై అందుబాటులో లేదు.</string>
+    <string name="placement_open_maps">మ్యాప్స్‌లో తెరవండి</string>
+    <string name="placement_join_now">ఇప్పుడే చేరండి</string>
+    <string name="placement_join_later">చేరే లింక్ (10 నిమిషాల ముందు తెరుచుకుంటుంది)</string>
+    <string name="placement_join_not_open">ప్రారంభానికి 10 నిమిషాల ముందు లింక్ తెరుచుకుంటుంది.</string>
+    <string name="placement_add_calendar">క్యాలెండర్‌కు జోడించండి</string>
+    <string name="placement_share">షేర్ చేయండి</string>
+    <string name="placement_share_text">%1$s\n%2$s\n%3$s\n%4$s\n%5$s</string>
+    <string name="placement_no_app">దీన్ని తెరవడానికి యాప్ ఏదీ కనుగొనబడలేదు</string>
+    <string name="placement_for_children">మీ పిల్లల కోసం</string>
+    <string name="placement_for_you">మీ కోసం</string>
+    <string name="placement_child_course">%1$s · %2$s</string>
+    <string name="placement_course_eligible">కోర్సుకు అర్హత ఉంది</string>
+    <string name="placement_course_not_eligible">కోర్సు అర్హత జాబితాలో లేదు</string>
+    <string name="placement_eligibility_note">ప్లేస్‌మెంట్ సెల్ ఇచ్చిన అర్హత కోర్సుల ఆధారంగా. కింద ఉన్న ఇతర ప్రమాణాలు కూడా వర్తిస్తాయి.</string>
+    <string name="placement_eligibility">అర్హత</string>
+    <string name="placement_other_criteria">ఇతర ప్రమాణాలు</string>
+    <string name="placement_student_row_title">%1$s · %2$s</string>
+    <plurals name="placement_in_days">
+        <item quantity="one">%1$d రోజులో</item>
+        <item quantity="other">%1$d రోజుల్లో</item>
+    </plurals>
+    <plurals name="placement_soon_count">
+        <item quantity="one">తదుపరి %2$d రోజుల్లో %1$d ఈవెంట్</item>
+        <item quantity="other">తదుపరి %2$d రోజుల్లో %1$d ఈవెంట్‌లు</item>
+    </plurals>
+    <plurals name="placement_open_to_many">
+        <item quantity="one">మీ %1$d బిడ్డ కోర్సుకు అందుబాటులో ఉంది</item>
+        <item quantity="other">మీ %1$d మంది పిల్లల కోర్సులకు అందుబాటులో ఉంది</item>
+    </plurals>
 </resources>

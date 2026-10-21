@@ -1547,4 +1547,84 @@
         <item quantity="one">%1$s காலிப் பாடவேளை · சுயப்படிப்பு</item>
         <item quantity="other">%1$s காலிப் பாடவேளைகள் · சுயப்படிப்பு</item>
     </plurals>
+
+    <!-- Placement events -->
+    <string name="placement_title">வேலைவாய்ப்பு நிகழ்வுகள்</string>
+    <string name="placement_subtitle">வேலைவாய்ப்புப் பிரிவிலிருந்து</string>
+    <string name="placement_detail_title">வேலைவாய்ப்பு நிகழ்வு</string>
+    <string name="placement_tab_upcoming">வரவிருப்பவை</string>
+    <string name="placement_tab_historical">முந்தையவை</string>
+    <string name="placement_section_this_week">இந்த வாரம்</string>
+    <string name="placement_section_later">பின்னர்</string>
+    <string name="placement_section_ended">முடிந்தவை</string>
+    <string name="placement_search_hint">நிகழ்வு, நிறுவனம் அல்லது படிப்பைத் தேடுக</string>
+    <string name="placement_student_search_hint">தேடுக</string>
+    <string name="placement_filter_mode">முறை</string>
+    <string name="placement_filter_course">படிப்பு</string>
+    <string name="placement_filter_all">அனைத்தும்</string>
+    <string name="placement_type_ppt">முன்-வேலைவாய்ப்பு உரை</string>
+    <string name="placement_type_campus_drive">வளாக நேர்காணல்</string>
+    <string name="placement_type_event">வேலைவாய்ப்பு நிகழ்வு</string>
+    <string name="placement_type_job_fair">வேலைவாய்ப்பு முகாம்</string>
+    <string name="placement_type_online_test">ஆன்லைன் தேர்வு</string>
+    <string name="placement_mode_virtual">மெய்நிகர்</string>
+    <string name="placement_mode_on_campus">வளாகத்தில்</string>
+    <string name="placement_mode_off_campus">வளாகத்திற்கு வெளியே</string>
+    <string name="placement_ended">முடிந்தது</string>
+    <string name="placement_live_now">இப்போது நடக்கிறது</string>
+    <string name="placement_today">இன்று</string>
+    <string name="placement_tomorrow">நாளை</string>
+    <string name="placement_time_range">%1$s – %2$s</string>
+    <string name="placement_soon_today">%1$s, இன்று %2$s மணிக்கு</string>
+    <string name="placement_soon_tomorrow">%1$s, நாளை %2$s மணிக்கு</string>
+    <string name="placement_offline_banner">நீங்கள் ஆஃப்லைனில் உள்ளீர்கள். கடைசியாக ஏற்றிய பட்டியல் காட்டப்படுகிறது. %1$s அன்று புதுப்பிக்கப்பட்டது.</string>
+    <string name="placement_company">நிறுவனம்</string>
+    <string name="placement_companies_count">நிறுவனங்கள் · %1$d</string>
+    <string name="placement_participating_companies">பங்கேற்கும் நிறுவனங்கள் · %1$d</string>
+    <string name="placement_more_companies">+%1$d மேலும்</string>
+    <string name="placement_eligible_courses">தகுதியான படிப்புகள்</string>
+    <string name="placement_open_to_one">%1$s படிப்புக்குத் திறந்துள்ளது</string>
+    <string name="placement_open_to_two">%1$s, %2$s படிப்புகளுக்குத் திறந்துள்ளது</string>
+    <string name="placement_closed_to_one">%1$s படிப்புக்குத் திறக்கப்படவில்லை</string>
+    <string name="placement_closed_to_two">%1$s, %2$s படிப்புகளுக்குத் திறக்கப்படவில்லை</string>
+    <string name="placement_closed_to_all">உங்கள் பிள்ளைகளின் படிப்புகளுக்குத் திறக்கப்படவில்லை</string>
+    <string name="placement_error_title">வேலைவாய்ப்பு நிகழ்வுகளை ஏற்ற முடியவில்லை</string>
+    <string name="placement_error_body">இணைய இணைப்பைச் சரிபார்த்து மீண்டும் முயலவும்.</string>
+    <string name="placement_none_upcoming_title">வரவிருக்கும் நிகழ்வுகள் இல்லை</string>
+    <string name="placement_none_historical_title">முந்தைய நிகழ்வுகள் இல்லை</string>
+    <string name="placement_none_body">வேலைவாய்ப்புப் பிரிவின் நிகழ்வுகள் இங்கே காட்டப்படும்.</string>
+    <string name="placement_no_match_title">பொருந்தும் நிகழ்வுகள் இல்லை</string>
+    <string name="placement_no_match_body">வேறு தேடலை முயலவும் அல்லது வடிகட்டிகளை நீக்கவும்.</string>
+    <string name="placement_student_no_match_body">வேறு நிறுவனம் அல்லது நிகழ்வுப் பெயரை முயலவும்.</string>
+    <string name="placement_footer_note">நிகழ்வுகளை வேலைவாய்ப்புப் பிரிவு வெளியிடுகிறது. விவரங்கள் அல்லது பதிவுக்கு வேலைவாய்ப்புப் பிரிவைத் தொடர்புகொள்ளவும்.</string>
+    <string name="placement_not_found">இந்த நிகழ்வு இனி கிடைக்கவில்லை.</string>
+    <string name="placement_open_maps">வரைபடத்தில் திற</string>
+    <string name="placement_join_now">இப்போது இணை</string>
+    <string name="placement_join_later">இணைப்பு (10 நிமிடம் முன் திறக்கும்)</string>
+    <string name="placement_join_not_open">தொடங்குவதற்கு 10 நிமிடம் முன் இணைப்பு திறக்கும்.</string>
+    <string name="placement_add_calendar">நாட்காட்டியில் சேர்</string>
+    <string name="placement_share">பகிர்</string>
+    <string name="placement_share_text">%1$s\n%2$s\n%3$s\n%4$s\n%5$s</string>
+    <string name="placement_no_app">இதைத் திறக்க ஆப் எதுவும் இல்லை</string>
+    <string name="placement_for_children">உங்கள் பிள்ளைகளுக்கு</string>
+    <string name="placement_for_you">உங்களுக்கு</string>
+    <string name="placement_child_course">%1$s · %2$s</string>
+    <string name="placement_course_eligible">படிப்பு தகுதியானது</string>
+    <string name="placement_course_not_eligible">படிப்பு தகுதிப் பட்டியலில் இல்லை</string>
+    <string name="placement_eligibility_note">வேலைவாய்ப்புப் பிரிவு பட்டியலிட்ட தகுதியான படிப்புகளின் அடிப்படையில். கீழே உள்ள பிற நிபந்தனைகளும் பொருந்தும்.</string>
+    <string name="placement_eligibility">தகுதி</string>
+    <string name="placement_other_criteria">பிற நிபந்தனைகள்</string>
+    <string name="placement_student_row_title">%1$s · %2$s</string>
+    <plurals name="placement_in_days">
+        <item quantity="one">%1$d நாளில்</item>
+        <item quantity="other">%1$d நாட்களில்</item>
+    </plurals>
+    <plurals name="placement_soon_count">
+        <item quantity="one">அடுத்த %2$d நாட்களில் %1$d நிகழ்வு</item>
+        <item quantity="other">அடுத்த %2$d நாட்களில் %1$d நிகழ்வுகள்</item>
+    </plurals>
+    <plurals name="placement_open_to_many">
+        <item quantity="one">உங்கள் %1$d பிள்ளையின் படிப்புக்குத் திறந்துள்ளது</item>
+        <item quantity="other">உங்கள் %1$d பிள்ளைகளின் படிப்புகளுக்குத் திறந்துள்ளது</item>
+    </plurals>
 </resources>

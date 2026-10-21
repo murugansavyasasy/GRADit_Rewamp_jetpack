@@ -1581,4 +1581,84 @@
         <item quantity="one">%1$s is a free period · self-study</item>
         <item quantity="other">%1$s are free periods · self-study</item>
     </plurals>
+
+    <!-- Placement events -->
+    <string name="placement_title">Placement Events</string>
+    <string name="placement_subtitle">From the placement cell</string>
+    <string name="placement_detail_title">Placement event</string>
+    <string name="placement_tab_upcoming">Upcoming</string>
+    <string name="placement_tab_historical">Historical</string>
+    <string name="placement_section_this_week">This week</string>
+    <string name="placement_section_later">Later</string>
+    <string name="placement_section_ended">Ended</string>
+    <string name="placement_search_hint">Search event, company or course</string>
+    <string name="placement_student_search_hint">Search</string>
+    <string name="placement_filter_mode">Mode</string>
+    <string name="placement_filter_course">Course</string>
+    <string name="placement_filter_all">All</string>
+    <string name="placement_type_ppt">Pre-placement talk</string>
+    <string name="placement_type_campus_drive">Campus drive</string>
+    <string name="placement_type_event">Placement event</string>
+    <string name="placement_type_job_fair">Job fair</string>
+    <string name="placement_type_online_test">Online test</string>
+    <string name="placement_mode_virtual">Virtual</string>
+    <string name="placement_mode_on_campus">On-campus</string>
+    <string name="placement_mode_off_campus">Off-campus</string>
+    <string name="placement_ended">Ended</string>
+    <string name="placement_live_now">Happening now</string>
+    <string name="placement_today">Today</string>
+    <string name="placement_tomorrow">Tomorrow</string>
+    <string name="placement_time_range">%1$s – %2$s</string>
+    <string name="placement_soon_today">%1$s, today at %2$s</string>
+    <string name="placement_soon_tomorrow">%1$s, tomorrow at %2$s</string>
+    <string name="placement_offline_banner">You’re offline. Showing the last loaded list. Updated on %1$s.</string>
+    <string name="placement_company">Company</string>
+    <string name="placement_companies_count">Companies · %1$d</string>
+    <string name="placement_participating_companies">Participating companies · %1$d</string>
+    <string name="placement_more_companies">+%1$d more</string>
+    <string name="placement_eligible_courses">Eligible courses</string>
+    <string name="placement_open_to_one">Open to %1$s’s course</string>
+    <string name="placement_open_to_two">Open to %1$s’s and %2$s’s courses</string>
+    <string name="placement_closed_to_one">Not open to %1$s’s course</string>
+    <string name="placement_closed_to_two">Not open to %1$s’s or %2$s’s courses</string>
+    <string name="placement_closed_to_all">Not open to your children’s courses</string>
+    <string name="placement_error_title">Couldn’t load placement events</string>
+    <string name="placement_error_body">Check your internet connection and try again.</string>
+    <string name="placement_none_upcoming_title">No upcoming events</string>
+    <string name="placement_none_historical_title">No past events</string>
+    <string name="placement_none_body">Events from the placement cell will show up here.</string>
+    <string name="placement_no_match_title">No matching events</string>
+    <string name="placement_no_match_body">Try a different search or clear the filters.</string>
+    <string name="placement_student_no_match_body">Try a different company or event name.</string>
+    <string name="placement_footer_note">Events are posted by the placement cell. For details or registration, contact the placement cell.</string>
+    <string name="placement_not_found">This event is no longer available.</string>
+    <string name="placement_open_maps">Open in Maps</string>
+    <string name="placement_join_now">Join now</string>
+    <string name="placement_join_later">Join link (opens 10 minutes before)</string>
+    <string name="placement_join_not_open">The join link opens 10 minutes before the start.</string>
+    <string name="placement_add_calendar">Add to calendar</string>
+    <string name="placement_share">Share</string>
+    <string name="placement_share_text">%1$s\n%2$s\n%3$s\n%4$s\n%5$s</string>
+    <string name="placement_no_app">No app found to open this</string>
+    <string name="placement_for_children">For your children</string>
+    <string name="placement_for_you">For you</string>
+    <string name="placement_child_course">%1$s · %2$s</string>
+    <string name="placement_course_eligible">Course is eligible</string>
+    <string name="placement_course_not_eligible">Course not in the eligible list</string>
+    <string name="placement_eligibility_note">Based on the eligible courses listed by the placement cell. Other criteria below also apply.</string>
+    <string name="placement_eligibility">Eligibility</string>
+    <string name="placement_other_criteria">Other criteria</string>
+    <string name="placement_student_row_title">%1$s · %2$s</string>
+    <plurals name="placement_in_days">
+        <item quantity="one">In %1$d day</item>
+        <item quantity="other">In %1$d days</item>
+    </plurals>
+    <plurals name="placement_soon_count">
+        <item quantity="one">%1$d event in the next %2$d days</item>
+        <item quantity="other">%1$d events in the next %2$d days</item>
+    </plurals>
+    <plurals name="placement_open_to_many">
+        <item quantity="one">Open to %1$d of your children’s courses</item>
+        <item quantity="other">Open to %1$d of your children’s courses</item>
+    </plurals>
 </resources>
